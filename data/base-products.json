@@ -4417,22 +4417,2891 @@
         ]
     },
     {
-        "id": "",
-        "title": "",
-        "image": "",
+        "id": 508,
+        "title": "Men's Premium Heavyweight Tee | Cotton Heritage MC1086",
+        "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/27/27a0e15dcb0e2d6b6ba4a836d05a2d1e_l",
         "category": "TSHIRTS",
-        "file_placement_options": [],
-        "options": [],
-        "variants": []
+        "file_placement_options": [
+            {
+                "id": "embroidery_chest_left",
+                "type": "embroidery_chest_left",
+                "title": "Left chest",
+                "additional_price": "2.95"
+            },
+            {
+                "id": "embroidery_chest_center",
+                "type": "embroidery_chest_center",
+                "title": "Center chest",
+                "additional_price": "2.95"
+            },
+            {
+                "id": "default",
+                "type": "front",
+                "title": "Front print",
+                "additional_price": null
+            },
+            {
+                "id": "back",
+                "type": "back",
+                "title": "Back print",
+                "additional_price": "5.95"
+            },
+            {
+                "id": "label_inside",
+                "type": "label_inside",
+                "title": "Inside label",
+                "additional_price": "2.49"
+            },
+            {
+                "id": "label_outside",
+                "type": "label_outside",
+                "title": "Outside label",
+                "additional_price": "2.49"
+            },
+            {
+                "id": "preview",
+                "type": "mockup",
+                "title": "Mockup",
+                "additional_price": null
+            }
+        ],
+        "options": [
+            {
+                "id": "thread_colors_chest_left",
+                "title": "Left chest thread colors",
+                "type": "multi_select",
+                "values": {
+                    "#FFFFFF": "1801 White",
+                    "#000000": "1800 Black",
+                    "#96A1A8": "1718 Grey",
+                    "#A67843": "1672 Old Gold",
+                    "#FFCC00": "1951 Gold",
+                    "#E25C27": "1987 Orange",
+                    "#CC3366": "1910 Flamingo",
+                    "#CC3333": "1839 Red",
+                    "#660000": "1784 Maroon",
+                    "#333366": "1966 Navy",
+                    "#005397": "1842 Royal",
+                    "#3399FF": "1695 Aqua/Teal",
+                    "#6B5294": "1832 Purple",
+                    "#01784E": "1751 Kelly Green",
+                    "#7BA35A": "1848 Kiwi Green"
+                },
+                "additional_price": null,
+                "additional_price_breakdown": []
+            },
+            {
+                "id": "thread_colors_chest_center",
+                "title": "Center chest thread colors",
+                "type": "multi_select",
+                "values": {
+                    "#FFFFFF": "1801 White",
+                    "#000000": "1800 Black",
+                    "#96A1A8": "1718 Grey",
+                    "#A67843": "1672 Old Gold",
+                    "#FFCC00": "1951 Gold",
+                    "#E25C27": "1987 Orange",
+                    "#CC3366": "1910 Flamingo",
+                    "#CC3333": "1839 Red",
+                    "#660000": "1784 Maroon",
+                    "#333366": "1966 Navy",
+                    "#005397": "1842 Royal",
+                    "#3399FF": "1695 Aqua/Teal",
+                    "#6B5294": "1832 Purple",
+                    "#01784E": "1751 Kelly Green",
+                    "#7BA35A": "1848 Kiwi Green"
+                },
+                "additional_price": null,
+                "additional_price_breakdown": []
+            },
+            {
+                "id": "thread_colors_sleeve_left_top",
+                "title": "Sleeve left top thread colors",
+                "type": "multi_select",
+                "values": {
+                    "#FFFFFF": "1801 White",
+                    "#000000": "1800 Black",
+                    "#96A1A8": "1718 Grey",
+                    "#A67843": "1672 Old Gold",
+                    "#FFCC00": "1951 Gold",
+                    "#E25C27": "1987 Orange",
+                    "#CC3366": "1910 Flamingo",
+                    "#CC3333": "1839 Red",
+                    "#660000": "1784 Maroon",
+                    "#333366": "1966 Navy",
+                    "#005397": "1842 Royal",
+                    "#3399FF": "1695 Aqua/Teal",
+                    "#6B5294": "1832 Purple",
+                    "#01784E": "1751 Kelly Green",
+                    "#7BA35A": "1848 Kiwi Green"
+                },
+                "additional_price": null,
+                "additional_price_breakdown": []
+            },
+            {
+                "id": "thread_colors_sleeve_right_top",
+                "title": "Sleeve right top thread colors",
+                "type": "multi_select",
+                "values": {
+                    "#FFFFFF": "1801 White",
+                    "#000000": "1800 Black",
+                    "#96A1A8": "1718 Grey",
+                    "#A67843": "1672 Old Gold",
+                    "#FFCC00": "1951 Gold",
+                    "#E25C27": "1987 Orange",
+                    "#CC3366": "1910 Flamingo",
+                    "#CC3333": "1839 Red",
+                    "#660000": "1784 Maroon",
+                    "#333366": "1966 Navy",
+                    "#005397": "1842 Royal",
+                    "#3399FF": "1695 Aqua/Teal",
+                    "#6B5294": "1832 Purple",
+                    "#01784E": "1751 Kelly Green",
+                    "#7BA35A": "1848 Kiwi Green"
+                },
+                "additional_price": null,
+                "additional_price_breakdown": []
+            },
+            {
+                "id": "notes",
+                "title": "Embroidery notes",
+                "type": "text",
+                "values": null,
+                "additional_price": null,
+                "additional_price_breakdown": []
+            },
+            {
+                "id": "lifelike",
+                "title": "Lifelike",
+                "type": "bool",
+                "values": null,
+                "additional_price": null,
+                "additional_price_breakdown": []
+            }
+        ],
+        "variants": [
+            {
+                "id": 12778,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Agave / 2XL)",
+                "size": "2XL",
+                "color": "Agave",
+                "color_code": "#66838d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12778_1624012523.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12779,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Agave / 3XL)",
+                "size": "3XL",
+                "color": "Agave",
+                "color_code": "#66838d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12779_1624012527.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 13064,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Agave / 4XL)",
+                "size": "4XL",
+                "color": "Agave",
+                "color_code": "#66838d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/13064_1627547323.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12776,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Agave / L)",
+                "size": "L",
+                "color": "Agave",
+                "color_code": "#66838d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12776_1624012527.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12775,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Agave / M)",
+                "size": "M",
+                "color": "Agave",
+                "color_code": "#66838d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12775_1624012528.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12774,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Agave / S)",
+                "size": "S",
+                "color": "Agave",
+                "color_code": "#66838d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12774_1624012529.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12777,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Agave / XL)",
+                "size": "XL",
+                "color": "Agave",
+                "color_code": "#66838d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12777_1624012538.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12760,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Black / 2XL)",
+                "size": "2XL",
+                "color": "Black",
+                "color_code": "#151515",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12760_1624012531.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12766,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Black / 3XL)",
+                "size": "3XL",
+                "color": "Black",
+                "color_code": "#151515",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12766_1624012535.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 13065,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Black / 4XL)",
+                "size": "4XL",
+                "color": "Black",
+                "color_code": "#151515",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/13065_1627547340.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12758,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Black / L)",
+                "size": "L",
+                "color": "Black",
+                "color_code": "#151515",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12758_1624012540.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12757,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Black / M)",
+                "size": "M",
+                "color": "Black",
+                "color_code": "#151515",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12757_1624012542.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12756,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Black / S)",
+                "size": "S",
+                "color": "Black",
+                "color_code": "#151515",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12756_1624012544.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12759,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Black / XL)",
+                "size": "XL",
+                "color": "Black",
+                "color_code": "#151515",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12759_1624012547.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12772,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Brick Red / 2XL)",
+                "size": "2XL",
+                "color": "Brick Red",
+                "color_code": "#8f242e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12772_1624012551.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12773,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Brick Red / 3XL)",
+                "size": "3XL",
+                "color": "Brick Red",
+                "color_code": "#8f242e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12773_1624012554.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 13066,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Brick Red / 4XL)",
+                "size": "4XL",
+                "color": "Brick Red",
+                "color_code": "#8f242e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/13066_1627547343.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12770,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Brick Red / L)",
+                "size": "L",
+                "color": "Brick Red",
+                "color_code": "#8f242e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12770_1624012561.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12769,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Brick Red / M)",
+                "size": "M",
+                "color": "Brick Red",
+                "color_code": "#8f242e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12769_1624012562.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12768,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Brick Red / S)",
+                "size": "S",
+                "color": "Brick Red",
+                "color_code": "#8f242e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12768_1624012566.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12771,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Brick Red / XL)",
+                "size": "XL",
+                "color": "Brick Red",
+                "color_code": "#8f242e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12771_1624012573.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12784,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Carbon Grey / 2XL)",
+                "size": "2XL",
+                "color": "Carbon Grey",
+                "color_code": "#8e8b8e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12784_1624012576.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12785,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Carbon Grey / 3XL)",
+                "size": "3XL",
+                "color": "Carbon Grey",
+                "color_code": "#8e8b8e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12785_1624012581.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 13067,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Carbon Grey / 4XL)",
+                "size": "4XL",
+                "color": "Carbon Grey",
+                "color_code": "#8e8b8e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/13067_1627547349.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12782,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Carbon Grey / L)",
+                "size": "L",
+                "color": "Carbon Grey",
+                "color_code": "#8e8b8e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12782_1624012584.jpg",
+                "price": "15.95",
+                "in_stock": false,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "supplier_out_of_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12781,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Carbon Grey / M)",
+                "size": "M",
+                "color": "Carbon Grey",
+                "color_code": "#8e8b8e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12781_1624012585.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12780,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Carbon Grey / S)",
+                "size": "S",
+                "color": "Carbon Grey",
+                "color_code": "#8e8b8e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12780_1624012699.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12783,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Carbon Grey / XL)",
+                "size": "XL",
+                "color": "Carbon Grey",
+                "color_code": "#8e8b8e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12783_1624012589.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12790,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Charcoal Heather / 2XL)",
+                "size": "2XL",
+                "color": "Charcoal Heather",
+                "color_code": "#343235",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12790_1624012589.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12791,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Charcoal Heather / 3XL)",
+                "size": "3XL",
+                "color": "Charcoal Heather",
+                "color_code": "#343235",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12791_1624012590.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 13068,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Charcoal Heather / 4XL)",
+                "size": "4XL",
+                "color": "Charcoal Heather",
+                "color_code": "#343235",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/13068_1627547353.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12788,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Charcoal Heather / L)",
+                "size": "L",
+                "color": "Charcoal Heather",
+                "color_code": "#343235",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12788_1624012596.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12787,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Charcoal Heather / M)",
+                "size": "M",
+                "color": "Charcoal Heather",
+                "color_code": "#343235",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12787_1624012598.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12786,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Charcoal Heather / S)",
+                "size": "S",
+                "color": "Charcoal Heather",
+                "color_code": "#343235",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12786_1624012600.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    }
+                ]
+            },
+            {
+                "id": 12789,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Charcoal Heather / XL)",
+                "size": "XL",
+                "color": "Charcoal Heather",
+                "color_code": "#343235",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12789_1624012606.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12802,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Vintage Gold / 2XL)",
+                "size": "2XL",
+                "color": "Vintage Gold",
+                "color_code": "#ffce88",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12802_1663769938.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12803,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Vintage Gold / 3XL)",
+                "size": "3XL",
+                "color": "Vintage Gold",
+                "color_code": "#ffce88",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12803_1663769948.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 13070,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Vintage Gold / 4XL)",
+                "size": "4XL",
+                "color": "Vintage Gold",
+                "color_code": "#ffce88",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/13070_1663769949.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12800,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Vintage Gold / L)",
+                "size": "L",
+                "color": "Vintage Gold",
+                "color_code": "#ffce88",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12800_1663769949.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12799,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Vintage Gold / M)",
+                "size": "M",
+                "color": "Vintage Gold",
+                "color_code": "#ffce88",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12799_1663769959.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12798,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Vintage Gold / S)",
+                "size": "S",
+                "color": "Vintage Gold",
+                "color_code": "#ffce88",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12798_1663769959.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12801,
+                "product_id": 508,
+                "name": "Cotton Heritage MC1086 Men's Premium Heavyweight Tee (Vintage Gold / XL)",
+                "size": "XL",
+                "color": "Vintage Gold",
+                "color_code": "#ffce88",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/508/12801_1663769960.jpg",
+                "price": "15.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            }
+
+        ]
     },
     {
-        "id": "",
-        "title": "",
-        "image": "",
+        "id": 356,
+        "title": "Unisex Long Sleeve Tee | Bella + Canvas 3501",
+        "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/81/81bb570004c403eb98606dd48481a98a_l",
         "category": "TSHIRTS",
-        "file_placement_options": [],
-        "options": [],
-        "variants": []
+        "file_placement_options": [
+            {
+                "id": "embroidery_chest_left",
+                "type": "embroidery_chest_left",
+                "title": "Left chest",
+                "additional_price": "2.95"
+            },
+            {
+                "id": "embroidery_chest_center",
+                "type": "embroidery_chest_center",
+                "title": "Center chest",
+                "additional_price": "2.95"
+            },
+            {
+                "id": "default",
+                "type": "front",
+                "title": "Front print",
+                "additional_price": null
+            },
+            {
+                "id": "back",
+                "type": "back",
+                "title": "Back print",
+                "additional_price": "5.95"
+            },
+            {
+                "id": "sleeve_left",
+                "type": "sleeve_left",
+                "title": "Left sleeve",
+                "additional_price": "5.95"
+            },
+            {
+                "id": "sleeve_right",
+                "type": "sleeve_right",
+                "title": "Right sleeve",
+                "additional_price": "5.95"
+            },
+            {
+                "id": "label_inside",
+                "type": "label_inside",
+                "title": "Inside label",
+                "additional_price": "2.49"
+            },
+            {
+                "id": "label_outside",
+                "type": "label_outside",
+                "title": "Outside label",
+                "additional_price": "2.49"
+            },
+            {
+                "id": "preview",
+                "type": "mockup",
+                "title": "Mockup",
+                "additional_price": null
+            }
+        ],
+        "options": [
+            {
+                "id": "thread_colors_chest_left",
+                "title": "Left chest thread colors",
+                "type": "multi_select",
+                "values": {
+                    "#FFFFFF": "1801 White",
+                    "#000000": "1800 Black",
+                    "#96A1A8": "1718 Grey",
+                    "#A67843": "1672 Old Gold",
+                    "#FFCC00": "1951 Gold",
+                    "#E25C27": "1987 Orange",
+                    "#CC3366": "1910 Flamingo",
+                    "#CC3333": "1839 Red",
+                    "#660000": "1784 Maroon",
+                    "#333366": "1966 Navy",
+                    "#005397": "1842 Royal",
+                    "#3399FF": "1695 Aqua/Teal",
+                    "#6B5294": "1832 Purple",
+                    "#01784E": "1751 Kelly Green",
+                    "#7BA35A": "1848 Kiwi Green"
+                },
+                "additional_price": null,
+                "additional_price_breakdown": []
+            },
+            {
+                "id": "thread_colors_chest_center",
+                "title": "Center chest thread colors",
+                "type": "multi_select",
+                "values": {
+                    "#FFFFFF": "1801 White",
+                    "#000000": "1800 Black",
+                    "#96A1A8": "1718 Grey",
+                    "#A67843": "1672 Old Gold",
+                    "#FFCC00": "1951 Gold",
+                    "#E25C27": "1987 Orange",
+                    "#CC3366": "1910 Flamingo",
+                    "#CC3333": "1839 Red",
+                    "#660000": "1784 Maroon",
+                    "#333366": "1966 Navy",
+                    "#005397": "1842 Royal",
+                    "#3399FF": "1695 Aqua/Teal",
+                    "#6B5294": "1832 Purple",
+                    "#01784E": "1751 Kelly Green",
+                    "#7BA35A": "1848 Kiwi Green"
+                },
+                "additional_price": null,
+                "additional_price_breakdown": []
+            },
+            {
+                "id": "notes",
+                "title": "Embroidery notes",
+                "type": "text",
+                "values": null,
+                "additional_price": null,
+                "additional_price_breakdown": []
+            },
+            {
+                "id": "lifelike",
+                "title": "Lifelike",
+                "type": "bool",
+                "values": null,
+                "additional_price": null,
+                "additional_price_breakdown": []
+            }
+        ],
+        "variants": [
+            {
+                "id": 10092,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Athletic Heather / 2XL)",
+                "size": "2XL",
+                "color": "Athletic Heather",
+                "color_code": "#b5b4b4",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10087_1556619713.jpg",
+                "price": "20.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "AU": "Australia",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10090,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Athletic Heather / L)",
+                "size": "L",
+                "color": "Athletic Heather",
+                "color_code": "#b5b4b4",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10087_1556619713.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "AU": "Australia",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10089,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Athletic Heather / M)",
+                "size": "M",
+                "color": "Athletic Heather",
+                "color_code": "#b5b4b4",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10087_1556619713.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "AU": "Australia",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10088,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Athletic Heather / S)",
+                "size": "S",
+                "color": "Athletic Heather",
+                "color_code": "#b5b4b4",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10087_1556619713.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "AU": "Australia",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10091,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Athletic Heather / XL)",
+                "size": "XL",
+                "color": "Athletic Heather",
+                "color_code": "#b5b4b4",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10087_1556619713.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "AU": "Australia",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10087,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Athletic Heather / XS)",
+                "size": "XS",
+                "color": "Athletic Heather",
+                "color_code": "#b5b4b4",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10087_1556619713.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10098,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Black / 2XL)",
+                "size": "2XL",
+                "color": "Black",
+                "color_code": "#131313",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10093_1556619715.jpg",
+                "price": "20.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "stocked_on_demand"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10096,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Black / L)",
+                "size": "L",
+                "color": "Black",
+                "color_code": "#131313",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10093_1556619715.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10095,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Black / M)",
+                "size": "M",
+                "color": "Black",
+                "color_code": "#131313",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10093_1556619715.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "stocked_on_demand"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10094,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Black / S)",
+                "size": "S",
+                "color": "Black",
+                "color_code": "#131313",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10093_1556619715.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "stocked_on_demand"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10097,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Black / XL)",
+                "size": "XL",
+                "color": "Black",
+                "color_code": "#131313",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10093_1556619715.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "stocked_on_demand"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10093,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Black / XS)",
+                "size": "XS",
+                "color": "Black",
+                "color_code": "#131313",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10093_1556619715.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 11202,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Dark Grey Heather / 2XL)",
+                "size": "2XL",
+                "color": "Dark Grey Heather",
+                "color_code": "#3e3c3d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/11202_1603780158.jpg",
+                "price": "20.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 11200,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Dark Grey Heather / L)",
+                "size": "L",
+                "color": "Dark Grey Heather",
+                "color_code": "#3e3c3d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/11200_1603780160.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 11199,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Dark Grey Heather / M)",
+                "size": "M",
+                "color": "Dark Grey Heather",
+                "color_code": "#3e3c3d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/11199_1603780163.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 11198,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Dark Grey Heather / S)",
+                "size": "S",
+                "color": "Dark Grey Heather",
+                "color_code": "#3e3c3d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/11198_1603780166.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 11201,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Dark Grey Heather / XL)",
+                "size": "XL",
+                "color": "Dark Grey Heather",
+                "color_code": "#3e3c3d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/11201_1603780169.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 11197,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Dark Grey Heather / XS)",
+                "size": "XS",
+                "color": "Dark Grey Heather",
+                "color_code": "#3e3c3d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/11197_1603780171.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 16155,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Heather Forest / 2XL)",
+                "size": "2XL",
+                "color": "Heather Forest",
+                "color_code": "#28332e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/16155_1664259901.jpg",
+                "price": "20.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 16153,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Heather Forest / L)",
+                "size": "L",
+                "color": "Heather Forest",
+                "color_code": "#28332e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/16153_1664259905.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 16152,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Heather Forest / M)",
+                "size": "M",
+                "color": "Heather Forest",
+                "color_code": "#28332e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/16152_1664259911.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 16151,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Heather Forest / S)",
+                "size": "S",
+                "color": "Heather Forest",
+                "color_code": "#28332e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/16151_1664259911.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 16154,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Heather Forest / XL)",
+                "size": "XL",
+                "color": "Heather Forest",
+                "color_code": "#28332e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/16154_1664259921.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 16150,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Heather Forest / XS)",
+                "size": "XS",
+                "color": "Heather Forest",
+                "color_code": "#28332e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/16150_1664259922.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "stocked_on_demand"
+                    }
+                ]
+            },
+            {
+                "id": 10128,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Navy / 2XL)",
+                "size": "2XL",
+                "color": "Navy",
+                "color_code": "#161324",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10123_1556619717.jpg",
+                "price": "20.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10126,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Navy / L)",
+                "size": "L",
+                "color": "Navy",
+                "color_code": "#161324",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10123_1556619717.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10125,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Navy / M)",
+                "size": "M",
+                "color": "Navy",
+                "color_code": "#161324",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10123_1556619717.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10124,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Navy / S)",
+                "size": "S",
+                "color": "Navy",
+                "color_code": "#161324",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10123_1556619717.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10127,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Navy / XL)",
+                "size": "XL",
+                "color": "Navy",
+                "color_code": "#161324",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10123_1556619717.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10123,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Navy / XS)",
+                "size": "XS",
+                "color": "Navy",
+                "color_code": "#161324",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10123_1556619717.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10140,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Red / 2XL)",
+                "size": "2XL",
+                "color": "Red",
+                "color_code": "#b9091d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10135_1556619716.jpg",
+                "price": "20.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    }
+                ]
+            },
+            {
+                "id": 10138,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Red / L)",
+                "size": "L",
+                "color": "Red",
+                "color_code": "#b9091d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10135_1556619716.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10137,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Red / M)",
+                "size": "M",
+                "color": "Red",
+                "color_code": "#b9091d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10135_1556619716.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10136,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Red / S)",
+                "size": "S",
+                "color": "Red",
+                "color_code": "#b9091d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10135_1556619716.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    }
+                ]
+            },
+            {
+                "id": 10139,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Red / XL)",
+                "size": "XL",
+                "color": "Red",
+                "color_code": "#b9091d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10135_1556619716.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10135,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Red / XS)",
+                "size": "XS",
+                "color": "Red",
+                "color_code": "#b9091d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10135_1556619716.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12955,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Sand Dune / 2XL)",
+                "size": "2XL",
+                "color": "Sand Dune",
+                "color_code": "#fbd4aa",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/12955_1627544970.jpg",
+                "price": "20.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12953,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Sand Dune / L)",
+                "size": "L",
+                "color": "Sand Dune",
+                "color_code": "#fbd4aa",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/12953_1627544979.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12952,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Sand Dune / M)",
+                "size": "M",
+                "color": "Sand Dune",
+                "color_code": "#fbd4aa",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/12952_1627544982.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12951,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Sand Dune / S)",
+                "size": "S",
+                "color": "Sand Dune",
+                "color_code": "#fbd4aa",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/12951_1627544985.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12954,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Sand Dune / XL)",
+                "size": "XL",
+                "color": "Sand Dune",
+                "color_code": "#fbd4aa",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/12954_1627544988.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12950,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (Sand Dune / XS)",
+                "size": "XS",
+                "color": "Sand Dune",
+                "color_code": "#fbd4aa",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/12950_1627544993.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10146,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (White / 2XL)",
+                "size": "2XL",
+                "color": "White",
+                "color_code": "#ffffff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10141_1556619718.jpg",
+                "price": "20.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10144,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (White / L)",
+                "size": "L",
+                "color": "White",
+                "color_code": "#ffffff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10141_1556619718.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10143,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (White / M)",
+                "size": "M",
+                "color": "White",
+                "color_code": "#ffffff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10141_1556619718.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10142,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (White / S)",
+                "size": "S",
+                "color": "White",
+                "color_code": "#ffffff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10141_1556619718.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10145,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (White / XL)",
+                "size": "XL",
+                "color": "White",
+                "color_code": "#ffffff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10141_1556619718.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 10141,
+                "product_id": 356,
+                "name": "Bella + Canvas 3501 Unisex Long Sleeve Shirt (White / XS)",
+                "size": "XS",
+                "color": "White",
+                "color_code": "#ffffff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/356/10141_1556619718.jpg",
+                "price": "18.50",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "",
