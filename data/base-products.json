@@ -1,0 +1,4761 @@
+[
+    {
+        "id": 515,
+        "title": "Oversized Tie-Dye T-Shirt | Shaka Wear SHHTDS",
+        "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/6a/6a2e188210762e13e5a47f64fbb956b6_l",
+        "category": "TSHIRTS",
+        "file_placement_options": [
+            {
+                "id": "embroidery_chest_left",
+                "type": "embroidery_chest_left",
+                "title": "Left chest",
+                "additional_price": "2.95"
+            },
+            {
+                "id": "embroidery_chest_center",
+                "type": "embroidery_chest_center",
+                "title": "Center chest",
+                "additional_price": "2.95"
+            },
+            {
+                "id": "embroidery_large_center",
+                "type": "embroidery_large_center",
+                "title": "Large center",
+                "additional_price": "3.95"
+            }
+        ],
+        "options": [
+            {
+                "id": "thread_colors_chest_left",
+                "title": "Left chest thread colors",
+                "type": "multi_select",
+                "values": {
+                    "#FFFFFF": "1801 White",
+                    "#000000": "1800 Black",
+                    "#96A1A8": "1718 Grey",
+                    "#A67843": "1672 Old Gold",
+                    "#FFCC00": "1951 Gold",
+                    "#E25C27": "1987 Orange",
+                    "#CC3366": "1910 Flamingo",
+                    "#CC3333": "1839 Red",
+                    "#660000": "1784 Maroon",
+                    "#333366": "1966 Navy",
+                    "#005397": "1842 Royal",
+                    "#3399FF": "1695 Aqua/Teal",
+                    "#6B5294": "1832 Purple",
+                    "#01784E": "1751 Kelly Green",
+                    "#7BA35A": "1848 Kiwi Green"
+                },
+                "additional_price": null,
+                "additional_price_breakdown": []
+            },
+            {
+                "id": "thread_colors_chest_center",
+                "title": "Center chest thread colors",
+                "type": "multi_select",
+                "values": {
+                    "#FFFFFF": "1801 White",
+                    "#000000": "1800 Black",
+                    "#96A1A8": "1718 Grey",
+                    "#A67843": "1672 Old Gold",
+                    "#FFCC00": "1951 Gold",
+                    "#E25C27": "1987 Orange",
+                    "#CC3366": "1910 Flamingo",
+                    "#CC3333": "1839 Red",
+                    "#660000": "1784 Maroon",
+                    "#333366": "1966 Navy",
+                    "#005397": "1842 Royal",
+                    "#3399FF": "1695 Aqua/Teal",
+                    "#6B5294": "1832 Purple",
+                    "#01784E": "1751 Kelly Green",
+                    "#7BA35A": "1848 Kiwi Green"
+                },
+                "additional_price": null,
+                "additional_price_breakdown": []
+            },
+            {
+                "id": "notes",
+                "title": "Embroidery notes",
+                "type": "text",
+                "values": null,
+                "additional_price": null,
+                "additional_price_breakdown": []
+            }
+        ],
+        "variants": [
+            {
+                "id": 12959,
+                "product_id": 515,
+                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Black / White / L)",
+                "size": "L",
+                "color": "Black / White",
+                "color_code": "#ffffff",
+                "color_code2": "#505c64",
+                "image": "https://files.cdn.printful.com/products/515/12959_1629810115.jpg",
+                "price": "18.95",
+                "in_stock": false,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "supplier_out_of_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12957,
+                "product_id": 515,
+                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Black / White / M)",
+                "size": "M",
+                "color": "Black / White",
+                "color_code": "#ffffff",
+                "color_code2": "#505c64",
+                "image": "https://files.cdn.printful.com/products/515/12957_1629810118.jpg",
+                "price": "18.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    }
+                ]
+            },
+            {
+                "id": 12956,
+                "product_id": 515,
+                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Black / White / S)",
+                "size": "S",
+                "color": "Black / White",
+                "color_code": "#ffffff",
+                "color_code2": "#505c64",
+                "image": "https://files.cdn.printful.com/products/515/12956_1629810120.jpg",
+                "price": "18.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    }
+                ]
+            },
+            {
+                "id": 12960,
+                "product_id": 515,
+                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Black / White / XL)",
+                "size": "XL",
+                "color": "Black / White",
+                "color_code": "#ffffff",
+                "color_code2": "#505c64",
+                "image": "https://files.cdn.printful.com/products/515/12960_1629810122.jpg",
+                "price": "18.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12970,
+                "product_id": 515,
+                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Milky way / 2XL)",
+                "size": "2XL",
+                "color": "Milky way",
+                "color_code": "#a682ae",
+                "color_code2": "#3d3e55",
+                "image": "https://files.cdn.printful.com/products/515/12970_1629810210.jpg",
+                "price": "20.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    }
+                ]
+            },
+            {
+                "id": 12968,
+                "product_id": 515,
+                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Milky way / L)",
+                "size": "L",
+                "color": "Milky way",
+                "color_code": "#a682ae",
+                "color_code2": "#3d3e55",
+                "image": "https://files.cdn.printful.com/products/515/12968_1629810211.jpg",
+                "price": "18.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12967,
+                "product_id": 515,
+                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Milky way / M)",
+                "size": "M",
+                "color": "Milky way",
+                "color_code": "#a682ae",
+                "color_code2": "#3d3e55",
+                "image": "https://files.cdn.printful.com/products/515/12967_1629810148.jpg",
+                "price": "18.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12966,
+                "product_id": 515,
+                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Milky way / S)",
+                "size": "S",
+                "color": "Milky way",
+                "color_code": "#a682ae",
+                "color_code2": "#3d3e55",
+                "image": "https://files.cdn.printful.com/products/515/12966_1629810152.jpg",
+                "price": "18.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12969,
+                "product_id": 515,
+                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Milky way / XL)",
+                "size": "XL",
+                "color": "Milky way",
+                "color_code": "#a682ae",
+                "color_code2": "#3d3e55",
+                "image": "https://files.cdn.printful.com/products/515/12969_1629810156.jpg",
+                "price": "18.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12975,
+                "product_id": 515,
+                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Navy / White / 2XL)",
+                "size": "2XL",
+                "color": "Navy / White",
+                "color_code": "#6da7ca",
+                "color_code2": "#012548",
+                "image": "https://files.cdn.printful.com/products/515/12975_1629810160.jpg",
+                "price": "20.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    }
+                ]
+            },
+            {
+                "id": 12973,
+                "product_id": 515,
+                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Navy / White / L)",
+                "size": "L",
+                "color": "Navy / White",
+                "color_code": "#6da7ca",
+                "color_code2": "#012548",
+                "image": "https://files.cdn.printful.com/products/515/12973_1629810165.jpg",
+                "price": "18.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12972,
+                "product_id": 515,
+                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Navy / White / M)",
+                "size": "M",
+                "color": "Navy / White",
+                "color_code": "#6da7ca",
+                "color_code2": "#012548",
+                "image": "https://files.cdn.printful.com/products/515/12972_1629810171.jpg",
+                "price": "18.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    }
+                ]
+            },
+            {
+                "id": 12971,
+                "product_id": 515,
+                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Navy / White / S)",
+                "size": "S",
+                "color": "Navy / White",
+                "color_code": "#6da7ca",
+                "color_code2": "#012548",
+                "image": "https://files.cdn.printful.com/products/515/12971_1629810168.jpg",
+                "price": "18.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    }
+                ]
+            },
+            {
+                "id": 12974,
+                "product_id": 515,
+                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Navy / White / XL)",
+                "size": "XL",
+                "color": "Navy / White",
+                "color_code": "#6da7ca",
+                "color_code2": "#012548",
+                "image": "https://files.cdn.printful.com/products/515/12974_1629810176.jpg",
+                "price": "18.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 108,
+        "title": "Men's Fitted T-Shirt | Next Level 3600",
+        "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/cb/cb7b95c7ae24a9b39d4cbc9c546b90e1_l",
+        "category": "TSHIRTS",
+        "file_placement_options": [
+            {
+                "id": "embroidery_chest_left",
+                "type": "embroidery_chest_left",
+                "title": "Left chest",
+                "additional_price": "2.95"
+            },
+            {
+                "id": "embroidery_chest_center",
+                "type": "embroidery_chest_center",
+                "title": "Center chest",
+                "additional_price": "2.95"
+            },
+            {
+                "id": "default",
+                "type": "front",
+                "title": "Front print",
+                "additional_price": null
+            },
+            {
+                "id": "back",
+                "type": "back",
+                "title": "Back print",
+                "additional_price": "5.95"
+            },
+            {
+                "id": "sleeve_left",
+                "type": "sleeve_left",
+                "title": "Left sleeve",
+                "additional_price": "2.49"
+            },
+            {
+                "id": "sleeve_right",
+                "type": "sleeve_right",
+                "title": "Right sleeve",
+                "additional_price": "2.49"
+            },
+            {
+                "id": "label_outside",
+                "type": "label_outside",
+                "title": "Outside label",
+                "additional_price": "2.49"
+            },
+            {
+                "id": "label_inside",
+                "type": "label_inside",
+                "title": "Inside label",
+                "additional_price": "2.49"
+            },
+            {
+                "id": "preview",
+                "type": "mockup",
+                "title": "Mockup",
+                "additional_price": null
+            }
+        ],
+        "options": [
+            {
+                "id": "thread_colors_chest_left",
+                "title": "Left chest thread colors",
+                "type": "multi_select",
+                "values": {
+                    "#FFFFFF": "1801 White",
+                    "#000000": "1800 Black",
+                    "#96A1A8": "1718 Grey",
+                    "#A67843": "1672 Old Gold",
+                    "#FFCC00": "1951 Gold",
+                    "#E25C27": "1987 Orange",
+                    "#CC3366": "1910 Flamingo",
+                    "#CC3333": "1839 Red",
+                    "#660000": "1784 Maroon",
+                    "#333366": "1966 Navy",
+                    "#005397": "1842 Royal",
+                    "#3399FF": "1695 Aqua/Teal",
+                    "#6B5294": "1832 Purple",
+                    "#01784E": "1751 Kelly Green",
+                    "#7BA35A": "1848 Kiwi Green"
+                },
+                "additional_price": null,
+                "additional_price_breakdown": []
+            },
+            {
+                "id": "thread_colors_chest_center",
+                "title": "Center chest thread colors",
+                "type": "multi_select",
+                "values": {
+                    "#FFFFFF": "1801 White",
+                    "#000000": "1800 Black",
+                    "#96A1A8": "1718 Grey",
+                    "#A67843": "1672 Old Gold",
+                    "#FFCC00": "1951 Gold",
+                    "#E25C27": "1987 Orange",
+                    "#CC3366": "1910 Flamingo",
+                    "#CC3333": "1839 Red",
+                    "#660000": "1784 Maroon",
+                    "#333366": "1966 Navy",
+                    "#005397": "1842 Royal",
+                    "#3399FF": "1695 Aqua/Teal",
+                    "#6B5294": "1832 Purple",
+                    "#01784E": "1751 Kelly Green",
+                    "#7BA35A": "1848 Kiwi Green"
+                },
+                "additional_price": null,
+                "additional_price_breakdown": []
+            },
+            {
+                "id": "notes",
+                "title": "Embroidery notes",
+                "type": "text",
+                "values": null,
+                "additional_price": null,
+                "additional_price_breakdown": []
+            },
+            {
+                "id": "lifelike",
+                "title": "Lifelike",
+                "type": "bool",
+                "values": null,
+                "additional_price": null,
+                "additional_price_breakdown": []
+            }
+        ],
+        "variants": [
+            {
+                "id": 13583,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew (Light Blue / 2XL)",
+                "size": "2XL",
+                "color": "Light Blue",
+                "color_code": "#cde5fa",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/13583_1640003471.jpg",
+                "price": "18.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 13584,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew (Light Blue / 3XL)",
+                "size": "3XL",
+                "color": "Light Blue",
+                "color_code": "#cde5fa",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/13584_1640003471.jpg",
+                "price": "20.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 13581,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew (Light Blue / L)",
+                "size": "L",
+                "color": "Light Blue",
+                "color_code": "#cde5fa",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/13581_1640003472.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 13580,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew (Light Blue / M)",
+                "size": "M",
+                "color": "Light Blue",
+                "color_code": "#cde5fa",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/13580_1640003471.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 13579,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew (Light Blue / S)",
+                "size": "S",
+                "color": "Light Blue",
+                "color_code": "#cde5fa",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/13579_1640003481.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 13582,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew (Light Blue / XL)",
+                "size": "XL",
+                "color": "Light Blue",
+                "color_code": "#cde5fa",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/13582_1640003481.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 13578,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew (Light Blue / XS)",
+                "size": "XS",
+                "color": "Light Blue",
+                "color_code": "#cde5fa",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/13578_1640003482.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "stocked_on_demand"
+                    }
+                ]
+            },
+            {
+                "id": 4870,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Black / 2XL)",
+                "size": "2XL",
+                "color": "Black",
+                "color_code": "#0c0b0b",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4870_1597825051.jpg",
+                "price": "18.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4871,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Black / 3XL)",
+                "size": "3XL",
+                "color": "Black",
+                "color_code": "#0c0b0b",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4871_1597825054.jpg",
+                "price": "20.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4868,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Black / L)",
+                "size": "L",
+                "color": "Black",
+                "color_code": "#0c0b0b",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4868_1597825056.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4867,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Black / M)",
+                "size": "M",
+                "color": "Black",
+                "color_code": "#0c0b0b",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4867_1597825059.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4866,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Black / S)",
+                "size": "S",
+                "color": "Black",
+                "color_code": "#0c0b0b",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4866_1597825063.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4869,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Black / XL)",
+                "size": "XL",
+                "color": "Black",
+                "color_code": "#0c0b0b",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4869_1597825066.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4865,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Black / XS)",
+                "size": "XS",
+                "color": "Black",
+                "color_code": "#0c0b0b",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4865_1597825069.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4884,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Heather Grey / 2XL)",
+                "size": "2XL",
+                "color": "Heather Grey",
+                "color_code": "#9a978e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4884_1597825156.jpg",
+                "price": "18.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4885,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Heather Grey / 3XL)",
+                "size": "3XL",
+                "color": "Heather Grey",
+                "color_code": "#9a978e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4885_1597825159.jpg",
+                "price": "20.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4882,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Heather Grey / L)",
+                "size": "L",
+                "color": "Heather Grey",
+                "color_code": "#9a978e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4882_1597825162.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4881,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Heather Grey / M)",
+                "size": "M",
+                "color": "Heather Grey",
+                "color_code": "#9a978e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4881_1597825164.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4880,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Heather Grey / S)",
+                "size": "S",
+                "color": "Heather Grey",
+                "color_code": "#9a978e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4880_1597825167.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4883,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Heather Grey / XL)",
+                "size": "XL",
+                "color": "Heather Grey",
+                "color_code": "#9a978e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4883_1597825170.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4879,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Heather Grey / XS)",
+                "size": "XS",
+                "color": "Heather Grey",
+                "color_code": "#9a978e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4879_1597825172.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4891,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Midnight Navy / 2XL)",
+                "size": "2XL",
+                "color": "Midnight Navy",
+                "color_code": "#1d242e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4891_1597825269.jpg",
+                "price": "18.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4892,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Midnight Navy / 3XL)",
+                "size": "3XL",
+                "color": "Midnight Navy",
+                "color_code": "#1d242e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4892_1597825272.jpg",
+                "price": "20.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4889,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Midnight Navy / L)",
+                "size": "L",
+                "color": "Midnight Navy",
+                "color_code": "#1d242e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4889_1597825275.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4888,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Midnight Navy / M)",
+                "size": "M",
+                "color": "Midnight Navy",
+                "color_code": "#1d242e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4888_1597825278.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4887,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Midnight Navy / S)",
+                "size": "S",
+                "color": "Midnight Navy",
+                "color_code": "#1d242e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4887_1597825280.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    }
+                ]
+            },
+            {
+                "id": 4890,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Midnight Navy / XL)",
+                "size": "XL",
+                "color": "Midnight Navy",
+                "color_code": "#1d242e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4890_1597825283.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4886,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Midnight Navy / XS)",
+                "size": "XS",
+                "color": "Midnight Navy",
+                "color_code": "#1d242e",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4886_1597825285.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "stocked_on_demand"
+                    }
+                ]
+            },
+            {
+                "id": 5336,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Red / 2XL)",
+                "size": "2XL",
+                "color": "Red",
+                "color_code": "#d50732",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/5336_1597825319.jpg",
+                "price": "18.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    }
+                ]
+            },
+            {
+                "id": 5337,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Red / 3XL)",
+                "size": "3XL",
+                "color": "Red",
+                "color_code": "#d50732",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/5337_1597825321.jpg",
+                "price": "20.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 5334,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Red / L)",
+                "size": "L",
+                "color": "Red",
+                "color_code": "#d50732",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/5334_1597825323.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    }
+                ]
+            },
+            {
+                "id": 5333,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Red / M)",
+                "size": "M",
+                "color": "Red",
+                "color_code": "#d50732",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/5333_1597825326.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    }
+                ]
+            },
+            {
+                "id": 5332,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Red / S)",
+                "size": "S",
+                "color": "Red",
+                "color_code": "#d50732",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/5332_1597825329.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 5335,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Red / XL)",
+                "size": "XL",
+                "color": "Red",
+                "color_code": "#d50732",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/5335_1597825331.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "CA": "Canada"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    }
+                ]
+            },
+            {
+                "id": 5331,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (Red / XS)",
+                "size": "XS",
+                "color": "Red",
+                "color_code": "#d50732",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/5331_1597825334.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4877,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (White / 2XL)",
+                "size": "2XL",
+                "color": "White",
+                "color_code": "#ffffff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4877_1597825404.jpg",
+                "price": "18.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4878,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (White / 3XL)",
+                "size": "3XL",
+                "color": "White",
+                "color_code": "#ffffff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4878_1597825407.jpg",
+                "price": "20.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4875,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (White / L)",
+                "size": "L",
+                "color": "White",
+                "color_code": "#ffffff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4875_1597825410.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4874,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (White / M)",
+                "size": "M",
+                "color": "White",
+                "color_code": "#ffffff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4874_1597825412.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4873,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (White / S)",
+                "size": "S",
+                "color": "White",
+                "color_code": "#ffffff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4873_1597825415.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4876,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (White / XL)",
+                "size": "XL",
+                "color": "White",
+                "color_code": "#ffffff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4876_1597825418.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 4872,
+                "product_id": 108,
+                "name": "Next Level 3600 Premium Fitted Short Sleeve Crew with Tear Away Label (White / XS)",
+                "size": "XS",
+                "color": "White",
+                "color_code": "#ffffff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/108/4872_1597825421.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 438,
+        "title": "Men’s Classic Tee | Gildan 5000",
+        "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/51/5137d67bedbf56010d1daa04555a6d03_l",
+        "category": "TSHIRTS",
+        "file_placement_options": [
+            {
+                "id": "embroidery_chest_left",
+                "type": "embroidery_chest_left",
+                "title": "Left chest",
+                "additional_price": "2.95"
+            },
+            {
+                "id": "embroidery_chest_center",
+                "type": "embroidery_chest_center",
+                "title": "Center chest",
+                "additional_price": "2.95"
+            },
+            {
+                "id": "default",
+                "type": "front",
+                "title": "Front print",
+                "additional_price": null
+            },
+            {
+                "id": "back",
+                "type": "back",
+                "title": "Back print",
+                "additional_price": "5.95"
+            },
+            {
+                "id": "label_outside",
+                "type": "label_outside",
+                "title": "Outside label",
+                "additional_price": "2.49"
+            },
+            {
+                "id": "label_inside",
+                "type": "label_inside",
+                "title": "Inside label",
+                "additional_price": "2.49"
+            },
+            {
+                "id": "sleeve_left",
+                "type": "sleeve_left",
+                "title": "Left sleeve",
+                "additional_price": "2.49"
+            },
+            {
+                "id": "sleeve_right",
+                "type": "sleeve_right",
+                "title": "Right sleeve",
+                "additional_price": "2.49"
+            },
+            {
+                "id": "preview",
+                "type": "mockup",
+                "title": "Mockup",
+                "additional_price": null
+            }
+        ],
+        "options": [
+            {
+                "id": "thread_colors_chest_left",
+                "title": "Left chest thread colors",
+                "type": "multi_select",
+                "values": {
+                    "#FFFFFF": "1801 White",
+                    "#000000": "1800 Black",
+                    "#96A1A8": "1718 Grey",
+                    "#A67843": "1672 Old Gold",
+                    "#FFCC00": "1951 Gold",
+                    "#E25C27": "1987 Orange",
+                    "#CC3366": "1910 Flamingo",
+                    "#CC3333": "1839 Red",
+                    "#660000": "1784 Maroon",
+                    "#333366": "1966 Navy",
+                    "#005397": "1842 Royal",
+                    "#3399FF": "1695 Aqua/Teal",
+                    "#6B5294": "1832 Purple",
+                    "#01784E": "1751 Kelly Green",
+                    "#7BA35A": "1848 Kiwi Green"
+                },
+                "additional_price": null,
+                "additional_price_breakdown": []
+            },
+            {
+                "id": "thread_colors_chest_center",
+                "title": "Center chest thread colors",
+                "type": "multi_select",
+                "values": {
+                    "#FFFFFF": "1801 White",
+                    "#000000": "1800 Black",
+                    "#96A1A8": "1718 Grey",
+                    "#A67843": "1672 Old Gold",
+                    "#FFCC00": "1951 Gold",
+                    "#E25C27": "1987 Orange",
+                    "#CC3366": "1910 Flamingo",
+                    "#CC3333": "1839 Red",
+                    "#660000": "1784 Maroon",
+                    "#333366": "1966 Navy",
+                    "#005397": "1842 Royal",
+                    "#3399FF": "1695 Aqua/Teal",
+                    "#6B5294": "1832 Purple",
+                    "#01784E": "1751 Kelly Green",
+                    "#7BA35A": "1848 Kiwi Green"
+                },
+                "additional_price": null,
+                "additional_price_breakdown": []
+            },
+            {
+                "id": "notes",
+                "title": "Embroidery notes",
+                "type": "text",
+                "values": null,
+                "additional_price": null,
+                "additional_price_breakdown": []
+            },
+            {
+                "id": "lifelike",
+                "title": "Lifelike",
+                "type": "bool",
+                "values": null,
+                "additional_price": null,
+                "additional_price_breakdown": []
+            }
+        ],
+        "variants": [
+            {
+                "id": 11550,
+                "product_id": 438,
+                "name": "Gildan 5000 (Black / 2XL)",
+                "size": "2XL",
+                "color": "Black",
+                "color_code": "#141313",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/11550_1642678229.jpg",
+                "price": "12.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12644,
+                "product_id": 438,
+                "name": "Gildan 5000 (Black / 3XL)",
+                "size": "3XL",
+                "color": "Black",
+                "color_code": "#141313",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/12644_1642678228.jpg",
+                "price": "14.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "AU": "Australia",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12645,
+                "product_id": 438,
+                "name": "Gildan 5000 (Black / 4XL)",
+                "size": "4XL",
+                "color": "Black",
+                "color_code": "#141313",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/12645_1642678228.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "AU": "Australia"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12646,
+                "product_id": 438,
+                "name": "Gildan 5000 (Black / 5XL)",
+                "size": "5XL",
+                "color": "Black",
+                "color_code": "#141313",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/12646_1642678239.jpg",
+                "price": "18.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "AU": "Australia"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 11548,
+                "product_id": 438,
+                "name": "Gildan 5000 (Black / L)",
+                "size": "L",
+                "color": "Black",
+                "color_code": "#141313",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/11548_1642678239.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 11547,
+                "product_id": 438,
+                "name": "Gildan 5000 (Black / M)",
+                "size": "M",
+                "color": "Black",
+                "color_code": "#141313",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/11547_1642678240.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 11546,
+                "product_id": 438,
+                "name": "Gildan 5000 (Black / S)",
+                "size": "S",
+                "color": "Black",
+                "color_code": "#141313",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/11546_1642678249.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 11549,
+                "product_id": 438,
+                "name": "Gildan 5000 (Black / XL)",
+                "size": "XL",
+                "color": "Black",
+                "color_code": "#141313",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/11549_1642678249.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12638,
+                "product_id": 438,
+                "name": "Gildan 5000 (Maroon / 2XL)",
+                "size": "2XL",
+                "color": "Maroon",
+                "color_code": "#47001b",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/12638_1642678271.jpg",
+                "price": "12.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "AU": "Australia"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 11565,
+                "product_id": 438,
+                "name": "Gildan 5000 (Navy / 2XL)",
+                "size": "2XL",
+                "color": "Navy",
+                "color_code": "#1a2330",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/11565_1642678321.jpg",
+                "price": "12.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12653,
+                "product_id": 438,
+                "name": "Gildan 5000 (Navy / 3XL)",
+                "size": "3XL",
+                "color": "Navy",
+                "color_code": "#1a2330",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/12653_1642678332.jpg",
+                "price": "14.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "stocked_on_demand"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12668,
+                "product_id": 438,
+                "name": "Gildan 5000 (Navy / 4XL)",
+                "size": "4XL",
+                "color": "Navy",
+                "color_code": "#1a2330",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/12668_1642678332.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "AU": "Australia",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12669,
+                "product_id": 438,
+                "name": "Gildan 5000 (Navy / 5XL)",
+                "size": "5XL",
+                "color": "Navy",
+                "color_code": "#1a2330",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/12669_1642678332.jpg",
+                "price": "18.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "AU": "Australia",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 11563,
+                "product_id": 438,
+                "name": "Gildan 5000 (Navy / L)",
+                "size": "L",
+                "color": "Navy",
+                "color_code": "#1a2330",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/11563_1642678342.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 11562,
+                "product_id": 438,
+                "name": "Gildan 5000 (Navy / M)",
+                "size": "M",
+                "color": "Navy",
+                "color_code": "#1a2330",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/11562_1642678342.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 11561,
+                "product_id": 438,
+                "name": "Gildan 5000 (Navy / S)",
+                "size": "S",
+                "color": "Navy",
+                "color_code": "#1a2330",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/11561_1642678343.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 11564,
+                "product_id": 438,
+                "name": "Gildan 5000 (Navy / XL)",
+                "size": "XL",
+                "color": "Navy",
+                "color_code": "#1a2330",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/11564_1642678353.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12643,
+                "product_id": 438,
+                "name": "Gildan 5000 (Sand / 2XL)",
+                "size": "2XL",
+                "color": "Sand",
+                "color_code": "#d6c0ab",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/12643_1642678374.jpg",
+                "price": "12.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12641,
+                "product_id": 438,
+                "name": "Gildan 5000 (Sand / L)",
+                "size": "L",
+                "color": "Sand",
+                "color_code": "#d6c0ab",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/12641_1642678374.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12640,
+                "product_id": 438,
+                "name": "Gildan 5000 (Sand / M)",
+                "size": "M",
+                "color": "Sand",
+                "color_code": "#d6c0ab",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/12640_1642678384.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12639,
+                "product_id": 438,
+                "name": "Gildan 5000 (Sand / S)",
+                "size": "S",
+                "color": "Sand",
+                "color_code": "#d6c0ab",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/12639_1642678384.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12642,
+                "product_id": 438,
+                "name": "Gildan 5000 (Sand / XL)",
+                "size": "XL",
+                "color": "Sand",
+                "color_code": "#d6c0ab",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/12642_1642678384.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 11580,
+                "product_id": 438,
+                "name": "Gildan 5000 (White / 2XL)",
+                "size": "2XL",
+                "color": "White",
+                "color_code": "#ffffff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/11580_1642678436.jpg",
+                "price": "12.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12650,
+                "product_id": 438,
+                "name": "Gildan 5000 (White / 3XL)",
+                "size": "3XL",
+                "color": "White",
+                "color_code": "#ffffff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/12650_1642678436.jpg",
+                "price": "14.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "AU": "Australia",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12651,
+                "product_id": 438,
+                "name": "Gildan 5000 (White / 4XL)",
+                "size": "4XL",
+                "color": "White",
+                "color_code": "#ffffff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/12651_1642678446.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "AU": "Australia",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 12652,
+                "product_id": 438,
+                "name": "Gildan 5000 (White / 5XL)",
+                "size": "5XL",
+                "color": "White",
+                "color_code": "#ffffff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/12652_1642678448.jpg",
+                "price": "18.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "AU": "Australia",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 11578,
+                "product_id": 438,
+                "name": "Gildan 5000 (White / L)",
+                "size": "L",
+                "color": "White",
+                "color_code": "#ffffff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/11578_1642678446.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 11577,
+                "product_id": 438,
+                "name": "Gildan 5000 (White / M)",
+                "size": "M",
+                "color": "White",
+                "color_code": "#ffffff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/11577_1642678456.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 11576,
+                "product_id": 438,
+                "name": "Gildan 5000 (White / S)",
+                "size": "S",
+                "color": "White",
+                "color_code": "#ffffff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/11576_1642678457.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 11579,
+                "product_id": 438,
+                "name": "Gildan 5000 (White / XL)",
+                "size": "XL",
+                "color": "White",
+                "color_code": "#ffffff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/11579_1642678457.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "EU_ES": "Spain",
+                    "AU": "Australia",
+                    "CA": "Canada",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_ES",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "AU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "CA",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 14977,
+                "product_id": 438,
+                "name": "Gildan Men's Heavyweight Tee Gildan 5000 (Ash / 2XL)",
+                "size": "2XL",
+                "color": "Ash",
+                "color_code": "#f3f3f3",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/14977_1652249461.jpg",
+                "price": "12.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 14978,
+                "product_id": 438,
+                "name": "Gildan Men's Heavyweight Tee Gildan 5000 (Ash / 3XL)",
+                "size": "3XL",
+                "color": "Ash",
+                "color_code": "#f3f3f3",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/14978_1652249464.jpg",
+                "price": "14.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 14979,
+                "product_id": 438,
+                "name": "Gildan Men's Heavyweight Tee Gildan 5000 (Ash / 4XL)",
+                "size": "4XL",
+                "color": "Ash",
+                "color_code": "#f3f3f3",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/14979_1652249467.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 14980,
+                "product_id": 438,
+                "name": "Gildan Men's Heavyweight Tee Gildan 5000 (Ash / 5XL)",
+                "size": "5XL",
+                "color": "Ash",
+                "color_code": "#f3f3f3",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/14980_1652249471.jpg",
+                "price": "18.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 14975,
+                "product_id": 438,
+                "name": "Gildan Men's Heavyweight Tee Gildan 5000 (Ash / L)",
+                "size": "L",
+                "color": "Ash",
+                "color_code": "#f3f3f3",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/14975_1652249475.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 14974,
+                "product_id": 438,
+                "name": "Gildan Men's Heavyweight Tee Gildan 5000 (Ash / M)",
+                "size": "M",
+                "color": "Ash",
+                "color_code": "#f3f3f3",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/14974_1652249482.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 14973,
+                "product_id": 438,
+                "name": "Gildan Men's Heavyweight Tee Gildan 5000 (Ash / S)",
+                "size": "S",
+                "color": "Ash",
+                "color_code": "#f3f3f3",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/14973_1652249482.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 14976,
+                "product_id": 438,
+                "name": "Gildan Men's Heavyweight Tee Gildan 5000 (Ash / XL)",
+                "size": "XL",
+                "color": "Ash",
+                "color_code": "#f3f3f3",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/14976_1652249487.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15823,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Cardinal / 2XL)",
+                "size": "2XL",
+                "color": "Cardinal",
+                "color_code": "#c21b3a",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15823_1661693873.jpg",
+                "price": "12.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15824,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Cardinal / 3XL)",
+                "size": "3XL",
+                "color": "Cardinal",
+                "color_code": "#c21b3a",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15824_1661693884.jpg",
+                "price": "14.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15821,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Cardinal / L)",
+                "size": "L",
+                "color": "Cardinal",
+                "color_code": "#c21b3a",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15821_1661693884.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15820,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Cardinal / M)",
+                "size": "M",
+                "color": "Cardinal",
+                "color_code": "#c21b3a",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15820_1661693884.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15819,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Cardinal / S)",
+                "size": "S",
+                "color": "Cardinal",
+                "color_code": "#c21b3a",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15819_1661693884.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15822,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Cardinal / XL)",
+                "size": "XL",
+                "color": "Cardinal",
+                "color_code": "#c21b3a",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15822_1661693884.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15829,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Carolina Blue / 2XL)",
+                "size": "2XL",
+                "color": "Carolina Blue",
+                "color_code": "#96bbff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15829_1661693894.jpg",
+                "price": "12.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15830,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Carolina Blue / 3XL)",
+                "size": "3XL",
+                "color": "Carolina Blue",
+                "color_code": "#96bbff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15830_1661693894.jpg",
+                "price": "14.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "stocked_on_demand"
+                    }
+                ]
+            },
+            {
+                "id": 15827,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Carolina Blue / L)",
+                "size": "L",
+                "color": "Carolina Blue",
+                "color_code": "#96bbff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15827_1661693894.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15826,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Carolina Blue / M)",
+                "size": "M",
+                "color": "Carolina Blue",
+                "color_code": "#96bbff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15826_1661693894.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15825,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Carolina Blue / S)",
+                "size": "S",
+                "color": "Carolina Blue",
+                "color_code": "#96bbff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15825_1661693894.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15828,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Carolina Blue / XL)",
+                "size": "XL",
+                "color": "Carolina Blue",
+                "color_code": "#96bbff",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15828_1661693905.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15847,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Dark Heather / 2XL)",
+                "size": "2XL",
+                "color": "Dark Heather",
+                "color_code": "#595959",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15847_1661693946.jpg",
+                "price": "12.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15848,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Dark Heather / 3XL)",
+                "size": "3XL",
+                "color": "Dark Heather",
+                "color_code": "#595959",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15848_1661693956.jpg",
+                "price": "14.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15845,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Dark Heather / L)",
+                "size": "L",
+                "color": "Dark Heather",
+                "color_code": "#595959",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15845_1661693957.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15844,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Dark Heather / M)",
+                "size": "M",
+                "color": "Dark Heather",
+                "color_code": "#595959",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15844_1661693966.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15843,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Dark Heather / S)",
+                "size": "S",
+                "color": "Dark Heather",
+                "color_code": "#595959",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15843_1661693966.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15846,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Dark Heather / XL)",
+                "size": "XL",
+                "color": "Dark Heather",
+                "color_code": "#595959",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15846_1661693966.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15871,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Military Green / 2XL)",
+                "size": "2XL",
+                "color": "Military Green",
+                "color_code": "#737a5f",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15871_1661694008.jpg",
+                "price": "12.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15872,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Military Green / 3XL)",
+                "size": "3XL",
+                "color": "Military Green",
+                "color_code": "#737a5f",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15872_1661694018.jpg",
+                "price": "14.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 16253,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Military Green / 4XL)",
+                "size": "4XL",
+                "color": "Military Green",
+                "color_code": "#737a5f",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/16253_1663165021.jpg",
+                "price": "16.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 16254,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Military Green / 5XL)",
+                "size": "5XL",
+                "color": "Military Green",
+                "color_code": "#737a5f",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/16254_1663165031.jpg",
+                "price": "18.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "stocked_on_demand"
+                    }
+                ]
+            },
+            {
+                "id": 15869,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Military Green / L)",
+                "size": "L",
+                "color": "Military Green",
+                "color_code": "#737a5f",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15869_1661694018.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15868,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Military Green / M)",
+                "size": "M",
+                "color": "Military Green",
+                "color_code": "#737a5f",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15868_1661694019.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15867,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Military Green / S)",
+                "size": "S",
+                "color": "Military Green",
+                "color_code": "#737a5f",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15867_1661694019.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15870,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Military Green / XL)",
+                "size": "XL",
+                "color": "Military Green",
+                "color_code": "#737a5f",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15870_1661694019.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States",
+                    "EU": "Europe",
+                    "EU_LV": "Latvia",
+                    "UK": "United Kingdom"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "EU_LV",
+                        "status": "in_stock"
+                    },
+                    {
+                        "region": "UK",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15877,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Purple / 2XL)",
+                "size": "2XL",
+                "color": "Purple",
+                "color_code": "#48197d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15877_1661694029.jpg",
+                "price": "12.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15878,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Purple / 3XL)",
+                "size": "3XL",
+                "color": "Purple",
+                "color_code": "#48197d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15878_1661694029.jpg",
+                "price": "14.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15875,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Purple / L)",
+                "size": "L",
+                "color": "Purple",
+                "color_code": "#48197d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15875_1661694029.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15874,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Purple / M)",
+                "size": "M",
+                "color": "Purple",
+                "color_code": "#48197d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15874_1661694029.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15873,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Purple / S)",
+                "size": "S",
+                "color": "Purple",
+                "color_code": "#48197d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15873_1661694030.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            },
+            {
+                "id": 15876,
+                "product_id": 438,
+                "name": "Gildan Men’s Classic Tee Gildan 5000 (Purple / XL)",
+                "size": "XL",
+                "color": "Purple",
+                "color_code": "#48197d",
+                "color_code2": null,
+                "image": "https://files.cdn.printful.com/products/438/15876_1661694030.jpg",
+                "price": "10.95",
+                "in_stock": true,
+                "availability_regions": {
+                    "US": "United States"
+                },
+                "availability_status": [
+                    {
+                        "region": "US",
+                        "status": "in_stock"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "TSHIRTS",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "TSHIRTS",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    },
+    {
+        "id": "",
+        "title": "",
+        "image": "",
+        "category": "",
+        "file_placement_options": [],
+        "options": [],
+        "variants": []
+    }
+]
