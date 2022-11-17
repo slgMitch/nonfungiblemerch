@@ -55,20 +55,19 @@ export async function updateStoreProduct(productId, productDetails) {
 }
 
 export function generatePrintfulRequest(data) {
-    let syncVariants = data.variantIds.map((id) => ({
-        variant_id: id,
+    // console.log('data variants', data.product.variants)
+    // console.log('data file_placement_options', data.product.file_placement_options)
+    let syncVariants = data.product.variants.map((variant) => ({
+        variant_id: variant.id,
+        retail_price: calculateRetailPrice(variant, data.product.file_placement_options, data.imagePlacement),
         files: [
             {
                 type: data.imagePlacement,
                 url: data.imageUrl
             }
         ],
-        options: []
+        options: [] // dynamically generate based off of imagePlacement
     }))
-    
-    if(syncVariants.length > 100) {
-        syncVariants = syncVariants.slice(0,100)
-    }
     
     let printfulRequest = {
         sync_product: {
@@ -80,21 +79,41 @@ export function generatePrintfulRequest(data) {
     return JSON.stringify(printfulRequest)
 }
 
-export async function findVariantFileWitPreview(id) {
+function calculateRetailPrice(variant, filePlacementOptions, imagePlacement) {
+    const filePlacementOption = filePlacementOptions.find(placement => placement.id === imagePlacement)
+    const retailPrice = +variant.price + +filePlacementOption.additional_price + ((+variant.price + +filePlacementOption.additional_price) * .4)
+    console.log('retailPrice', retailPrice)
+
+    return ''
+}
+
+export async function getVariantPreviewImages(id) {
     try {
-        let variantFileWithPreview
+        let productWithPreviews, runLoop = true
     
-        while(!variantFileWithPreview) {
+        while(runLoop === true) {
             const getProductResponse = await getStoreProductById(id)
-            console.log('getProductResponse sync_variants', getProductResponse.result.sync_variants)
             const getProductSyncVariants = getProductResponse.result.sync_variants
-            variantFileWithPreview = getProductSyncVariants.find(variant => variant.files.find(file => file.type === 'preview' && file.preview_url !== null))
+            const variantsWithPreview = handleVariants(getProductSyncVariants)
+            if(variantsWithPreview.length == getProductSyncVariants.length) {
+                const { result } = getProductResponse
+                productWithPreviews = result
+                runLoop = false
+            }
         }
-    
-        const previewFile = variantFileWithPreview.files.find(file => file.type === 'preview')
-        return previewFile.preview_url
+        return productWithPreviews
 
     } catch(error) {
         return error
     }
+}
+
+function handleVariants(variants) {
+    let variantsWithPreview = []
+    for(let variant of variants) {
+        if(variant.files[1] && variant.files[1].type === 'preview' && variant.files[1].status === 'ok') {
+            variantsWithPreview.push(variant)
+        } 
+    }
+    return variantsWithPreview
 }

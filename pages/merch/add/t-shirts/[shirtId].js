@@ -47,6 +47,7 @@ export default function Variants(props) {
     
     useEffect(() => {
         setIsLoading(true)
+        console.log('data', data)
         setProduct(data)
         setIsLoading(false)
     }, [data])
@@ -81,15 +82,14 @@ export default function Variants(props) {
     const createMerch = async () => {
         setIsLoading(true)
         const { address } = session.user
+        // console.log('heres the product', product)
         const merchData = {
             userWalletAddress: address,
-            merchName: selectedWalletNFT.metadata.name + " " + product.product.title,
-            variantIds: product.variants.map(({ id }) => id),
+            merchName: selectedWalletNFT.metadata.name + " " + product.title,
             imageUrl: imageWithNoBackground ? imageWithNoBackground : selectedWalletNFT.metadata.image,
             imagePlacement,
-            productType: product.product.type 
+            product
         }
-        console.log('merchhData', merchData)
 
         const result = await axios.post('/api/printful/create-product', merchData, {
             headers: {
@@ -163,10 +163,10 @@ export default function Variants(props) {
                 <Typography variant="h4" gutterBottom>Add a new T-Shirt</Typography>
             </Grid>
             <Grid item xs={6} style={{ border: '1px solid black' }}>
-                 <Typography variant="h5" gutterBottom>{product.product.title}</Typography> 
+                 <Typography variant="h5" gutterBottom>{product.title}</Typography> 
                  <Image 
-                    src={product.product.image}
-                    alt={product.product.title}
+                    src={product.image}
+                    alt={product.title}
                     width={500}
                     height={500}
                  />
@@ -233,7 +233,7 @@ export default function Variants(props) {
                                         onChange={handleImagePlacementChange}
                                     >
                                         {
-                                            product.product.files.map((placement) => (
+                                            product.file_placement_options.map((placement) => (
                                                 <MenuItem value={placement.id}>{placement.title}</MenuItem>
                                             ))
                                         }
