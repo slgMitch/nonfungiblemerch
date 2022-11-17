@@ -14,20 +14,20 @@ export default async function handler(req, res) {
         const reqData = JSON.parse(req.body)
         // console.log('reqData', reqData)
         const printfulData = generatePrintfulRequest(reqData)
-        // const createProductResponse = await createStoreProduct(printfulData)
+        const createProductResponse = await createStoreProduct(printfulData)
         
-        // const { id } = createProductResponse.result
+        const { id } = createProductResponse.result
         
-        // const variantPreviewImages = await getVariantPreviewImages(id)
-        // const lastVariant = variantPreviewImages.sync_variants[variantPreviewImages.sync_variants.length - 1]
-        // const previewFileUrl = lastVariant.files[1].preview_url
-        // // const previewFileUrl = lastVariant.files[1].thumbnail_url
+        const variantPreviewImages = await getVariantPreviewImages(id)
+        const lastVariant = variantPreviewImages.sync_variants[variantPreviewImages.sync_variants.length - 1]
+        const previewFileUrl = lastVariant.files[1].preview_url
+        // const previewFileUrl = lastVariant.files[1].thumbnail_url
         
-        // const updatedProductJson = JSON.parse(printfulData)
-        // updatedProductJson.sync_product.thumbnail = previewFileUrl
-        // const updatedProductData = JSON.stringify(updatedProductJson)
+        const updatedProductJson = JSON.parse(printfulData)
+        updatedProductJson.sync_product.thumbnail = previewFileUrl
+        const updatedProductData = JSON.stringify(updatedProductJson)
         
-        // const updateProductResponse = await updateStoreProduct(id, updatedProductData)
+        const updateProductResponse = await updateStoreProduct(id, updatedProductData)
     
         // const newMongoProductData = {
         //     userWalletAddress: reqData.userWalletAddress,

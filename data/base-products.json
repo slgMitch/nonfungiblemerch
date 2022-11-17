@@ -1,462 +1,10 @@
 [
     {
-        "id": 515,
-        "title": "Oversized Tie-Dye T-Shirt | Shaka Wear SHHTDS",
-        "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/6a/6a2e188210762e13e5a47f64fbb956b6_l",
-        "category": "TSHIRTS",
-        "file_placement_options": [
-            {
-                "id": "embroidery_chest_left",
-                "type": "embroidery_chest_left",
-                "title": "Left chest",
-                "additional_price": "2.95"
-            },
-            {
-                "id": "embroidery_chest_center",
-                "type": "embroidery_chest_center",
-                "title": "Center chest",
-                "additional_price": "2.95"
-            },
-            {
-                "id": "embroidery_large_center",
-                "type": "embroidery_large_center",
-                "title": "Large center",
-                "additional_price": "3.95"
-            }
-        ],
-        "options": [
-            {
-                "id": "thread_colors_chest_left",
-                "title": "Left chest thread colors",
-                "type": "multi_select",
-                "values": {
-                    "#FFFFFF": "1801 White",
-                    "#000000": "1800 Black",
-                    "#96A1A8": "1718 Grey",
-                    "#A67843": "1672 Old Gold",
-                    "#FFCC00": "1951 Gold",
-                    "#E25C27": "1987 Orange",
-                    "#CC3366": "1910 Flamingo",
-                    "#CC3333": "1839 Red",
-                    "#660000": "1784 Maroon",
-                    "#333366": "1966 Navy",
-                    "#005397": "1842 Royal",
-                    "#3399FF": "1695 Aqua/Teal",
-                    "#6B5294": "1832 Purple",
-                    "#01784E": "1751 Kelly Green",
-                    "#7BA35A": "1848 Kiwi Green"
-                },
-                "additional_price": null,
-                "additional_price_breakdown": []
-            },
-            {
-                "id": "thread_colors_chest_center",
-                "title": "Center chest thread colors",
-                "type": "multi_select",
-                "values": {
-                    "#FFFFFF": "1801 White",
-                    "#000000": "1800 Black",
-                    "#96A1A8": "1718 Grey",
-                    "#A67843": "1672 Old Gold",
-                    "#FFCC00": "1951 Gold",
-                    "#E25C27": "1987 Orange",
-                    "#CC3366": "1910 Flamingo",
-                    "#CC3333": "1839 Red",
-                    "#660000": "1784 Maroon",
-                    "#333366": "1966 Navy",
-                    "#005397": "1842 Royal",
-                    "#3399FF": "1695 Aqua/Teal",
-                    "#6B5294": "1832 Purple",
-                    "#01784E": "1751 Kelly Green",
-                    "#7BA35A": "1848 Kiwi Green"
-                },
-                "additional_price": null,
-                "additional_price_breakdown": []
-            },
-            {
-                "id": "notes",
-                "title": "Embroidery notes",
-                "type": "text",
-                "values": null,
-                "additional_price": null,
-                "additional_price_breakdown": []
-            }
-        ],
-        "variants": [
-            {
-                "id": 12959,
-                "product_id": 515,
-                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Black / White / L)",
-                "size": "L",
-                "color": "Black / White",
-                "color_code": "#ffffff",
-                "color_code2": "#505c64",
-                "image": "https://files.cdn.printful.com/products/515/12959_1629810115.jpg",
-                "price": "18.95",
-                "in_stock": false,
-                "availability_regions": {
-                    "US": "United States"
-                },
-                "availability_status": [
-                    {
-                        "region": "US",
-                        "status": "supplier_out_of_stock"
-                    }
-                ]
-            },
-            {
-                "id": 12957,
-                "product_id": 515,
-                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Black / White / M)",
-                "size": "M",
-                "color": "Black / White",
-                "color_code": "#ffffff",
-                "color_code2": "#505c64",
-                "image": "https://files.cdn.printful.com/products/515/12957_1629810118.jpg",
-                "price": "18.95",
-                "in_stock": true,
-                "availability_regions": {
-                    "US": "United States",
-                    "CA": "Canada"
-                },
-                "availability_status": [
-                    {
-                        "region": "US",
-                        "status": "in_stock"
-                    },
-                    {
-                        "region": "CA",
-                        "status": "stocked_on_demand"
-                    }
-                ]
-            },
-            {
-                "id": 12956,
-                "product_id": 515,
-                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Black / White / S)",
-                "size": "S",
-                "color": "Black / White",
-                "color_code": "#ffffff",
-                "color_code2": "#505c64",
-                "image": "https://files.cdn.printful.com/products/515/12956_1629810120.jpg",
-                "price": "18.95",
-                "in_stock": true,
-                "availability_regions": {
-                    "US": "United States",
-                    "CA": "Canada"
-                },
-                "availability_status": [
-                    {
-                        "region": "US",
-                        "status": "in_stock"
-                    },
-                    {
-                        "region": "CA",
-                        "status": "stocked_on_demand"
-                    }
-                ]
-            },
-            {
-                "id": 12960,
-                "product_id": 515,
-                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Black / White / XL)",
-                "size": "XL",
-                "color": "Black / White",
-                "color_code": "#ffffff",
-                "color_code2": "#505c64",
-                "image": "https://files.cdn.printful.com/products/515/12960_1629810122.jpg",
-                "price": "18.95",
-                "in_stock": true,
-                "availability_regions": {
-                    "US": "United States",
-                    "CA": "Canada"
-                },
-                "availability_status": [
-                    {
-                        "region": "US",
-                        "status": "in_stock"
-                    },
-                    {
-                        "region": "CA",
-                        "status": "in_stock"
-                    }
-                ]
-            },
-            {
-                "id": 12970,
-                "product_id": 515,
-                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Milky way / 2XL)",
-                "size": "2XL",
-                "color": "Milky way",
-                "color_code": "#a682ae",
-                "color_code2": "#3d3e55",
-                "image": "https://files.cdn.printful.com/products/515/12970_1629810210.jpg",
-                "price": "20.95",
-                "in_stock": true,
-                "availability_regions": {
-                    "US": "United States",
-                    "CA": "Canada"
-                },
-                "availability_status": [
-                    {
-                        "region": "US",
-                        "status": "in_stock"
-                    },
-                    {
-                        "region": "CA",
-                        "status": "stocked_on_demand"
-                    }
-                ]
-            },
-            {
-                "id": 12968,
-                "product_id": 515,
-                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Milky way / L)",
-                "size": "L",
-                "color": "Milky way",
-                "color_code": "#a682ae",
-                "color_code2": "#3d3e55",
-                "image": "https://files.cdn.printful.com/products/515/12968_1629810211.jpg",
-                "price": "18.95",
-                "in_stock": true,
-                "availability_regions": {
-                    "US": "United States",
-                    "CA": "Canada"
-                },
-                "availability_status": [
-                    {
-                        "region": "US",
-                        "status": "in_stock"
-                    },
-                    {
-                        "region": "CA",
-                        "status": "in_stock"
-                    }
-                ]
-            },
-            {
-                "id": 12967,
-                "product_id": 515,
-                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Milky way / M)",
-                "size": "M",
-                "color": "Milky way",
-                "color_code": "#a682ae",
-                "color_code2": "#3d3e55",
-                "image": "https://files.cdn.printful.com/products/515/12967_1629810148.jpg",
-                "price": "18.95",
-                "in_stock": true,
-                "availability_regions": {
-                    "US": "United States",
-                    "CA": "Canada"
-                },
-                "availability_status": [
-                    {
-                        "region": "US",
-                        "status": "in_stock"
-                    },
-                    {
-                        "region": "CA",
-                        "status": "in_stock"
-                    }
-                ]
-            },
-            {
-                "id": 12966,
-                "product_id": 515,
-                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Milky way / S)",
-                "size": "S",
-                "color": "Milky way",
-                "color_code": "#a682ae",
-                "color_code2": "#3d3e55",
-                "image": "https://files.cdn.printful.com/products/515/12966_1629810152.jpg",
-                "price": "18.95",
-                "in_stock": true,
-                "availability_regions": {
-                    "US": "United States"
-                },
-                "availability_status": [
-                    {
-                        "region": "US",
-                        "status": "in_stock"
-                    }
-                ]
-            },
-            {
-                "id": 12969,
-                "product_id": 515,
-                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Milky way / XL)",
-                "size": "XL",
-                "color": "Milky way",
-                "color_code": "#a682ae",
-                "color_code2": "#3d3e55",
-                "image": "https://files.cdn.printful.com/products/515/12969_1629810156.jpg",
-                "price": "18.95",
-                "in_stock": true,
-                "availability_regions": {
-                    "US": "United States",
-                    "CA": "Canada"
-                },
-                "availability_status": [
-                    {
-                        "region": "US",
-                        "status": "in_stock"
-                    },
-                    {
-                        "region": "CA",
-                        "status": "in_stock"
-                    }
-                ]
-            },
-            {
-                "id": 12975,
-                "product_id": 515,
-                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Navy / White / 2XL)",
-                "size": "2XL",
-                "color": "Navy / White",
-                "color_code": "#6da7ca",
-                "color_code2": "#012548",
-                "image": "https://files.cdn.printful.com/products/515/12975_1629810160.jpg",
-                "price": "20.95",
-                "in_stock": true,
-                "availability_regions": {
-                    "US": "United States",
-                    "CA": "Canada"
-                },
-                "availability_status": [
-                    {
-                        "region": "US",
-                        "status": "in_stock"
-                    },
-                    {
-                        "region": "CA",
-                        "status": "stocked_on_demand"
-                    }
-                ]
-            },
-            {
-                "id": 12973,
-                "product_id": 515,
-                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Navy / White / L)",
-                "size": "L",
-                "color": "Navy / White",
-                "color_code": "#6da7ca",
-                "color_code2": "#012548",
-                "image": "https://files.cdn.printful.com/products/515/12973_1629810165.jpg",
-                "price": "18.95",
-                "in_stock": true,
-                "availability_regions": {
-                    "US": "United States",
-                    "CA": "Canada"
-                },
-                "availability_status": [
-                    {
-                        "region": "US",
-                        "status": "in_stock"
-                    },
-                    {
-                        "region": "CA",
-                        "status": "in_stock"
-                    }
-                ]
-            },
-            {
-                "id": 12972,
-                "product_id": 515,
-                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Navy / White / M)",
-                "size": "M",
-                "color": "Navy / White",
-                "color_code": "#6da7ca",
-                "color_code2": "#012548",
-                "image": "https://files.cdn.printful.com/products/515/12972_1629810171.jpg",
-                "price": "18.95",
-                "in_stock": true,
-                "availability_regions": {
-                    "US": "United States",
-                    "CA": "Canada"
-                },
-                "availability_status": [
-                    {
-                        "region": "US",
-                        "status": "in_stock"
-                    },
-                    {
-                        "region": "CA",
-                        "status": "stocked_on_demand"
-                    }
-                ]
-            },
-            {
-                "id": 12971,
-                "product_id": 515,
-                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Navy / White / S)",
-                "size": "S",
-                "color": "Navy / White",
-                "color_code": "#6da7ca",
-                "color_code2": "#012548",
-                "image": "https://files.cdn.printful.com/products/515/12971_1629810168.jpg",
-                "price": "18.95",
-                "in_stock": true,
-                "availability_regions": {
-                    "US": "United States",
-                    "CA": "Canada"
-                },
-                "availability_status": [
-                    {
-                        "region": "US",
-                        "status": "in_stock"
-                    },
-                    {
-                        "region": "CA",
-                        "status": "stocked_on_demand"
-                    }
-                ]
-            },
-            {
-                "id": 12974,
-                "product_id": 515,
-                "name": "Oversized Tie-Dye T-shirt | Shaka Wear SHHTDS (Navy / White / XL)",
-                "size": "XL",
-                "color": "Navy / White",
-                "color_code": "#6da7ca",
-                "color_code2": "#012548",
-                "image": "https://files.cdn.printful.com/products/515/12974_1629810176.jpg",
-                "price": "18.95",
-                "in_stock": true,
-                "availability_regions": {
-                    "US": "United States",
-                    "CA": "Canada"
-                },
-                "availability_status": [
-                    {
-                        "region": "US",
-                        "status": "in_stock"
-                    },
-                    {
-                        "region": "CA",
-                        "status": "stocked_on_demand"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "id": 108,
         "title": "Men's Fitted T-Shirt | Next Level 3600",
         "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/cb/cb7b95c7ae24a9b39d4cbc9c546b90e1_l",
         "category": "TSHIRTS",
         "file_placement_options": [
-            {
-                "id": "embroidery_chest_left",
-                "type": "embroidery_chest_left",
-                "title": "Left chest",
-                "additional_price": "2.95"
-            },
-            {
-                "id": "embroidery_chest_center",
-                "type": "embroidery_chest_center",
-                "title": "Center chest",
-                "additional_price": "2.95"
-            },
             {
                 "id": "default",
                 "type": "front",
@@ -480,24 +28,6 @@
                 "type": "sleeve_right",
                 "title": "Right sleeve",
                 "additional_price": "2.49"
-            },
-            {
-                "id": "label_outside",
-                "type": "label_outside",
-                "title": "Outside label",
-                "additional_price": "2.49"
-            },
-            {
-                "id": "label_inside",
-                "type": "label_inside",
-                "title": "Inside label",
-                "additional_price": "2.49"
-            },
-            {
-                "id": "preview",
-                "type": "mockup",
-                "title": "Mockup",
-                "additional_price": null
             }
         ],
         "options": [
@@ -2028,18 +1558,6 @@
         "category": "TSHIRTS",
         "file_placement_options": [
             {
-                "id": "embroidery_chest_left",
-                "type": "embroidery_chest_left",
-                "title": "Left chest",
-                "additional_price": "2.95"
-            },
-            {
-                "id": "embroidery_chest_center",
-                "type": "embroidery_chest_center",
-                "title": "Center chest",
-                "additional_price": "2.95"
-            },
-            {
                 "id": "default",
                 "type": "front",
                 "title": "Front print",
@@ -2052,18 +1570,6 @@
                 "additional_price": "5.95"
             },
             {
-                "id": "label_outside",
-                "type": "label_outside",
-                "title": "Outside label",
-                "additional_price": "2.49"
-            },
-            {
-                "id": "label_inside",
-                "type": "label_inside",
-                "title": "Inside label",
-                "additional_price": "2.49"
-            },
-            {
                 "id": "sleeve_left",
                 "type": "sleeve_left",
                 "title": "Left sleeve",
@@ -2074,12 +1580,6 @@
                 "type": "sleeve_right",
                 "title": "Right sleeve",
                 "additional_price": "2.49"
-            },
-            {
-                "id": "preview",
-                "type": "mockup",
-                "title": "Mockup",
-                "additional_price": null
             }
         ],
         "options": [
@@ -4423,18 +3923,6 @@
         "category": "TSHIRTS",
         "file_placement_options": [
             {
-                "id": "embroidery_chest_left",
-                "type": "embroidery_chest_left",
-                "title": "Left chest",
-                "additional_price": "2.95"
-            },
-            {
-                "id": "embroidery_chest_center",
-                "type": "embroidery_chest_center",
-                "title": "Center chest",
-                "additional_price": "2.95"
-            },
-            {
                 "id": "default",
                 "type": "front",
                 "title": "Front print",
@@ -4445,24 +3933,6 @@
                 "type": "back",
                 "title": "Back print",
                 "additional_price": "5.95"
-            },
-            {
-                "id": "label_inside",
-                "type": "label_inside",
-                "title": "Inside label",
-                "additional_price": "2.49"
-            },
-            {
-                "id": "label_outside",
-                "type": "label_outside",
-                "title": "Outside label",
-                "additional_price": "2.49"
-            },
-            {
-                "id": "preview",
-                "type": "mockup",
-                "title": "Mockup",
-                "additional_price": null
             }
         ],
         "options": [
@@ -5522,18 +4992,6 @@
         "category": "TSHIRTS",
         "file_placement_options": [
             {
-                "id": "embroidery_chest_left",
-                "type": "embroidery_chest_left",
-                "title": "Left chest",
-                "additional_price": "2.95"
-            },
-            {
-                "id": "embroidery_chest_center",
-                "type": "embroidery_chest_center",
-                "title": "Center chest",
-                "additional_price": "2.95"
-            },
-            {
                 "id": "default",
                 "type": "front",
                 "title": "Front print",
@@ -5556,24 +5014,6 @@
                 "type": "sleeve_right",
                 "title": "Right sleeve",
                 "additional_price": "5.95"
-            },
-            {
-                "id": "label_inside",
-                "type": "label_inside",
-                "title": "Inside label",
-                "additional_price": "2.49"
-            },
-            {
-                "id": "label_outside",
-                "type": "label_outside",
-                "title": "Outside label",
-                "additional_price": "2.49"
-            },
-            {
-                "id": "preview",
-                "type": "mockup",
-                "title": "Mockup",
-                "additional_price": null
             }
         ],
         "options": [

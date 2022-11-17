@@ -36,7 +36,8 @@ export async function createStoreProduct(productDetails) {
         });
         return data;
     } catch(error) {
-        return error
+        console.log('there was an error in createStoreProduct', error)
+        throw new Error(error)
     }
 }
 
@@ -81,10 +82,10 @@ export function generatePrintfulRequest(data) {
 
 function calculateRetailPrice(variant, filePlacementOptions, imagePlacement) {
     const filePlacementOption = filePlacementOptions.find(placement => placement.id === imagePlacement)
-    const retailPrice = +variant.price + +filePlacementOption.additional_price + ((+variant.price + +filePlacementOption.additional_price) * .4)
-    console.log('retailPrice', retailPrice)
+    const retailPrice = (+variant.price + +filePlacementOption.additional_price + ((+variant.price + +filePlacementOption.additional_price) * .4)).toFixed(2)
+    const retailPriceString = retailPrice.toString()
 
-    return ''
+    return retailPriceString
 }
 
 export async function getVariantPreviewImages(id) {
