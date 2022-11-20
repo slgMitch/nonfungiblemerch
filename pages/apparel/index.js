@@ -12,22 +12,19 @@ import {
 } from '@mui/material';
 import useSWR from 'swr';
 
-
-const fetcher = (url) => fetch(url).then((res) => res.json());
-const url = `/api/products/get-all-products`;
-const { data, error } = useSWR(url, fetcher);
-
-useEffect(() => {
-  console.log('data', data)
-  setIsLoading(true)
-  setMerch(data)
-  setIsLoading(false)
-
-}, [data])
-
 export default function Apparel() {
+
+    const fetcher = (url) => fetch(url).then((res) => res.json());
+    const url = `/api/products/get-all-products`;
+    const { data, error } = useSWR(url, fetcher);
     const [isLoading, setIsLoading] = useState(false);
     const [apparel, setApparel] = useState(false);
+
+    useEffect(() => {
+        setIsLoading(true)
+        setApparel(data)
+        setIsLoading(false)
+      }, [data])
     
     if(isLoading) {
         return (
