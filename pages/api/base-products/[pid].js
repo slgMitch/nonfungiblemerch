@@ -11,4 +11,4 @@ export default async function handler(req, res) {
     const document = await findDocumentsByQueryObject(client, 'base-products', query)
     const result = document[0]
     res.status(200).json(result)
-}
+} 

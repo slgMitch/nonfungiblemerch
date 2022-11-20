@@ -82,13 +82,15 @@ export default function Variants(props) {
     const createMerch = async () => {
         setIsLoading(true)
         const { address } = session.user
-        // console.log('heres the product', product)
+        const imagePlacementObject = product.file_placement_options.find(placement => placement.id === imagePlacement)
+
         const merchData = {
             userWalletAddress: address,
-            merchName: selectedWalletNFT.metadata.name + " " + product.title,
+            merchName: imageWithNoBackground ? `${imagePlacementObject.title} No Background ${selectedWalletNFT.metadata.name} ${product.title}` : `${imagePlacementObject.title} ${selectedWalletNFT.metadata.name} ${product.title}`,
             imageUrl: imageWithNoBackground ? imageWithNoBackground : selectedWalletNFT.metadata.image,
             imagePlacement,
-            product
+            product,
+            nftData: selectedWalletNFT
         }
 
         const result = await axios.post('/api/printful/create-product', merchData, {

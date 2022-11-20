@@ -26,6 +26,7 @@ export default function Merch(props) {
   const { data, error } = useSWR(url, fetcher);
 
   useEffect(() => {
+    console.log('data', data)
     setIsLoading(true)
     setMerch(data)
     setIsLoading(false)
@@ -92,13 +93,13 @@ if(!data || !merch || isLoading) {
                   <CardActionArea>
                     <CardMedia 
                       component="img"
-                      image={m.productImageUrl}
-                      alt={m.productName}
+                      image={m.imageUrl}
+                      alt={m.merchName}
 
                     />
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
-                        {m.productName}
+                        {m.merchName}
                       </Typography>
                     </CardContent>
                   </CardActionArea>
