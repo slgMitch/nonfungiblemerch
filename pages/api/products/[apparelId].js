@@ -9,11 +9,10 @@ export default async function handler(req, res) {
         const query = { _id: id };
         const client = await connectDatabase()
         const document = await findDocumentsByQueryObject(client, 'products', query)
-        console.log('document', document)
         res.status(200).json(document[0])
         client.close()
     } catch(error) {
-        console.log('there was an error getting all products from mango', error)
+        console.log('there was an error getting  product by id from mango', error)
         res.status(400).json(error)
     }
 
