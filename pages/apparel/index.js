@@ -12,6 +12,7 @@ import {
   ToggleButton
 } from '@mui/material';
 import useSWR from 'swr';
+import { useRouter } from 'next/router';
 
 export default function Apparel() {
 
@@ -20,12 +21,18 @@ export default function Apparel() {
     const { data, error } = useSWR(url, fetcher);
     const [isLoading, setIsLoading] = useState(false);
     const [apparel, setApparel] = useState(false);
+    const { push } = useRouter();
 
     useEffect(() => {
         setIsLoading(true)
         setApparel(data)
         setIsLoading(false)
       }, [data])
+
+    const viewApparel = (apparelId) => {
+        console.log('apparelId', apparelId)
+        push(`/apparel/${apparelId}`)
+    }
     
     if(isLoading) {
         return (
@@ -80,17 +87,15 @@ export default function Apparel() {
                                         <Typography gutterBottom variant="h6" component="div">
                                             Project: { tshirt.tokenData.tokenName}
                                         </Typography>
-                                        <Grid container xs={12} style={{ border: '1px solid black'}}>
-                                            <Grid item xs={6} style={{ border: '1px solid red'}}>
-                                                {tshirt.colors.map((color) => (
-                                                    <ToggleButton style={{ backgroundColor: `${color}`}}></ToggleButton>
-                                                ))}
-                                            </Grid>
-                                            <Grid item xs={6} style={{ border: '1px solid blue'}}>
-                                                {tshirt.sizes.map((size) => (
-                                                    <Typography variant="h6">{size}</Typography>
-                                                ))}
-                                            </Grid>
+                                        <Grid item xs={12}>
+                                            Colors: {tshirt.colors.map((color) => (
+                                                <ToggleButton style={{ backgroundColor: `${color}`}}></ToggleButton>
+                                            ))}
+                                        </Grid>
+                                        <Grid item xs={12}>
+                                            Sizes: {tshirt.sizes.map((size) => (
+                                                <ToggleButton>{size}</ToggleButton>
+                                            ))}
                                         </Grid>
                                         <Typography gutterBottom variant="h6" component="div">
                                             Price: { tshirt.maxPrice } - { tshirt.minPrice }
