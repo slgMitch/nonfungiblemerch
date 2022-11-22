@@ -9,19 +9,26 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          {/* PWA primary color */}
+          <title>Non Fungible Merch</title>
+          <meta name="viewport" content="initial-scale=1, width=device-width" />
+          <meta name='description' content='Non Fungible Merch' />
           <meta name="theme-color" content={theme.palette.primary.main} />
           <link rel="shortcut icon" href="/favicon.ico" />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
+          <link rel="preconnect" href="https://app.snipcart.com" />
+          <link rel="preconnect" href="https://cdn.snipcart.com" />
+          <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.1/default/snipcart.css" />
           <meta name="emotion-insertion-point" content="" />
           {this.props.emotionStyleTags}
         </Head>
         <body>
           <Main />
           <NextScript />
+          <script async src="https://cdn.snipcart.com/themes/v3.3.1/default/snipcart.js" />
+          <div hidden id="snipcart" data-api-key={process.env.SNIPCART_TEST_API_KEY} />
         </body>
       </Html>
     );

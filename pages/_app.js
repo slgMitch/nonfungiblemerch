@@ -11,7 +11,22 @@ import theme from '../src/theme';
 import createEmotionCache from '../src/createEmotionCache';
 import Layout from '../src/components/Layout/Layout'
 import { UserContextProvider } from '../store/user-context';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
+
+function useResetHistory() {
+  const router = useRouter()
+
+  useEffect(() => {
+    document.addEventListener("snipcart.ready", () => {
+      Snipcart.events.on('snipcart.initialized', (snipcartState) => {
+        // use `router.asPath` instead of `router.pathname`
+        router.replace(router.asPath)
+      });
+    });
+  }, [])
+}
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -33,11 +48,6 @@ export default function MyApp(props) {
     <WagmiConfig client={wagmiClient}>
       <SessionProvider session={pageProps.session} refetchInterval={0}>
         <CacheProvider value={emotionCache}>
-          <Head>
-            <title>Non Fungible Merch</title>
-            <meta name="viewport" content="initial-scale=1, width=device-width" />
-            <meta name='description' content='Non Fungible Merch' />
-          </Head>
           <ThemeProvider theme={theme}>
             {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
             <CssBaseline />

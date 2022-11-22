@@ -12,8 +12,10 @@ import {
 } from '@mui/material';
 import Image from 'next/image';
 import useSWR from 'swr';
+import { useRouter } from 'next/router';
 
 export default function ApparelId(props) {
+    const { push } = useRouter();
     const { apparelId } = props;
     const fetcher = (url) => fetch(url).then((res) => res.json());
     const url = `/api/products/${apparelId}`;
@@ -51,8 +53,21 @@ export default function ApparelId(props) {
         setAvailabilityStatus(variant.availability_status.find((status) => status.region === 'US'))
     }
 
-    const addToCart = (selectedVatiant) => {
+    const addToCart = async (selectedVatiant) => {
         console.log('add to cart', selectedVatiant)
+        const item = {
+            id: selectedVatiant.id,
+            name: selectedVatiant.name,
+            price: +selectedVatiant.price,
+            image: selectedVatiant.image,
+            quantity: 1,
+        }
+        try {
+            await Snipcart.api.cart.items.add(item)
+
+        } catch(error) {
+            console.log('there was an error adding item to cart', error)
+        }
     }
 
 

@@ -1,17 +1,22 @@
 import * as React from 'react';
 import { useState, useContext } from 'react'
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
+import { 
+  AppBar,
+  Box,
+  Toolbar,
+  IconButton,
+  Typography,
+  Menu,
+  Container,
+  Avatar,
+  Button,
+  Tooltip,
+  MenuItem,
+  Badge
+} from '@mui/material'
 import AdbIcon from '@mui/icons-material/Adb';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+
 import Link from 'next/link';
 import { signIn, signOut, useSession } from 'next-auth/react';
 import { useAccount, useConnect, useSignMessage, useDisconnect } from 'wagmi';
@@ -61,6 +66,10 @@ function ResponsiveAppBar() {
   const handleCloseWalletMenu = () => {
     setAnchorElWallet(null);
   };
+
+  const openShoppingCart = () => {
+    Snipcart.api.theme.cart.open()
+  }
 
   const handleProfileOption = async (option) => {
     switch (option) {
@@ -194,12 +203,31 @@ function ResponsiveAppBar() {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
+          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+            <IconButton 
+              size="large"
+              color="inherit"
+              onClick={openShoppingCart} 
+              sx={{ 
+                p: 0,
+                padding: '15px'
+              }}
+            >
+              <Badge badgeContent={0} color="error">
+                <ShoppingCartIcon />
+              </Badge>
+            </IconButton>
             {
               session ? (
                 <>
                   <Tooltip title="Open Profile settings">
-                    <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                    <IconButton 
+                      onClick={handleOpenUserMenu} 
+                      sx={{ 
+                        p: 0,
+                        padding: '15px'
+                      }}
+                    >
                       <Avatar />
                     </IconButton>
                   </Tooltip>
