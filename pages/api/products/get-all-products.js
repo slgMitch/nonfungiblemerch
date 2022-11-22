@@ -7,7 +7,6 @@ export default async function handler(req, res) {
         const client = await connectDatabase()
         const document = await getAllDocuments(client, 'products')
         const apparel = createApparelObject(document)
-        console.log('apparel', apparel)
         res.status(200).json(apparel)
         client.close()
     } catch(error) {
