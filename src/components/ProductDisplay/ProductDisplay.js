@@ -7,9 +7,19 @@ import {
     InputLabel,
     Select,
   } from '@mui/material';
+  import Image from 'next/image';
 
 export default function ProductDisplay(props) {
     console.log('props', props)
+    const {
+        product,
+        selectedVatiant,
+        changeSelectedColor,
+        changeSelectedSize,
+        colorOptions,
+        sizeOptions,
+        availabilityStatus
+    } = props
     return (
         <Grid 
             container 

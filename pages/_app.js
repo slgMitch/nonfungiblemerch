@@ -24,6 +24,9 @@ function useResetHistory() {
       Snipcart.events.on('snipcart.initialized', (snipcartState) => {
         // use `router.asPath` instead of `router.pathname`
         router.replace(router.asPath)
+        Snipcart.events.on('cart.confirmed', async (cartConfirmResponse) => {
+          console.log(cartConfirmResponse);
+        })
       });
     });
   }, [])

@@ -10,87 +10,46 @@ import {
   InputLabel,
   Select,
 } from '@mui/material';
-import Image from 'next/image';
-import useSWR from 'swr';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
+import ProductDisplay from '../../../src/components/ProductDisplay/ProductDisplay';
 
 export default function ApparelId(props) {
     const { push, pathname } = useRouter();
-    console.log('props', props)
-    // const { apparelId } = props;
-    // const fetcher = (url) => fetch(url).then((res) => res.json());
-    // const url = `/api/products/${apparelId}`;
-    // const { data, error } = useSWR(url, fetcher);
+    const { selectedVatiant, colorOptions, sizeOptions, availabilityStatus } = props;
     const [isLoading, setIsLoading] = useState(false);
-    const [product, setProduct] = useState();
-    const [selectedVatiant, setSelectedVariant] = useState();
-    const [colorOptions, setColorOptions] = useState();
-    const [sizeOptions, setSizeOptions] = useState();
-    const [availabilityStatus, setAvailabilityStatus] = useState();
+    // const [selectedVatiant, setSelectedVariant] = useState();
+    // const [colorOptions, setColorOptions] = useState();
+    // const [sizeOptions, setSizeOptions] = useState();
+    // const [availabilityStatus, setAvailabilityStatus] = useState();
 
     // useEffect(() => {
-    //     setIsLoading(true)
-    //     setProduct(data)
-    //     setSelectedVariant(data ? data.variants[data.variants.length - 1] : null)
-    //     setColorOptions(data ? [...new Set(data.variants.map(variant => variant.color))] : null)
-    //     setSizeOptions(data ? [...new Set(data.variants.map(variant => variant.size))] : null)
-    //     setAvailabilityStatus(data ? data.variants[data.variants.length - 1].availability_status.find((status) => status.region === 'US') : null)
-    //     console.log('data', data)
-    //     setIsLoading(false)
-    // }, [data])
+        // setIsLoading(true)
+        // setSelectedVariant(product ? product.variants[product.variants.length - 1] : null)
+        // setColorOptions(product ? [...new Set(product.variants.map(variant => variant.color))] : null)
+        // setSizeOptions(product ? [...new Set(product.variants.map(variant => variant.size))] : null)
+        // setAvailabilityStatus(product ? product.variants[product.variants.length - 1].availability_status.find((status) => status.region === 'US') : null)
+        // console.log('product', product)
+        // setIsLoading(false)
+    // }, [product])
 
 
-    const changeSelectedColor = (event) => {
-        const variant = product.variants.find((variant) => variant.color === event.target.value && variant.size === selectedVatiant.size)
-        console.log('variant', variant)
-        setSelectedVariant(variant)
-        setAvailabilityStatus(variant.availability_status.find((status) => status.region === 'US'))
-    }
-
-    const changeSelectedSize = (event) => {
-        const variant = product.variants.find((variant) => variant.size === event.target.value && variant.color === selectedVatiant.color)
-        console.log('variant', variant)
-        setSelectedVariant(variant)
-        setAvailabilityStatus(variant.availability_status.find((status) => status.region === 'US'))
-    }
-
-    const addToCart = async (selectedVatiant) => {
-        console.log('add to cart', pathname)
-        const item = {
-            id: product._id,
-            name: selectedVatiant.name,
-            price: selectedVatiant.price,
-            image: selectedVatiant.image,
-            url: `/apparel/${product._id}`,
-            quantity: 1,
-        }
-        console.log('item', item)
-        try {
-            await Snipcart.api.cart.items.add(item)
-            push('/apparel')
-
-
-        } catch(error) {
-            console.log('there was an error adding item to cart', error)
-        }
-    }
-
-
-    // if(error) {
-    //     return <p>Failed to load... {error}</p>
+    // const changeSelectedColor = (event) => {
+    //     const variant = product.variants.find((variant) => variant.color === event.target.value && variant.size === selectedVatiant.size)
+    //     console.log('variant', variant)
+    //     setSelectedVariant(variant)
+    //     setAvailabilityStatus(variant.availability_status.find((status) => status.region === 'US'))
     // }
 
-    // if(!data || !selectedVatiant || isLoading) {
-    //     return (
-    //         <Backdrop
-    //             open={isLoading}
-    //             sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
-    //         >
-    //             <CircularProgress color="inherit" />
-    //         </Backdrop>
-    //     )
+    // const changeSelectedSize = (event) => {
+    //     const variant = product.variants.find((variant) => variant.size === event.target.value && variant.color === selectedVatiant.color)
+    //     console.log('variant', variant)
+    //     setSelectedVariant(variant)
+    //     setAvailabilityStatus(variant.availability_status.find((status) => status.region === 'US'))
     // }
-    if(isLoading) {
+
+
+    if(!selectedVatiant || isLoading) {
         return (
             <Backdrop
                 open={isLoading}
@@ -101,15 +60,16 @@ export default function ApparelId(props) {
         )
     }
 
+
     return (
         <Grid 
             container 
             direction="row"
         >
-            {/* <Grid item xs={6} align="center">
+            <Grid item xs={6} align="center">
                  <Image 
                     src={selectedVatiant.image}
-                    alt={product._id}
+                    alt={selectedVatiant.id}
                     width={500}
                     height={500}
 
@@ -130,7 +90,7 @@ export default function ApparelId(props) {
                                     id="product-color-select"
                                     value={selectedVatiant.color}
                                     label="Color"
-                                    onChange={changeSelectedColor}
+                                    // onChange={changeSelectedColor}
                                 >
                                     {
                                         colorOptions &&
@@ -150,7 +110,7 @@ export default function ApparelId(props) {
                                         id="product-size-select"
                                         value={selectedVatiant.size}
                                         label="Size"
-                                        onChange={changeSelectedSize}
+                                        // onChange={changeSelectedSize}
                                     >
                                         {
                                             sizeOptions &&
@@ -175,11 +135,10 @@ export default function ApparelId(props) {
                                     minWidth: 800
                                 }}
                                 disabled={availabilityStatus.status === 'in_stock' ? false : true}
-                                // onClick={() => addToCart(selectedVatiant)}
                                 className="snipcart-add-item"
-                                data-item-id={product._id}
+                                data-item-id={selectedVatiant.id}
                                 data-item-price={selectedVatiant.price}
-                                data-item-url={`/apparel/${product._id}`}
+                                data-item-url={`/apparel/${selectedVatiant._id}`}
                                 data-item-name={selectedVatiant.name}
                                 data-item-image={selectedVatiant.image}
                             >
@@ -188,7 +147,7 @@ export default function ApparelId(props) {
                         </Grid>
                     </Grid>
                 </Grid>
-            </Grid> */}
+            </Grid>
         </Grid>
     )
 
@@ -198,13 +157,13 @@ export async function getServerSideProps(context) {
     const {apparelId} = context.params
     const res = await fetch(`http://localhost:3000/api/products/${apparelId}`)
     const data = await res.json()
-    // const fetcher = (url) => fetch(url).then((res) => res.json());
-    // const url = `/api/products/${apparelId}`;
-    // const { data, error } = useSWR(url, fetcher);
-    console.log('getServerSideProps', data)
+    // console.log('getServerSideProps', data)
     return {
         props: {
-            product: data
+            selectedVatiant: data.selectedVatiant,
+            colorOptions: data.colorOptions,
+            sizeOptions: data.sizeOptions,
+            availabilityStatus: data.availabilityStatus
         }
     }
   }
