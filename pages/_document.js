@@ -28,7 +28,7 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
           <script async src="https://cdn.snipcart.com/themes/v3.3.1/default/snipcart.js" />
-          <div hidden id="snipcart" data-api-key={process.env.SNIPCART_TEST_API_KEY} />
+          <div hidden id="snipcart" data-api-key={process.env.SNIPCART_TEST_API_KEY} data-config-modal-style="side" />
         </body>
       </Html>
     );

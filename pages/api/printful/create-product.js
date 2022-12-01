@@ -22,6 +22,7 @@ export default async function handler(req, res) {
         const { id } = createProductResponse.result
         
         const variantPreviewImages = await getVariantPreviewImages(id)
+        // console.log('variantPreviewImages', variantPreviewImages)
         const lastVariant = variantPreviewImages.sync_variants[variantPreviewImages.sync_variants.length - 1]
         const previewFileUrl = lastVariant.files[1].preview_url
         // const previewFileUrl = lastVariant.files[1].thumbnail_url

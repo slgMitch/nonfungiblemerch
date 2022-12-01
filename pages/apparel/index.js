@@ -8,7 +8,6 @@ import {
   Card,
   CardMedia,
   CardContent,
-  CardActionArea,
   ToggleButton
 } from '@mui/material';
 import useSWR from 'swr';
@@ -74,6 +73,7 @@ export default function Apparel() {
                                 <Card 
                                     key={tshirt._id}
                                     onClick={() => viewApparel(tshirt._id)}
+                                    sx={{ cursor: 'pointer' }}
                                 >
                                     <CardMedia
                                         component="img"
@@ -87,24 +87,24 @@ export default function Apparel() {
                                         <Typography gutterBottom variant="h6" component="div">
                                             Project: { tshirt.tokenData.tokenName}
                                         </Typography>
+                                        <br />
                                         <Grid item xs={12}>
                                             Colors: {tshirt.colors.map((color) => (
-                                                <ToggleButton style={{ backgroundColor: `${color}`}}></ToggleButton>
+                                                <ToggleButton key={color} value={color} style={{ backgroundColor: `${color}`, margin: '2px', padding: '15px'}}></ToggleButton>
                                             ))}
                                         </Grid>
+                                        <br />
                                         <Grid item xs={12}>
                                             Sizes: {tshirt.sizes.map((size) => (
-                                                <ToggleButton>{size}</ToggleButton>
+                                                <ToggleButton key={size} value={size} style={{margin: '2px'}}>{size}</ToggleButton>
                                             ))}
                                         </Grid>
+                                        <br />
                                         <Typography gutterBottom variant="h6" component="div">
-                                            Price: { tshirt.maxPrice } - { tshirt.minPrice }
+                                            Price: ${ tshirt.maxPrice.toFixed(2) } - ${ tshirt.minPrice.toFixed(2) }
                                         </Typography>
                                     </CardContent>
-
                                 </Card>
-
-
                             </Grid>
                         )) 
 

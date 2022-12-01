@@ -16,7 +16,7 @@ import {
 } from '@mui/material'
 import AdbIcon from '@mui/icons-material/Adb';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-
+import { useSnipcart } from 'use-snipcart';
 import Link from 'next/link';
 import { signIn, signOut, useSession } from 'next-auth/react';
 import { useAccount, useConnect, useSignMessage, useDisconnect } from 'wagmi';
@@ -34,7 +34,7 @@ const walletOptions = ['Wallet Connect', 'MetaMask', 'Coinbase Wallet']
 function ResponsiveAppBar() {
   const userCtx = useContext(UserContext);
   const activeUser = userCtx.user
-
+  const { cart = {} } = useSnipcart();
   const { connectAsync } = useConnect();
   const { disconnectAsync } = useDisconnect();
   const { isConnected } = useAccount();
@@ -213,7 +213,7 @@ function ResponsiveAppBar() {
                 padding: '15px'
               }}
             >
-              <Badge badgeContent={0} color="error">
+              <Badge badgeContent={cart.items?.count} color="error">
                 <ShoppingCartIcon />
               </Badge>
             </IconButton>

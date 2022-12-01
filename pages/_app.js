@@ -13,6 +13,7 @@ import Layout from '../src/components/Layout/Layout'
 import { UserContextProvider } from '../store/user-context';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
+import { SnipcartProvider } from 'use-snipcart';
 
 
 function useResetHistory() {
@@ -52,8 +53,10 @@ export default function MyApp(props) {
             {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
             <CssBaseline />
             <UserContextProvider>
+            <SnipcartProvider>
               <Layout />
               <Component {...pageProps} />
+            </SnipcartProvider>
             </UserContextProvider>
           </ThemeProvider>
         </CacheProvider>
