@@ -93,13 +93,13 @@ if(!data || !merch || isLoading) {
                   <CardActionArea>
                     <CardMedia 
                       component="img"
-                      image={m.imageUrl}
-                      alt={m.merchName}
+                      image={m.imagePreviewUrl}
+                      alt={m.name}
 
                     />
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
-                        {m.merchName}
+                        {m.name}
                       </Typography>
                     </CardContent>
                   </CardActionArea>

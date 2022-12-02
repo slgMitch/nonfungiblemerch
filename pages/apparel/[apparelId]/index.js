@@ -120,7 +120,7 @@ export default function ApparelId(props) {
                                         }
 
                                     </Select>
-                                </FormControl>
+                            </FormControl>
                         </Grid>
                         <Grid item xs={12}>
                             <br />

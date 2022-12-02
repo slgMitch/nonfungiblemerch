@@ -34,14 +34,15 @@ export default async function handler(req, res) {
         
         await updateStoreProduct(id, updatedProductData)
 
+        // need to add availability options
         const { product, productVariants } = generateMongoProductData(reqData, variantPreviewImages) 
         // console.log('product', product)
         // console.log('productVariants', productVariants)
     
-        await insertDocument(client, 'products', product)
-        await insertDocuments(client, 'variants', productVariants)
+        const mongoProduct = await insertDocument(client, 'products', product)
+        const mongoVariants = await insertDocuments(client, 'variants', productVariants)
     
-        res.status(200)
+        res.status(200).json({ mongoProduct, mongoVariants })
         client.close()
     } catch(error) {
         console.log('there was an error', error)

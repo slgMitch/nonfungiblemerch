@@ -75,6 +75,7 @@ export function generateMongoProductData(requestData, variantPreviewImages) {
   return mongoProductData
 }
 
+// need to add availability options
 function craeteProductVariants(variants, sync_variants, requestData) {
   const productVariants = sync_variants.map((sync) => {
     const variant = variants.find(v => v.id === sync.variant_id)

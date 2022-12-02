@@ -10,7 +10,7 @@ export default async function handler(req, res) {
         res.status(200).json(apparel)
         client.close()
     } catch(error) {
-        console.log('there was an error getting all products from mango', error)
+        console.log('there was an error getting all products from mongo', error)
         res.status(400).json(error)
     }
 

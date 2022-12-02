@@ -23,14 +23,16 @@ export default function Apparel() {
     const { push } = useRouter();
 
     useEffect(() => {
+        console.log('products data', data)
         setIsLoading(true)
         setApparel(data)
         setIsLoading(false)
       }, [data])
 
-    const viewApparel = (apparelId) => {
-        console.log('apparelId', apparelId)
-        push(`/apparel/${apparelId}`)
+    const viewApparel = (product) => {
+        console.log('product', product)
+        const colorHex = product.colors[product.colors.length - 1].colorCode.replace( /#/g, "" )
+        push(`/products/${product.syncProductId}/color/${colorHex}/size/${product.sizes[product.sizes.length - 1]}`)
     }
     
     if(isLoading) {
@@ -72,17 +74,17 @@ export default function Apparel() {
                             <Grid item xs={3} key={tshirt._id}>
                                 <Card 
                                     key={tshirt._id}
-                                    onClick={() => viewApparel(tshirt._id)}
+                                    onClick={() => viewApparel(tshirt)}
                                     sx={{ cursor: 'pointer' }}
                                 >
                                     <CardMedia
                                         component="img"
-                                        image={tshirt.imageUrl}
-                                        alt={tshirt.merchName}
+                                        image={tshirt.imagePreviewUrl}
+                                        alt={tshirt.name}
                                     />
                                     <CardContent>
                                         <Typography gutterBottom variant="h5" component="div">
-                                            {tshirt.merchName}
+                                            {tshirt.name}
                                         </Typography>
                                         <Typography gutterBottom variant="h6" component="div">
                                             Project: { tshirt.tokenData.tokenName}
@@ -90,7 +92,7 @@ export default function Apparel() {
                                         <br />
                                         <Grid item xs={12}>
                                             Colors: {tshirt.colors.map((color) => (
-                                                <ToggleButton key={color} value={color} style={{ backgroundColor: `${color}`, margin: '2px', padding: '15px'}}></ToggleButton>
+                                                <ToggleButton key={color.colorCode} value={color.colorCode} style={{ backgroundColor: `${color.colorCode}`, margin: '2px', padding: '15px'}}></ToggleButton>
                                             ))}
                                         </Grid>
                                         <br />
@@ -101,7 +103,7 @@ export default function Apparel() {
                                         </Grid>
                                         <br />
                                         <Typography gutterBottom variant="h6" component="div">
-                                            Price: ${ tshirt.maxPrice.toFixed(2) } - ${ tshirt.minPrice.toFixed(2) }
+                                            Price: ${ tshirt.maxPrice } - ${ tshirt.minPrice }
                                         </Typography>
                                     </CardContent>
                                 </Card>

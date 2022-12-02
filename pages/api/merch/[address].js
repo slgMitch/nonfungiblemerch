@@ -6,7 +6,7 @@ export default async function handler(req, res) {
     const { address } = req.query;
     const client = await connectDatabase()
     const queryObject = {
-        userWalletAddress: address
+        productCreator: address
     }
 
     const merch = await findDocumentsByQueryObject(client, 'products', queryObject)
