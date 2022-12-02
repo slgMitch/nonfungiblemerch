@@ -8,6 +8,7 @@ import {
 import { 
     connectDatabase, 
     insertDocument,
+    insertDocuments,
     generateMongoProductData 
 } from '../../../utils/mongo-utils'
 
@@ -33,11 +34,14 @@ export default async function handler(req, res) {
         
         await updateStoreProduct(id, updatedProductData)
 
-        const mongoProductData = generateMongoProductData(reqData, variantPreviewImages) 
+        const { product, productVariants } = generateMongoProductData(reqData, variantPreviewImages) 
+        // console.log('product', product)
+        // console.log('productVariants', productVariants)
     
-        const newMongoProduct = await insertDocument(client, 'products', mongoProductData)
+        await insertDocument(client, 'products', product)
+        await insertDocuments(client, 'variants', productVariants)
     
-        res.status(200).json(newMongoProduct)
+        res.status(200)
         client.close()
     } catch(error) {
         console.log('there was an error', error)

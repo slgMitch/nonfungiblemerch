@@ -63,37 +63,76 @@ export async function deleteCollection(client, collection) {
 export function generateMongoProductData(requestData, variantPreviewImages) {
   const { variants } = requestData.product
   const { sync_variants } = variantPreviewImages
-  const updatedVariants = variants.map(variant => {
-    const sync = sync_variants.find(syncVariant => syncVariant.variant_id === variant.id)
-    variant.image = sync.files[1].preview_url
-    variant.name = sync.name
-    return variant
-  })
 
-  const colors = [...new Set(updatedVariants.map(variant => variant.color_code))]
-  const sizes = [...new Set(updatedVariants.map(variant => variant.size))]
-  const maxPrice = Math.max(...updatedVariants.map(variant => +variant.price))
-  const minPrice = Math.min(...updatedVariants.map(variant => +variant.price))
-  const productId = requestData.product.id
-  const productCategory = requestData.product.category
-  const tokenData = {
-    tokenAddress: requestData.nftData.token_address,
-    tokenName: requestData.nftData.name,
-    tokenSymbol: requestData.nftData.symbol,
+  const product = createProductData(variants, sync_variants, variantPreviewImages, requestData)
+  const productVariants = craeteProductVariants(variants, sync_variants, requestData)
+
+  const mongoProductData = {
+    product,
+    productVariants
   }
-  
-  delete requestData.product
-  delete requestData.imagePlacement
-  delete requestData.nftData
 
-  requestData.productId = productId
-  requestData.productCategory = productCategory
-  requestData.tokenData = tokenData
-  requestData.imageUrl = updatedVariants[updatedVariants.length - 1].image
-  requestData.colors = colors
-  requestData.sizes = sizes
-  requestData.maxPrice = maxPrice
-  requestData.minPrice = minPrice
-  requestData.variants = updatedVariants
-  return requestData
+  return mongoProductData
+}
+
+function craeteProductVariants(variants, sync_variants, requestData) {
+  const productVariants = sync_variants.map((sync) => {
+    const variant = variants.find(v => v.id === sync.variant_id)
+    const productVariant = {
+      externalId: sync.external_id,
+      syncVariantId: sync.id,
+      baseVariantId: sync.variant_id,
+      baseProductId: requestData.product.id,
+      syncProductId: sync.sync_product_id,
+      name: sync.name,
+      imagePreviewUrl: sync.files[1].preview_url,
+      imageThumbnailUrl: sync.files[1].thumbnail_url,
+      color: { color: variant.color, color_code: variant.color_code }, // find reqData variant by baseVariantId and use color
+      size: variant.size, // find reqData variant by baseVariantId and use size
+      productCategory: requestData.product.category,
+      tokenData: {
+        tokenAddress: requestData.nftData.token_address,
+        tokenName: requestData.nftData.name,
+        tokenSymbol: requestData.nftData.symbol
+      },
+      retailPrice: sync.retail_price,
+      productCreator: requestData.userWalletAddress
+    }
+    return productVariant
+  })
+  return productVariants
+}
+
+function createProductData(variants, sync_variants, variantPreviewImages, requestData) {
+  const allProductColors = variants.map(variant => {
+    return { color: variant.color, colorCode: variant.color_code }
+  })
+  const uniqueProductColors = allProductColors.filter((value, index, self) => 
+    index === self.findIndex((color) => (color.color === value.color && color.color_code === value.color_code))
+  )
+  const productSizes = [...new Set(variants.map(variant => variant.size))]
+  const productMaxPrice = Math.max(...variants.map(variant => +variant.price)).toFixed(2)
+  const productMinPrice = Math.min(...variants.map(variant => +variant.price)).toFixed(2)
+
+  const product = {
+    externalId: variantPreviewImages.sync_product.external_id,
+    baseProductId: requestData.product.id,
+    syncProductId: variantPreviewImages.sync_product.id,
+    name: variantPreviewImages.sync_product.name,
+    imagePreviewUrl: sync_variants[sync_variants.length - 1].files[1].preview_url,
+    imageThumbnailUrl: sync_variants[sync_variants.length - 1].files[1].thumbnail_url,
+    colors: uniqueProductColors,
+    sizes: productSizes,
+    productCategory: requestData.product.category,
+    tokenData: {
+      tokenAddress: requestData.nftData.token_address,
+      tokenName: requestData.nftData.name,
+      tokenSymbol: requestData.nftData.symbol
+    },
+    maxPrice: productMaxPrice,
+    minPrice: productMinPrice,
+    productCreator: requestData.userWalletAddress
+  }
+
+  return product
 }

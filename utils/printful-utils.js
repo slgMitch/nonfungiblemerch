@@ -56,7 +56,7 @@ export async function updateStoreProduct(productId, productDetails) {
 }
 
 export function generatePrintfulRequest(data) {
-    // console.log('data variants', data.product.variants)
+    // console.log('data variants', data)
     // console.log('data file_placement_options', data.product.file_placement_options)
     let syncVariants = data.product.variants.map((variant) => ({
         variant_id: variant.id,
