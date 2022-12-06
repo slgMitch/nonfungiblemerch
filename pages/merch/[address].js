@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from 'react';
+import { useState, useEffect } from 'react';
 import { 
   Typography, 
   Button, 
@@ -38,7 +38,7 @@ export default function Merch(props) {
   }
 
   const viewAll = (merchType) => {
-    push(`/merch/${merchType}`)
+    push(`/merch/add/${merchType}`)
   }
 
   const viewMerch = (id) => {
@@ -72,7 +72,7 @@ if(!data || !merch || isLoading) {
       <Grid item xs={8}>
         <Grid container justifyContent="flex-end">
           <Button onClick={() => addMerch('t-shirts')}>Add Shirt</Button>
-          <Button onClick={() => viewAll('t-shirts')}>View All</Button>
+          <Button onClick={() => viewAll('all')}>View All</Button>
         </Grid>
       </Grid>
       <Grid item xs={12}>
