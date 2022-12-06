@@ -8,7 +8,8 @@ import {
   Card,
   CardMedia,
   CardContent,
-  ToggleButton
+  ToggleButton,
+  Tooltip
 } from '@mui/material';
 import useSWR from 'swr';
 import { useRouter } from 'next/router';
@@ -92,7 +93,9 @@ export default function Apparel() {
                                         <br />
                                         <Grid item xs={12}>
                                             Colors: {tshirt.colors.map((color) => (
-                                                <ToggleButton key={color.colorCode} value={color.colorCode} style={{ backgroundColor: `${color.colorCode}`, margin: '2px', padding: '15px'}}></ToggleButton>
+                                                <Tooltip title={color.color}>
+                                                    <ToggleButton key={color.colorCode} value={color.colorCode} style={{ backgroundColor: `${color.colorCode}`, margin: '2px', padding: '15px'}}></ToggleButton>
+                                                </Tooltip>
                                             ))}
                                         </Grid>
                                         <br />

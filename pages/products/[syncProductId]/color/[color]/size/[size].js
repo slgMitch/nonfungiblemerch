@@ -99,7 +99,7 @@ export default function Variant(props) {
                         </Grid>
                         <Grid item xs={12}>
                             <br />
-                            <Typography variant="h5">Status:  </Typography>
+                            <Typography variant="h5">Status: {variant.availabilityStatus[0].status === 'in_stock' ? 'In Stock' : 'Out of Stock'}  </Typography>
                         </Grid>
                         <Grid item align="center" xs={12}>
                             <br />
@@ -109,7 +109,7 @@ export default function Variant(props) {
                                 sx={{
                                     minWidth: 800
                                 }}
-                                // disabled={availabilityStatus.status === 'in_stock' ? false : true}
+                                disabled={variant.availabilityStatus[0].status === 'in_stock' ? false : true}
                                 className="snipcart-add-item"
                                 data-item-id={variant.syncVariantId}
                                 data-item-price={variant.retailPrice}
@@ -137,8 +137,6 @@ export async function getServerSideProps(context) {
     const res = await fetch('http://localhost:3000/api/variants/get-variants?' + searchParams)
     const data = await res.json()
     const { variant, productColors,  productSizes } = data
-    console.log('getServerSideProps', data)
-
     return {
         props: {
             variant, 

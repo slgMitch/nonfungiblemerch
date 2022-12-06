@@ -97,7 +97,8 @@ function craeteProductVariants(variants, sync_variants, requestData) {
         tokenSymbol: requestData.nftData.symbol
       },
       retailPrice: sync.retail_price,
-      productCreator: requestData.userWalletAddress
+      productCreator: requestData.userWalletAddress,
+      availabilityStatus: variant.availability_status
     }
     return productVariant
   })
