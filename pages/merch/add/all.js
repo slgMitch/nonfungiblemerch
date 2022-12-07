@@ -35,6 +35,10 @@ export default function All() {
         setSelectedProducts(selectedProducts => [...selectedProducts, selectedProduct])
         console.log('selectedProducts', selectedProducts)
     }
+
+    const createProducts = async () => {
+        console.log('creating products... selectedProducts', selectedProducts)
+    }
     
     if(error) {
         return <p>Failed to load... {error}</p>
@@ -431,7 +435,7 @@ export default function All() {
             </Grid>
             <Grid container direction="row" justifyContent="flex-end">
                 <Grid item xs={12} >
-                    <Button>Add Merch</Button>
+                    <Button onClick={createProducts}>Add Merch</Button>
                 </Grid>
             </Grid>
         </Grid>
