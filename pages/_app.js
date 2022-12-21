@@ -3,14 +3,12 @@ import { createClient, configureChains, defaultChains, WagmiConfig } from 'wagmi
 import { publicProvider } from 'wagmi/providers/public';
 import { SessionProvider } from 'next-auth/react';
 import PropTypes from 'prop-types';
-import Head from 'next/head';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { CacheProvider } from '@emotion/react';
 import theme from '../src/theme';
 import createEmotionCache from '../src/createEmotionCache';
 import Layout from '../src/components/Layout/Layout'
-import { UserContextProvider } from '../store/user-context';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { SnipcartProvider } from 'use-snipcart';
@@ -55,12 +53,10 @@ export default function MyApp(props) {
           <ThemeProvider theme={theme}>
             {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
             <CssBaseline />
-            <UserContextProvider>
             <SnipcartProvider>
               <Layout />
               <Component {...pageProps} />
             </SnipcartProvider>
-            </UserContextProvider>
           </ThemeProvider>
         </CacheProvider>
       </SessionProvider>

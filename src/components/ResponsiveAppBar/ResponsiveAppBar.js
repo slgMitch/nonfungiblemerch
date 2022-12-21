@@ -160,11 +160,14 @@ function ResponsiveAppBar() {
     } catch (e) {
       console.log('there was an error', e)
     }
+  }
 
-  };
+  const navigateToMyProfile = () => {
+    push('/profile')
+  }
 
   return (
-    <AppBar position="sticky">
+    <AppBar sx={{ borderRadius: '16px' }} position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -202,6 +205,15 @@ function ResponsiveAppBar() {
                 </Link>
             ))}
           </Box>
+          <Box>
+            <Button
+              key="profile"
+              onClick={navigateToMyProfile}
+              sx={{ my: 2, color: 'white', display: 'block' }}
+            >
+              My Profile
+            </Button>
+          </Box>
 
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <IconButton 
@@ -217,7 +229,7 @@ function ResponsiveAppBar() {
                 <ShoppingCartIcon />
               </Badge>
             </IconButton>
-            {
+            {/* {
               session ? (
                 <>
                   <Tooltip title="Open Profile settings">
@@ -296,7 +308,7 @@ function ResponsiveAppBar() {
                   </Menu>
                 </>
               )
-            }
+            } */}
           </Box>
         </Toolbar>
       </Container>
