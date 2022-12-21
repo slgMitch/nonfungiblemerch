@@ -6,12 +6,8 @@ import {
   Toolbar,
   IconButton,
   Typography,
-  Menu,
   Container,
-  Avatar,
   Button,
-  Tooltip,
-  MenuItem,
   Badge
 } from '@mui/material'
 import AdbIcon from '@mui/icons-material/Adb';
@@ -25,15 +21,12 @@ import axios from 'axios';
 import { WalletConnectConnector } from 'wagmi/connectors/walletConnect';
 import { MetaMaskConnector } from 'wagmi/connectors/metaMask';
 import { CoinbaseWalletConnector } from 'wagmi/connectors/coinbaseWallet';
-import UserContext from '../../../store/user-context';
 
 const pages = [{ name: 'Apparel', href: '/apparel' }, { name: 'Accessories', href: '/accessories' }, { name: 'Prints', href: '/prints' }, { name: 'Projects', href: '/projects' },];
 const profileOptions = ['Profile', 'My Merch', 'Logout'];
 const walletOptions = ['Wallet Connect', 'MetaMask', 'Coinbase Wallet']
 
 function ResponsiveAppBar() {
-  const userCtx = useContext(UserContext);
-  const activeUser = userCtx.user
   const { cart = {} } = useSnipcart();
   const { connectAsync } = useConnect();
   const { disconnectAsync } = useDisconnect();

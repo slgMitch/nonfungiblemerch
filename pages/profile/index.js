@@ -1,5 +1,15 @@
 import { Fragment, useState } from 'react'
-import {Container, Box, Typography, Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@mui/material'
+import { 
+    Button,
+    Card,
+    CardContent,
+    CardActions,
+    Grid,
+    Typography,
+    Drawer,
+    Toolbar,
+    Divider
+  } from '@mui/material';
 import { useSession } from 'next-auth/react';
 import axios from 'axios';
 import Image from 'next/image'
@@ -9,6 +19,9 @@ function Profile() {
     const { data: session } = useSession()
     const [open, setOpen] = useState(false);
     const [tokens, setTokens] = useState(null);
+    console.log('session', session)
+    const profileActionOptions = ['NTFs', 'Products']
+    const profileManagementOptions = ['Settings', 'Sign Out']
 
   
     const handleClose = () => {
@@ -32,35 +45,78 @@ function Profile() {
         setOpen(true);
     }
 
-    return (
-        <Fragment>
-            <Container maxWidth='lg'>
-                <Box sx={{ bgcolor: '#cfe8fc' }}>
-                    <Typography variant="h2" gutterBottom textAlign='center'>
-                    Profile Page
-                    </Typography>
-                    <Button 
-                        variant='contained'
-                        onClick={getWalletNFTsHandler}
+    const signInCard = () => {
+        return (
+            <Grid 
+                container 
+                direction="row" 
+                justifyContent="center" 
+                alignContent="center"
+                style={{ minHeight: "100vh" }}
+            >
+                <Grid item xs={6}>
+                    <Card sx={{ borderRadius: '16px', top: '50%' }}>
+                        <CardContent>
+                            <Typography variant="h4" gutterBottom textAlign="center">
+                                Connect wallet to view your Profile
+                            </Typography>
+                        </CardContent>
+                        <CardActions>
+                            <Button>Connect Wallet</Button>
+                        </CardActions>
+                    </Card>
+                </Grid>
+            </Grid>
+        )
+    }
+
+    const profilePage = () => {
+        return (
+            <Grid 
+                container
+                direction="row"
+            >
+                <Grid item xs={3}>
+                    <Drawer
+                        sx={{
+                            width: 240,
+                            flexShrink: 0,
+                            '& .MuiDrawer-paper': {
+                              width: 240,
+                              boxSizing: 'border-box',
+                            },
+                          }}
+                          variant="permanent"
+                          anchor="left"
                     >
-                        Add NFTs
-                    </Button>
-                    <Dialog open={open} onClose={handleClose}>
-                        <DialogTitle>Wallet NFTs</DialogTitle>
-                        <DialogContent>
-                        <DialogContentText>
-                            Select the NFTs you would like to add
-                        </DialogContentText>
-                        <AddProductsStepper />
-                        </DialogContent>
-                        <DialogActions>
-                        <Button onClick={handleClose}>Cancel</Button>
-                        <Button onClick={handleClose}>Add</Button>
-                        </DialogActions>
-                    </Dialog>
-                </Box>
-            </Container>
-        </Fragment>
+                        <Toolbar />
+                        <Divider />
+                        <List>
+
+                        </List>
+
+                    </Drawer>
+                </Grid>
+                <Grid item xs={9}>
+                    My Profile components
+
+                </Grid>
+
+            </Grid>
+        )
+    }
+
+    return (
+        <Grid container>
+            {
+                session ? (
+                    profilePage()
+                ) : (
+                    signInCard()
+                )
+            }
+        </Grid>
+
     )
 }
 
