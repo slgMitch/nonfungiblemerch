@@ -7,7 +7,6 @@ import {
     Card,
     CardMedia,
     CardContent,
-    Divider,
     ToggleButton,
     Tooltip,
     Button

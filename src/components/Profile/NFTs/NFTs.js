@@ -7,6 +7,7 @@ import {
     Card,
     CardMedia,
     CardContent,
+    CardActions,
     ToggleButton,
     Tooltip,
     Button
@@ -48,9 +49,61 @@ export default function NFTs(props) {
                 <Button>Add NFTs</Button>
             </Grid>
             <Grid item xs={12}>
-                {/* {
-                    nfts && nfts.length ? () : ()
-                } */}
+                {
+                    nfts && nfts.length ? (
+                        <Grid
+                            container
+                            spacing={3}
+                            direction="row"
+                            justifyContent="flex-start"
+                            alignItems="flex-start"
+                        >
+                            {
+                                nfts.map((nft) => (
+                                    <Grid item xs={3} key={nft.id}>
+                                        <Card 
+                                            key={nft.id}
+                                        >
+                                            <CardMedia 
+                                                component='img'
+                                                image={nft.image}
+                                                alt={nft.name}
+                                            />
+                                            <CardContent>
+                                                <Typography noWrap gutterBottom component="div">
+                                                    {nft.name}
+                                                </Typography>
+                                            </CardContent>
+                                        </Card>
+                                    </Grid>
+                                ))
+                            }
+
+                        </Grid>
+                    ) : (
+                        <Grid
+                            container
+                            direction='row'
+                            justifyContent="center" 
+                            alignContent="center"
+                            style={{ minHeight: "100vh" }}
+                        >
+                            <Grid item xs={6}>
+                                <Card sx={{ borderRadius: '16px', top: '50%' }}>
+                                    <CardContent>
+                                        <Typography variant="h5" gutterBottom textAlign="center">
+                                            You haven't added any NFTs yet... Click below to add!
+                                        </Typography>
+                                    </CardContent>
+                                    <CardActions>
+                                        <Button>Add NFTs</Button>
+                                    </CardActions>
+                                </Card>
+                            </Grid>
+
+                        </Grid>
+                    )
+                }
 
             </Grid>
         </Grid>
