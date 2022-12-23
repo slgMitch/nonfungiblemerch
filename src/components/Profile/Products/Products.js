@@ -1,29 +1,49 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Fragment } from 'react'
 import { 
     Grid,
     Typography,
     Backdrop,
+    Box,
     CircularProgress,
     Card,
     CardMedia,
     CardContent,
     ToggleButton,
     Tooltip,
-    Button
+    Button,
+    Modal,
+    Stepper,
+    Step,
+    StepLabel
   } from '@mui/material'
 import useSWR from 'swr'
+import axios from 'axios'
+import BaseProducts from './Steps/BaseProducts'
+import Images from './Steps/Images'
+import ImagePlacement from './Steps/ImagePlacement'
+import Review from './Steps/Review'
+
+
+const createProductSteps = ['Select a Product', 'Select an image', 'Select image placement']
 
 export default function Products(props) {
     const { user } = props
-    console.log('the user', user)
     const fetcher = (url) => fetch(url).then((res) => res.json())
     const url = `/api/profile/products/${user}`
     const { data, error } = useSWR(url, fetcher)
     const [products, setProducts] = useState()
+    const [baseProducts, setBaseProducts] = useState()
+    const [userImages, setUserImages] = useState()
+    const [imagePlacements, setImagePlacements] = useState()
+    const [selectedBaseProduct, setSelectedBaseProduct] = useState()
+    const [selectedUserImage, setSelectedUserImage] = useState()
+    const [selectedImagePlacement, setSelectedImagePlacement] = useState()
     const [isLoading, setIsLoading] = useState(false)
+    const [showCreateProductModal, setShowCreateProductModal] = useState(false)
+    const [activeStep, setActiveStep] = useState(0)
+    
 
     useEffect(() => {
-        console.log('products data', data)
         setIsLoading(true)
         setProducts(data)
         setIsLoading(false)
@@ -40,6 +60,68 @@ export default function Products(props) {
         )
     }
 
+    const openCreateProductModal = async () => {
+        setIsLoading(true)
+        const products = await getBaseProducts()
+        setBaseProducts(products)
+        const images = await getUserImages()
+        setUserImages(images)
+        setIsLoading(false)
+        setShowCreateProductModal(true)
+    }
+
+    const getBaseProducts = async () => {
+        const { data } = await axios.get('/api/base-products/get-all', {
+            headers: {
+                'content-type': 'application/json',
+            },
+        })
+        return data
+    }
+
+    const getUserImages = async () => {
+        const { data } = await axios.get(`/api/profile/nfts/${user}`, {
+            headers: {
+                'content-type': 'application/json',
+            },
+        })
+        return data
+    }
+
+    const handleNext = () => {
+        setActiveStep((prevActiveStep) => prevActiveStep + 1)
+    }
+
+    const handleBack = () => {
+        setActiveStep((prevActiveStep) => prevActiveStep - 1)
+    }
+
+    const createProduct = async () => {
+
+    }
+
+    const renderStep = (activeStep) => {
+        switch(activeStep) {
+            case 0:
+                return <BaseProducts 
+                            baseProducts={baseProducts}
+                            setSelectedBaseProduct={setSelectedBaseProduct}
+                            setImagePlacements={setImagePlacements} 
+                            selectedBaseProduct={selectedBaseProduct}
+                        />
+            case 1:
+                return <Images 
+                            userImages={userImages}
+                            setSelectedUserImage={setSelectedUserImage} 
+                        />
+            case 2:
+                return <ImagePlacement 
+                            imagePlacements={imagePlacements}
+                            setSelectedImagePlacement={setSelectedImagePlacement} 
+                        />
+        }
+    }
+
 
 
     return (
@@ -48,7 +130,7 @@ export default function Products(props) {
                 <Typography variant="h3" textAlign='center'>My Products</Typography>
             </Grid>
             <Grid item xs={12} container justifyContent="flex-end">
-                <Button>Add Product</Button>
+                <Button onClick={() => openCreateProductModal()}>Add Product</Button>
             </Grid>
             <Grid item xs={12}>
                 {
@@ -122,7 +204,7 @@ export default function Products(props) {
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <Button>Create Products</Button>
+                                        <Button onClick={() => openCreateProductModal()}>Create Products</Button>
                                     </CardActions>
                                 </Card>
                             </Grid>
@@ -130,6 +212,61 @@ export default function Products(props) {
                         </Grid>
                     )
                 }
+                <Modal open={showCreateProductModal}>
+                    <Box sx={{ width: '100%', backgroundColor: 'white' }}>
+                            <Stepper sx={{ paddingTop: '20px', paddingBottom: '50px' }} activeStep={activeStep}>
+                                {
+                                    createProductSteps.map((label, index) => {
+                                        const stepProps = {};
+                                        const labelProps = {};
+                                        return (
+                                            <Step key={label} {...stepProps}>
+                                                <StepLabel {...labelProps}>{label}</StepLabel>
+                                            </Step>
+                                        )
+                                    })
+                                }
+                            </Stepper>
+                            {
+                                activeStep === createProductSteps.length ? (
+                                    <Fragment>
+                                        <Review />
+                                        <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
+                                            <Button
+                                                color="inherit"
+                                                disabled={activeStep === 0}
+                                                onClick={handleBack}
+                                                sx={{ mr: 1 }}
+                                            >
+                                                Back
+                                            </Button>
+                                            <Button onClick={() => setShowCreateProductModal(false)}>Cancel</Button>
+                                            <Box sx={{ flex: '1 1 auto' }} />
+                                            <Button onClick={createProduct}>Create</Button>
+                                        </Box>
+                                  </Fragment>
+                                ) : (
+                                    <Grid container>
+                                        {renderStep(activeStep)}
+                                        <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
+                                            <Button
+                                                color="inherit"
+                                                disabled={activeStep === 0}
+                                                onClick={handleBack}
+                                                sx={{ mr: 1 }}
+                                            >
+                                                Back
+                                            </Button>
+                                            <Button onClick={() => setShowCreateProductModal(false)}>Cancel</Button>
+                                            <Box sx={{ flex: '1 1 auto' }} />
+                                            <Button onClick={handleNext}>Next</Button>
+                                        </Box>
+                                    </Grid>
+                                )
+                            }
+                    </Box>
+
+                </Modal>
 
             </Grid>
         </Grid>
