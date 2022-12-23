@@ -60,6 +60,14 @@ export async function deleteCollection(client, collection) {
   return result;
 }
 
+export async function updateDocument(client, collection, filter, document) {
+  const db = client.db();
+
+  const result = await db.collection(collection).updateOne(filter, document);
+
+  return result
+}
+
 export function generateMongoProductData(requestData, variantPreviewImages) {
   const { variants } = requestData.product
   const { sync_variants } = variantPreviewImages

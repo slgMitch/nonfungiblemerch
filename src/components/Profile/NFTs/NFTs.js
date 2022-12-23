@@ -8,10 +8,10 @@ import {
     CardMedia,
     CardContent,
     CardActions,
-    ToggleButton,
-    Tooltip,
     Button,
-    Modal
+    Modal,
+    Checkbox,
+    FormControlLabel
   } from '@mui/material'
 import useSWR from 'swr'
 import axios from 'axios'
@@ -23,26 +23,68 @@ export default function NFTs(props) {
     const { data, error } = useSWR(url, fetcher)
     const [nfts, setNfts] = useState()
     const [walletNfts, setWalletNfts] = useState()
+    const [selectedWalletNfts, setSelectedWalletNfts] = useState([])
     const [isLoading, setIsLoading] = useState(false)
     const [showNftModal, setShowNftModal] = useState(false)
+    const [removeImageBackgrounds, setRemoveImageBackgrounds] = useState(true)
 
     useEffect(() => {
-        console.log('nfts data', data)
         setIsLoading(true)
         setNfts(data)
+        setSelectedWalletNfts(data)
         setIsLoading(false)
     }, [data])
 
     const displayWalletNfts = async () => {
+        setIsLoading(true)
         const requestData = { address: user }
         const { data } = await axios.post('/api/nft/wallet-nfts', requestData, {
             headers: {
                 'content-type': 'application/json',
             },
-        });
-        console.log('wallet nfts', data)
+        })
         setWalletNfts(data)
+        setIsLoading(false)
         setShowNftModal(true)
+    }
+
+    const selectNft = (walletNft) => {
+        const isAlreadySelected = selectedWalletNfts && selectedWalletNfts.find(selectedWalletNft => selectedWalletNft.token_id === walletNft.token_id)
+        if(isAlreadySelected) {
+            setSelectedWalletNfts(selectedWalletNfts.filter(selectedWalletNft => selectedWalletNft.token_id !== isAlreadySelected.token_id))
+        } else {
+            setSelectedWalletNfts([...selectedWalletNfts, walletNft])
+        }
+    }
+
+    const saveWalletNfts = async () => {
+        setShowNftModal(false)
+        setIsLoading(true)
+        let nftsToSave
+        if(nfts && nfts.length) {
+            for(const nft of nfts) {
+                nftsToSave = selectedWalletNfts.filter(selectedWalletNft => selectedWalletNft.token_id !== nft.token_id)
+            }
+        } else {
+            nftsToSave = selectedWalletNfts
+        }
+
+        const requestData = {
+            user,
+            nfts: nftsToSave
+        }
+        const { data } = await axios.post('/api/profile/nfts/save', requestData, {
+            headers: {
+                'content-type': 'application/json',
+            },
+        })
+        setNfts(data)
+        setSelectedWalletNfts(data)
+        setIsLoading(false)
+    }
+
+    const handleRemoveImageBackgroundsChange = (event) => {
+
     }
 
     if(!data || !nfts || isLoading) {
@@ -62,7 +104,7 @@ export default function NFTs(props) {
                 <Typography variant="h3" textAlign='center'>My NFTs</Typography>
             </Grid>
             <Grid item xs={12} container justifyContent="flex-end">
-                <Button>Add NFTs</Button>
+                <Button onClick={() => displayWalletNfts()}>Add NFTs</Button>
             </Grid>
             <Grid item xs={12}>
                 {
@@ -76,18 +118,21 @@ export default function NFTs(props) {
                         >
                             {
                                 nfts.map((nft) => (
-                                    <Grid item xs={3} key={nft.id}>
+                                    <Grid item xs={3} key={nft.token_id}>
                                         <Card 
-                                            key={nft.id}
+                                            key={nft.token_id}
                                         >
                                             <CardMedia 
                                                 component='img'
-                                                image={nft.image}
-                                                alt={nft.name}
+                                                image={nft.metadata.image}
+                                                alt={nft.metadata.name}
                                             />
                                             <CardContent>
                                                 <Typography noWrap gutterBottom component="div">
-                                                    {nft.name}
+                                                    Token Collection: {nft.name}
+                                                </Typography>
+                                                <Typography noWrap gutterBottom component="div">
+                                                    Token Name: {nft.metadata.name}
                                                 </Typography>
                                             </CardContent>
                                         </Card>
@@ -116,68 +161,70 @@ export default function NFTs(props) {
                                     </CardActions>
                                 </Card>
                             </Grid>
-                            <Modal
-                                open={showNftModal}
-                            >
-                                <Grid
-                                    container 
-                                    direction="row" 
-                                    justifyContent="center" 
-                                    alignContent="center"
-                                    style={{ minHeight: "100vh" }}
-                                >
-                                    <Grid item xs={8}>
-                                        <Card sx={{ borderRadius: '16px', top: '50%' }}>
-                                            <CardContent>
-                                                <Typography variant='h4' textAlign='center'>Select NFTs to save</Typography>
-                                                <Grid container direction='row'>
-                                                    {
-                                                        walletNfts && walletNfts.map((walletNft) => (
-                                                            <Grid item xs={4}>
-                                                                <Card 
-                                                                    sx={{ 
-                                                                        margin: '15px', 
-                                                                        ":hover": { 
-                                                                            boxShadow: '-1px 10px 29px 0px rgba(0,0,0,0.8);', 
-                                                                            cursor: 'pointer' 
-                                                                        },
-                                                                        
-                                                                        ":onclick": {
-                                                                            boxShadow: '-1px 10px 29px 0px rgba(0,0,0,0.8);', 
-                                                                        }
-                                                                         
-                                                                    }}
-                                                                    // onClick={() => handleAuth('metamask')}
-                                                                >
-                                                                    <CardMedia 
-                                                                        sx={{ height: 350 }}
-                                                                        image={walletNft.metadata.image}
-                                                                        title={walletNft.metadata.name}
-                                                                    />
-                                                                    <CardContent>
-                                                                        <Typography textAlign='center'>{walletNft.metadata.name}</Typography>
-                                                                    </CardContent>
-                                                                </Card>
-                                                            </Grid>
-
-                                                        ))
-                                                    }
-                                                </Grid>
-                                            </CardContent>
-                                            <CardActions>
-                                                <Button onClick={() => setShowNftModal(false)}>Close</Button>
-                                            </CardActions>
-
-                                        </Card>
-                                    </Grid>
-
-                                </Grid>
-
-                            </Modal>
-
                         </Grid>
                     )
                 }
+
+                <Modal open={showNftModal}>
+                    <Grid
+                        container 
+                        direction="row" 
+                        justifyContent="center" 
+                        alignContent="center"
+                        style={{ minHeight: "100vh" }}
+                    >
+                        <Grid item xs={8}>
+                            <Card sx={{ borderRadius: '16px', top: '50%' }}>
+                                <CardContent>
+                                    <Typography variant='h4' textAlign='center'>Select NFTs to save</Typography>
+                                    <Grid container direction='row'>
+                                        {
+                                            walletNfts && walletNfts.map((walletNft) => (
+                                                <Grid item xs={4} key={walletNft.token_id}>
+                                                    <Card
+                                                        key={walletNft.token_id} 
+                                                        sx={{ 
+                                                            margin: '15px', 
+                                                            ":hover": { 
+                                                                boxShadow: '-1px 10px 29px 0px rgba(0,0,0,0.8);', 
+                                                                cursor: 'pointer' 
+                                                            },
+                                                            boxShadow: selectedWalletNfts && selectedWalletNfts.find(selectedWalletNft => selectedWalletNft.token_id === walletNft.token_id) || nfts && nfts.find(nft => nft.token_id === walletNft.token_id) ? '-1px 10px 29px 0px rgba(0,0,0,0.8);' : ''
+                                                        }}
+                                                        onClick={() => selectNft(walletNft)}
+                                                    >
+                                                        <CardMedia 
+                                                            sx={{ height: 350 }}
+                                                            image={walletNft.metadata.image}
+                                                            title={walletNft.metadata.name}
+                                                        />
+                                                        <CardContent>
+                                                            <Typography textAlign='center'>{walletNft.metadata.name}</Typography>
+                                                        </CardContent>
+                                                    </Card>
+                                                </Grid>
+
+                                            ))
+                                        }
+                                    </Grid>
+                                </CardContent>
+                                <CardActions>
+                                    <Button onClick={() => setShowNftModal(false)}>Close</Button>
+                                    <Button onClick={() => saveWalletNfts()}>Save</Button>
+                                    <FormControlLabel 
+                                        control={
+                                            <Checkbox 
+                                                checked={removeImageBackgrounds}
+                                                onChange={handleRemoveImageBackgroundsChange}
+                                            />
+                                        }
+                                        label="Remove background from tokens" 
+                                    />
+                                </CardActions>
+                            </Card>
+                        </Grid>
+                    </Grid>
+                </Modal>
 
             </Grid>
         </Grid>

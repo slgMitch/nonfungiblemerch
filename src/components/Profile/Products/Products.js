@@ -84,7 +84,7 @@ export default function Products(props) {
                                                 <br />
                                                 <Grid item xs={12}>
                                                     Colors: {product.colors.map((color) => (
-                                                        <Tooltip title={color.color}>
+                                                        <Tooltip key={color.colorCode} title={color.color}>
                                                             <ToggleButton key={color.colorCode} value={color.colorCode} style={{ backgroundColor: `${color.colorCode}`, margin: '2px', padding: '15px'}}></ToggleButton>
                                                         </Tooltip>
                                                     ))}
