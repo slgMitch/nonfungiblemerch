@@ -71,7 +71,8 @@ export default function NFTs(props) {
 
         const requestData = {
             user,
-            nfts: nftsToSave
+            nfts: nftsToSave,
+            removeImageBackgrounds
         }
         const { data } = await axios.post('/api/profile/nfts/save', requestData, {
             headers: {
@@ -84,7 +85,13 @@ export default function NFTs(props) {
     }
 
     const handleRemoveImageBackgroundsChange = (event) => {
+        console.log('event', event.target.checked)
+        setRemoveImageBackgrounds(event.target.checked)
+    }
 
+    const closeWalletNftModal = () => {
+        setShowNftModal(false)
+        setSelectedWalletNfts(nfts)
     }
 
     if(!data || !nfts || isLoading) {
@@ -129,10 +136,10 @@ export default function NFTs(props) {
                                             />
                                             <CardContent>
                                                 <Typography noWrap gutterBottom component="div">
-                                                    Token Collection: {nft.name}
+                                                    Collection: {nft.name}
                                                 </Typography>
                                                 <Typography noWrap gutterBottom component="div">
-                                                    Token Name: {nft.metadata.name}
+                                                    Name: {nft.metadata.name}
                                                 </Typography>
                                             </CardContent>
                                         </Card>
@@ -209,17 +216,22 @@ export default function NFTs(props) {
                                     </Grid>
                                 </CardContent>
                                 <CardActions>
-                                    <Button onClick={() => setShowNftModal(false)}>Close</Button>
-                                    <Button onClick={() => saveWalletNfts()}>Save</Button>
-                                    <FormControlLabel 
-                                        control={
-                                            <Checkbox 
-                                                checked={removeImageBackgrounds}
-                                                onChange={handleRemoveImageBackgroundsChange}
-                                            />
-                                        }
-                                        label="Remove background from tokens" 
-                                    />
+                                    <Grid  container item xs={6} justifyContent='flex-start'>
+                                        <Button onClick={() => closeWalletNftModal()}>Close</Button>
+                                        <Button disabled={!selectedWalletNfts.length} onClick={() => saveWalletNfts()}>Save</Button>
+
+                                    </Grid>
+                                    <Grid  container item xs={6} justifyContent='flex-end'>
+                                        <FormControlLabel
+                                            control={
+                                                <Checkbox 
+                                                    checked={removeImageBackgrounds}
+                                                    onChange={handleRemoveImageBackgroundsChange}
+                                                />
+                                            }
+                                            label="Remove background from tokens" 
+                                        />
+                                    </Grid>
                                 </CardActions>
                             </Card>
                         </Grid>
