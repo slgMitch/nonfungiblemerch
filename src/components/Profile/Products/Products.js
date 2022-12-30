@@ -6,6 +6,7 @@ import {
     Box,
     CircularProgress,
     Card,
+    CardActions,
     CardMedia,
     CardContent,
     ToggleButton,
@@ -36,7 +37,7 @@ export default function Products(props) {
     const [userImages, setUserImages] = useState()
     const [imagePlacements, setImagePlacements] = useState()
     const [selectedBaseProduct, setSelectedBaseProduct] = useState()
-    const [selectedUserImage, setSelectedUserImage] = useState()
+    const [selectedUserImages, setSelectedUserImages] = useState([])
     const [selectedImagePlacement, setSelectedImagePlacement] = useState()
     const [isLoading, setIsLoading] = useState(false)
     const [showCreateProductModal, setShowCreateProductModal] = useState(false)
@@ -125,10 +126,11 @@ export default function Products(props) {
                             setCanGoToNextStep={setCanGoToNextStep}
                         />
             case 1:
-                return <Images 
+                return <Images
+                            user={user} 
                             userImages={userImages}
-                            setSelectedUserImage={setSelectedUserImage}
-                            selectedUserImage={selectedUserImage}
+                            setSelectedUserImages={setSelectedUserImages}
+                            selectedUserImages={selectedUserImages}
                             setCanGoToNextStep={setCanGoToNextStep} 
                         />
             case 2:
@@ -143,7 +145,7 @@ export default function Products(props) {
 
     const cancelProductCreation = () => {
         setSelectedBaseProduct()
-        setSelectedUserImage()
+        setSelectedUserImages()
         setSelectedImagePlacement()
         setActiveStep(0)
         setShowCreateProductModal(false)
@@ -240,7 +242,7 @@ export default function Products(props) {
                         </Grid>
                     )
                 }
-                <Modal open={showCreateProductModal} sx={{ overflow: 'scroll'}}>
+                <Modal open={showCreateProductModal} sx={{ overflow: 'scroll' }}>
                     <Box sx={{ width: '100%', backgroundColor: 'white' }}>
                             <Stepper sx={{ paddingTop: '20px', paddingBottom: '50px' }} activeStep={activeStep}>
                                 {
@@ -260,7 +262,7 @@ export default function Products(props) {
                                     <Fragment>
                                         <Review 
                                             selectedBaseProduct={selectedBaseProduct}
-                                            selectedUserImage={selectedUserImage}
+                                            selectedUserImages={selectedUserImages}
                                             selectedImagePlacement={selectedImagePlacement}
                                         />
                                         <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>

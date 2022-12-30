@@ -72,6 +72,9 @@ export default async function handler(req, res) {
                 tokensToSave.push(nftWithNoBackground)
             }
         } else {
+            for(let nft of nfts) {
+                nft.user = user
+            }
             tokensToSave = nfts
         }
 

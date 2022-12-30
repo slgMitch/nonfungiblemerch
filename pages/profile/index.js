@@ -121,6 +121,7 @@ function Profile() {
     const handleManagementOption = (managementOption) => {
         if(managementOption.component === 'signOut') {
             signOut({ redirect: '/' })
+            push('/')
         } else {
             setActiveProfileComponent(managementOption.component)
         }

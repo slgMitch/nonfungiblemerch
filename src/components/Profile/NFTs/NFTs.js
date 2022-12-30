@@ -8,13 +8,11 @@ import {
     CardMedia,
     CardContent,
     CardActions,
-    Button,
-    Modal,
-    Checkbox,
-    FormControlLabel
+    Button
   } from '@mui/material'
 import useSWR from 'swr'
 import axios from 'axios'
+import WalletNftsModal from './WalletNftsModal'
 
 export default function NFTs(props) {
     const { user } = props
@@ -30,6 +28,7 @@ export default function NFTs(props) {
 
     useEffect(() => {
         setIsLoading(true)
+        console.log('data', data)
         setNfts(data)
         setSelectedWalletNfts(data)
         setIsLoading(false)
@@ -43,18 +42,10 @@ export default function NFTs(props) {
                 'content-type': 'application/json',
             },
         })
+        console.log('data', data)
         setWalletNfts(data)
         setIsLoading(false)
         setShowNftModal(true)
-    }
-
-    const selectNft = (walletNft) => {
-        const isAlreadySelected = selectedWalletNfts && selectedWalletNfts.find(selectedWalletNft => selectedWalletNft.token_id === walletNft.token_id)
-        if(isAlreadySelected) {
-            setSelectedWalletNfts(selectedWalletNfts.filter(selectedWalletNft => selectedWalletNft.token_id !== isAlreadySelected.token_id))
-        } else {
-            setSelectedWalletNfts([...selectedWalletNfts, walletNft])
-        }
     }
 
     const saveWalletNfts = async () => {
@@ -84,15 +75,6 @@ export default function NFTs(props) {
         setIsLoading(false)
     }
 
-    const handleRemoveImageBackgroundsChange = (event) => {
-        console.log('event', event.target.checked)
-        setRemoveImageBackgrounds(event.target.checked)
-    }
-
-    const closeWalletNftModal = () => {
-        setShowNftModal(false)
-        setSelectedWalletNfts(nfts)
-    }
 
     if(!data || !nfts || isLoading) {
         return (
@@ -171,72 +153,17 @@ export default function NFTs(props) {
                         </Grid>
                     )
                 }
-
-                <Modal open={showNftModal}>
-                    <Grid
-                        container 
-                        direction="row" 
-                        justifyContent="center" 
-                        alignContent="center"
-                        style={{ minHeight: "100vh" }}
-                    >
-                        <Grid item xs={8}>
-                            <Card sx={{ borderRadius: '16px', top: '50%' }}>
-                                <CardContent>
-                                    <Typography variant='h4' textAlign='center'>Select NFTs to save</Typography>
-                                    <Grid container direction='row'>
-                                        {
-                                            walletNfts && walletNfts.map((walletNft) => (
-                                                <Grid item xs={4} key={walletNft.token_id}>
-                                                    <Card
-                                                        key={walletNft.token_id} 
-                                                        sx={{ 
-                                                            margin: '15px', 
-                                                            ":hover": { 
-                                                                boxShadow: '-1px 10px 29px 0px rgba(0,0,0,0.8);', 
-                                                                cursor: 'pointer' 
-                                                            },
-                                                            boxShadow: selectedWalletNfts && selectedWalletNfts.find(selectedWalletNft => selectedWalletNft.token_id === walletNft.token_id) || nfts && nfts.find(nft => nft.token_id === walletNft.token_id) ? '-1px 10px 29px 0px rgba(0,0,0,0.8);' : ''
-                                                        }}
-                                                        onClick={() => selectNft(walletNft)}
-                                                    >
-                                                        <CardMedia 
-                                                            sx={{ height: 350 }}
-                                                            image={walletNft.metadata.image}
-                                                            title={walletNft.metadata.name}
-                                                        />
-                                                        <CardContent>
-                                                            <Typography textAlign='center'>{walletNft.metadata.name}</Typography>
-                                                        </CardContent>
-                                                    </Card>
-                                                </Grid>
-
-                                            ))
-                                        }
-                                    </Grid>
-                                </CardContent>
-                                <CardActions>
-                                    <Grid  container item xs={6} justifyContent='flex-start'>
-                                        <Button onClick={() => closeWalletNftModal()}>Close</Button>
-                                        <Button disabled={!selectedWalletNfts.length} onClick={() => saveWalletNfts()}>Save</Button>
-
-                                    </Grid>
-                                    <Grid  container item xs={6} justifyContent='flex-end'>
-                                        <FormControlLabel
-                                            control={
-                                                <Checkbox 
-                                                    checked={removeImageBackgrounds}
-                                                    onChange={handleRemoveImageBackgroundsChange}
-                                                />
-                                            }
-                                            label="Remove background from tokens" 
-                                        />
-                                    </Grid>
-                                </CardActions>
-                            </Card>
-                        </Grid>
-                    </Grid>
-                </Modal>
+                <WalletNftsModal 
+                    nfts={nfts}
+                    showNftModal={showNftModal}
+                    walletNfts={walletNfts}
+                    selectedWalletNfts={selectedWalletNfts}
+                    setSelectedWalletNfts={setSelectedWalletNfts}
+                    setShowNftModal={setShowNftModal}
+                    saveWalletNfts={saveWalletNfts}
+                    removeImageBackgrounds={removeImageBackgrounds}
+                    setRemoveImageBackgrounds={setRemoveImageBackgrounds}
+                />
 
             </Grid>
         </Grid>

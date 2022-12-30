@@ -6,12 +6,12 @@ import {
 export default function Review(props) {
     const {
         selectedBaseProduct,
-        selectedUserImage,
+        selectedUserImages,
         selectedImagePlacement
     } = props
 
     console.log('selectedBaseProduct', selectedBaseProduct)
-    console.log('selectedUserImage', selectedUserImage)
+    console.log('selectedUserImages', selectedUserImages)
     console.log('selectedImagePlacement', selectedImagePlacement)
 
     return (
