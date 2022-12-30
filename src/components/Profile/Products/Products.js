@@ -99,13 +99,13 @@ export default function Products(props) {
 
     const createProduct = async () => {
         setIsLoading(true)
-        const craeteProductRequest = {
+        const createProductRequest = {
             selectedBaseProduct,
             selectedUserImage,
             selectedImagePlacement
         }
 
-        const { data } = await axios.post(`${process.env.CREATE_PRODUCT_EVENT_URL}`, {
+        const { data } = await axios.post(`${process.env.CREATE_PRODUCT_EVENT_URL}`, createProductRequest, {
             headers: {
                 'content-type': 'application/json',
             },

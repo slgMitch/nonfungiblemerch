@@ -4,6 +4,33 @@
         "title": "Men's Fitted T-Shirt | Next Level 3600",
         "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/cb/cb7b95c7ae24a9b39d4cbc9c546b90e1_l",
         "category": "TSHIRTS",
+        "colors": [
+            {
+                "colorCode": "#ffffff",
+                "color": "White"
+            },
+            {
+                "colorCode": "#d50732",
+                "color": "Red"
+            },
+            {
+                "colorCode": "#1d242e",
+                "color": "Midnight Navy"
+            },
+            {
+                "colorCode": "#9a978e",
+                "color": "Heather Grey"
+            },
+            {
+                "colorCode": "#0c0b0b",
+                "color": "Black"
+            },
+            {
+                "colorCode": "#cde5fa",
+                "color": "Light Blue"
+            }
+        ],
+        "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
         "file_placement_options": [
             {
                 "id": "default",
@@ -1556,6 +1583,53 @@
         "title": "Men’s Classic Tee | Gildan 5000",
         "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/51/5137d67bedbf56010d1daa04555a6d03_l",
         "category": "TSHIRTS",
+        "colors": [
+            {
+                "colorCode": "#ffffff",
+                "color": "White"
+            },
+            {
+                "colorCode": "#47001b",
+                "color": "Maroon"
+            },
+            {
+                "colorCode": "#1a2330",
+                "color": "Navy"
+            },
+            {
+                "colorCode": "#d6c0ab",
+                "color": "Sand"
+            },
+            {
+                "colorCode": "#0c0b0b",
+                "color": "Black"
+            },
+            {
+                "colorCode": "#f3f3f3",
+                "color": "Ash"
+            },
+            {
+                "colorCode": "#c21b3a",
+                "color": "Cardinal"
+            },
+            {
+                "colorCode": "#96bbff",
+                "color": "Carolina Blue"
+            },
+            {
+                "colorCode": "#595959",
+                "color": "Dark Heather"
+            },
+            {
+                "colorCode": "#737a5f",
+                "color": "Military Green"
+            },
+            {
+                "colorCode": "#48197d",
+                "color": "Purple"
+            }
+        ],
+        "sizes": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
         "file_placement_options": [
             {
                 "id": "default",
@@ -3921,6 +3995,33 @@
         "title": "Men's Premium Heavyweight Tee | Cotton Heritage MC1086",
         "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/27/27a0e15dcb0e2d6b6ba4a836d05a2d1e_l",
         "category": "TSHIRTS",
+        "colors": [
+            {
+                "colorCode": "#151515",
+                "color": "Black"
+            },
+            {
+                "colorCode": "#66838d",
+                "color": "Agave"
+            },
+            {
+                "colorCode": "#8f242e",
+                "color": "Brick Red"
+            },
+            {
+                "colorCode": "#8e8b8e",
+                "color": "Carbon Grey"
+            },
+            {
+                "colorCode": "#343235",
+                "color": "Charcoal Heather"
+            },
+            {
+                "colorCode": "#ffce88",
+                "color": "Vintage Gold"
+            }
+        ],
+        "sizes": ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
         "file_placement_options": [
             {
                 "id": "default",
@@ -4990,6 +5091,42 @@
         "title": "Unisex Long Sleeve Tee | Bella + Canvas 3501",
         "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/81/81bb570004c403eb98606dd48481a98a_l",
         "category": "TSHIRTS",
+        "colors": [
+            {
+                "colorCode": "#ffffff",
+                "color": "White"
+            },
+            {
+                "colorCode": "#b5b4b4",
+                "color": "Athletic Heather"
+            },
+            {
+                "colorCode": "#131313",
+                "color": "Black"
+            },
+            {
+                "colorCode": "#3e3c3d",
+                "color": "Dark Grey Heather"
+            },
+            {
+                "colorCode": "#28332e",
+                "color": "Heather Forest"
+            },
+            {
+                "colorCode": "#161324",
+                "color": "Navy"
+            },
+            {
+                "colorCode": "#b9091d",
+                "color": "Red"
+            },
+            {
+                "colorCode": "#fbd4aa",
+                "color": "Sand Dune"
+            }
+            
+        ],
+        "sizes": ["XS", "S", "M", "L", "XL", "2XL"],
         "file_placement_options": [
             {
                 "id": "default",
@@ -6748,6 +6885,13 @@
         "title": "All-Over Print Unisex Hoodie",
         "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/b4/b47bf3aa23da9f86ecbfcf1f8bdd24aa_l",
         "category": "HOODIES",
+        "colors": [
+            {
+                "colorCode": "#ffffff",
+                "color": "White"
+            }
+        ],
+        "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
         "file_placement_options": [
             {
                 "id": "default",
@@ -6783,18 +6927,6 @@
                 "id": "hood",
                 "type": "hood",
                 "title": "Hood",
-                "additional_price": null
-            },
-            {
-                "id": "label_inside",
-                "type": "label_inside",
-                "title": "Inside label",
-                "additional_price": null
-            },
-            {
-                "id": "preview",
-                "type": "mockup",
-                "title": "Mockup",
                 "additional_price": null
             }
         ],
@@ -7044,6 +7176,33 @@
         "title": "Unisex Fleece Zip Up Hoodie | Independent Trading Co. SS4500Z",
         "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/88/88fefc01ca95546f0addb4e4bb2da8df_l",
         "category": "HOODIES",
+        "colors": [
+            {
+                "colorCode": "#ffffff",
+                "color": "White"
+            },
+            {
+                "colorCode": "#406a59",
+                "color": "Alpine Green"
+            },
+            {
+                "colorCode": "#1d1d1d",
+                "color": "Black"
+            },
+            {
+                "colorCode": "#302f2f",
+                "color": "Charcoal Heather"
+            },
+            {
+                "colorCode": "#2b4054",
+                "color": "Navy"
+            },
+            {
+                "colorCode": "#deb189",
+                "color": "Sandstone"
+            }
+        ],
+        "sizes": ["S", "M", "L", "XL", "2XL"],
         "file_placement_options": [
             {
                 "id": "default",
@@ -7068,18 +7227,6 @@
                 "type": "sleeve_left",
                 "title": "Left sleeve",
                 "additional_price": "5.95"
-            },
-            {
-                "id": "label_outside",
-                "type": "label_outside",
-                "title": "Outside label",
-                "additional_price": "2.49"
-            },
-            {
-                "id": "preview",
-                "type": "mockup",
-                "title": "Mockup",
-                "additional_price": null
             }
         ],
         "options": [
@@ -7762,6 +7909,49 @@
         "title": "Unisex Premium Hoodie | Cotton Heritage M2580",
         "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/da/da1938874abec72f7c3602738247f58b_l",
         "category": "HOODIES",
+        "colors": [
+            {
+                "colorCode": "#fefefe",
+                "color": "White"
+            },
+            {
+                "colorCode": "#Carolina Blue",
+                "color": "98b7ee"
+            },
+            {
+                "colorCode": "#463e3d",
+                "color": "Charcoal Heather"
+            },
+            {
+                "colorCode": "#7d263a",
+                "color": "Maroon"
+            },
+            {
+                "colorCode": "#171f2c",
+                "color": "Navy Blazer"
+            },
+            {
+                "colorCode": "#080808",
+                "color": "Black"
+            },
+            {
+                "colorCode": "#c7c3be",
+                "color": "Carbon Grey"
+            },
+            {
+                "colorCode": "#335231",
+                "color": "Forest Green"
+            },
+            {
+                "colorCode": "#c09766",
+                "color": "Khaki"
+            },
+            {
+                "colorCode": "#623a7a",
+                "color": "Purple"
+            }
+        ],
+        "sizes": ["S", "M", "L", "XL", "2XL"],
         "file_placement_options": [
             {
                 "id": "default",
@@ -7776,18 +7966,6 @@
                 "additional_price": "5.95"
             },
             {
-                "id": "label_outside",
-                "type": "label_outside",
-                "title": "Outside label",
-                "additional_price": "2.49"
-            },
-            {
-                "id": "label_inside",
-                "type": "label_inside",
-                "title": "Inside label",
-                "additional_price": "2.49"
-            },
-            {
                 "id": "sleeve_left",
                 "type": "sleeve_left",
                 "title": "Left sleeve",
@@ -7798,12 +7976,6 @@
                 "type": "sleeve_right",
                 "title": "Right sleeve",
                 "additional_price": "5.95"
-            },
-            {
-                "id": "preview",
-                "type": "mockup",
-                "title": "Mockup",
-                "additional_price": null
             }
         ],
         "options": [
@@ -8663,27 +8835,6 @@
                 ]
             },
             {
-                "id": 13416,
-                "product_id": 380,
-                "name": "Cotton Heritage M2580 Premium Unisex Hoodie (Black / 3XL)",
-                "size": "3XL",
-                "color": "Black",
-                "color_code": "#080808",
-                "color_code2": null,
-                "image": "https://files.cdn.printful.com/products/380/13416_1642689880.jpg",
-                "price": "29.95",
-                "in_stock": true,
-                "availability_regions": {
-                    "US": "United States"
-                },
-                "availability_status": [
-                    {
-                        "region": "US",
-                        "status": "in_stock"
-                    }
-                ]
-            },
-            {
                 "id": 10781,
                 "product_id": 380,
                 "name": "Cotton Heritage M2580 Premium Unisex Hoodie (Black / L)",
@@ -8889,27 +9040,6 @@
                 ]
             },
             {
-                "id": 13420,
-                "product_id": 380,
-                "name": "Cotton Heritage M2580 Premium Unisex Hoodie (Carbon Grey / 3XL)",
-                "size": "3XL",
-                "color": "Carbon Grey",
-                "color_code": "#c7c3be",
-                "color_code2": null,
-                "image": "https://files.cdn.printful.com/products/380/13420_1642689907.jpg",
-                "price": "29.95",
-                "in_stock": true,
-                "availability_regions": {
-                    "US": "United States"
-                },
-                "availability_status": [
-                    {
-                        "region": "US",
-                        "status": "in_stock"
-                    }
-                ]
-            },
-            {
                 "id": 10786,
                 "product_id": 380,
                 "name": "Cotton Heritage M2580 Premium Unisex Hoodie (Carbon Grey / L)",
@@ -9074,48 +9204,6 @@
                 ]
             },
             {
-                "id": 13422,
-                "product_id": 380,
-                "name": "Cotton Heritage M2580 Premium Unisex Hoodie (Carolina Blue / 3XL)",
-                "size": "3XL",
-                "color": "Carolina Blue",
-                "color_code": "#98b7ee",
-                "color_code2": null,
-                "image": "https://files.cdn.printful.com/products/380/13422_1642689934.jpg",
-                "price": "29.95",
-                "in_stock": false,
-                "availability_regions": {
-                    "US": "United States"
-                },
-                "availability_status": [
-                    {
-                        "region": "US",
-                        "status": "supplier_out_of_stock"
-                    }
-                ]
-            },
-            {
-                "id": 13419,
-                "product_id": 380,
-                "name": "Cotton Heritage M2580 Premium Unisex Hoodie (Charcoal Heather / 3XL)",
-                "size": "3XL",
-                "color": "Charcoal Heather",
-                "color_code": "#463e3d",
-                "color_code2": null,
-                "image": "https://files.cdn.printful.com/products/380/13419_1642689942.jpg",
-                "price": "29.95",
-                "in_stock": true,
-                "availability_regions": {
-                    "US": "United States"
-                },
-                "availability_status": [
-                    {
-                        "region": "US",
-                        "status": "in_stock"
-                    }
-                ]
-            },
-            {
                 "id": 16166,
                 "product_id": 380,
                 "name": "Cotton Heritage M2580 Premium Unisex Hoodie (Forest Green / 2XL)",
@@ -9125,27 +9213,6 @@
                 "color_code2": null,
                 "image": "https://files.cdn.printful.com/products/380/16166_1664343601.jpg",
                 "price": "27.95",
-                "in_stock": true,
-                "availability_regions": {
-                    "US": "United States"
-                },
-                "availability_status": [
-                    {
-                        "region": "US",
-                        "status": "in_stock"
-                    }
-                ]
-            },
-            {
-                "id": 16167,
-                "product_id": 380,
-                "name": "Cotton Heritage M2580 Premium Unisex Hoodie (Forest Green / 3XL)",
-                "size": "3XL",
-                "color": "Forest Green",
-                "color_code": "#335231",
-                "color_code2": null,
-                "image": "https://files.cdn.printful.com/products/380/16167_1664343601.jpg",
-                "price": "29.95",
                 "in_stock": true,
                 "availability_regions": {
                     "US": "United States"
@@ -9263,27 +9330,6 @@
                 ]
             },
             {
-                "id": 13904,
-                "product_id": 380,
-                "name": "Cotton Heritage M2580 Premium Unisex Hoodie (Khaki / 3XL)",
-                "size": "3XL",
-                "color": "Khaki",
-                "color_code": "#c09766",
-                "color_code2": null,
-                "image": "https://files.cdn.printful.com/products/380/13904_1668151106.jpg",
-                "price": "29.95",
-                "in_stock": false,
-                "availability_regions": {
-                    "US": "United States"
-                },
-                "availability_status": [
-                    {
-                        "region": "US",
-                        "status": "supplier_out_of_stock"
-                    }
-                ]
-            },
-            {
                 "id": 13901,
                 "product_id": 380,
                 "name": "Cotton Heritage M2580 Premium Unisex Hoodie (Khaki / L)",
@@ -9368,48 +9414,6 @@
                 ]
             },
             {
-                "id": 13418,
-                "product_id": 380,
-                "name": "Cotton Heritage M2580 Premium Unisex Hoodie (Maroon / 3XL)",
-                "size": "3XL",
-                "color": "Maroon",
-                "color_code": "#7d263a",
-                "color_code2": null,
-                "image": "https://files.cdn.printful.com/products/380/13418_1642689953.jpg",
-                "price": "29.95",
-                "in_stock": true,
-                "availability_regions": {
-                    "US": "United States"
-                },
-                "availability_status": [
-                    {
-                        "region": "US",
-                        "status": "in_stock"
-                    }
-                ]
-            },
-            {
-                "id": 13417,
-                "product_id": 380,
-                "name": "Cotton Heritage M2580 Premium Unisex Hoodie (Navy Blazer / 3XL)",
-                "size": "3XL",
-                "color": "Navy Blazer",
-                "color_code": "#171f2c",
-                "color_code2": null,
-                "image": "https://files.cdn.printful.com/products/380/13417_1642689964.jpg",
-                "price": "29.95",
-                "in_stock": true,
-                "availability_regions": {
-                    "US": "United States"
-                },
-                "availability_status": [
-                    {
-                        "region": "US",
-                        "status": "in_stock"
-                    }
-                ]
-            },
-            {
                 "id": 13915,
                 "product_id": 380,
                 "name": "Cotton Heritage M2580 Premium Unisex Hoodie (Purple / 2XL)",
@@ -9419,27 +9423,6 @@
                 "color_code2": null,
                 "image": "https://files.cdn.printful.com/products/380/13915_1643027622.jpg",
                 "price": "27.95",
-                "in_stock": true,
-                "availability_regions": {
-                    "US": "United States"
-                },
-                "availability_status": [
-                    {
-                        "region": "US",
-                        "status": "in_stock"
-                    }
-                ]
-            },
-            {
-                "id": 13916,
-                "product_id": 380,
-                "name": "Cotton Heritage M2580 Premium Unisex Hoodie (Purple / 3XL)",
-                "size": "3XL",
-                "color": "Purple",
-                "color_code": "#623a7a",
-                "color_code2": null,
-                "image": "https://files.cdn.printful.com/products/380/13916_1643027622.jpg",
-                "price": "29.95",
                 "in_stock": true,
                 "availability_regions": {
                     "US": "United States"
@@ -9572,27 +9555,6 @@
                     },
                     {
                         "region": "UK",
-                        "status": "in_stock"
-                    }
-                ]
-            },
-            {
-                "id": 13421,
-                "product_id": 380,
-                "name": "Cotton Heritage M2580 Premium Unisex Hoodie (White / 3XL)",
-                "size": "3XL",
-                "color": "White",
-                "color_code": "#ffffff",
-                "color_code2": null,
-                "image": "https://files.cdn.printful.com/products/380/13421_1642689975.jpg",
-                "price": "29.95",
-                "in_stock": true,
-                "availability_regions": {
-                    "US": "United States"
-                },
-                "availability_status": [
-                    {
-                        "region": "US",
                         "status": "in_stock"
                     }
                 ]
@@ -9769,6 +9731,49 @@
         "title": "Unisex Crew Neck Sweatshirt | Gildan 18000",
         "image": "https://files.cdn.printful.com/o/products/145/product_1564055211.jpg",
         "category": "SWEATSHIRTS",
+        "colors": [
+            {
+                "colorCode": "#ffffff",
+                "color": "White"
+            },
+            {
+                "colorCode": "#0b0b0b",
+                "color": "Black"
+            },
+            {
+                "colorCode": "#46484d",
+                "color": "Dark Heather"
+            },
+            {
+                "colorCode": "#395d82",
+                "color": "Indigo Blue"
+            },
+            {
+                "colorCode": "#a1c5e1",
+                "color": "Light Blue"
+            },
+            {
+                "colorCode": "#47171c",
+                "color": "Maroon"
+            },
+            {
+                "colorCode": "#7e8560",
+                "color": "Military Green"
+            },
+            {
+                "colorCode": "#050c1d",
+                "color": "Navy"
+            },
+            {
+                "colorCode": "#da0a1a",
+                "color": "Red"
+            },
+            {
+                "colorCode": "#ccccce",
+                "color": "Sport Grey"
+            }
+        ],
+        "sizes": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
         "file_placement_options": [
             {
                 "id": "default",
@@ -9783,12 +9788,6 @@
                 "additional_price": "5.95"
             },
             {
-                "id": "label_outside",
-                "type": "label_outside",
-                "title": "Outside label",
-                "additional_price": "2.49"
-            },
-            {
                 "id": "sleeve_right",
                 "type": "sleeve_right",
                 "title": "Right sleeve",
@@ -9799,12 +9798,6 @@
                 "type": "sleeve_left",
                 "title": "Left sleeve",
                 "additional_price": "5.95"
-            },
-            {
-                "id": "preview",
-                "type": "mockup",
-                "title": "Mockup",
-                "additional_price": null
             }
         ],
         "options": [
@@ -13080,6 +13073,41 @@
         "title": "Unisex Organic Sweatshirt | SOL'S 03574",
         "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/a5/a5a370f8011ab5418b7228536f8b9d4d_l",
         "category": "SWEATSHIRTS",
+        "colors": [
+            {
+                "colorCode": "#ffffff",
+                "color": "White"
+            },
+            {
+                "colorCode": "#0d0d0d",
+                "color": "Black"
+            },
+            {
+                "colorCode": "#426c47",
+                "color": "Bottle Green"
+            },
+            {
+                "colorCode": "#40362f",
+                "color": "Deep Charcoal Grey"
+            },
+            {
+                "colorCode": "#3e4959",
+                "color": "French Navy"
+            },
+            {
+                "colorCode": "#dedae3",
+                "color": "Grey Melange"
+            },
+            {
+                "colorCode": "#ea0021",
+                "color": "Red"
+            },
+            {
+                "colorCode": "#3a65b5",
+                "color": "Royal Blue"
+            }
+        ],
+        "sizes": ["S", "M", "L", "XL", "XXL"],
         "file_placement_options": [
             {
                 "id": "default",
@@ -13104,18 +13132,6 @@
                 "type": "sleeve_right",
                 "title": "Right sleeve",
                 "additional_price": "5.95"
-            },
-            {
-                "id": "label_outside",
-                "type": "label_outside",
-                "title": "Outside label",
-                "additional_price": "2.49"
-            },
-            {
-                "id": "preview",
-                "type": "mockup",
-                "title": "Mockup",
-                "additional_price": null
             }
         ],
         "options": [
@@ -14742,6 +14758,13 @@
         "title": "All-Over Print Unisex Sweatshirt",
         "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/1b/1b2751358ca8a816d64b79afcb860f64_l",
         "category": "SWEATSHIRTS",
+        "colors": [
+            {
+                "colorCode": "#ffffff",
+                "color": "White"
+            }
+        ],
+        "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
         "file_placement_options": [
             {
                 "id": "default",
@@ -14765,18 +14788,6 @@
                 "id": "sleeve_left",
                 "type": "sleeve_left",
                 "title": "Left sleeve",
-                "additional_price": null
-            },
-            {
-                "id": "label_inside",
-                "type": "label_inside",
-                "title": "Inside label",
-                "additional_price": null
-            },
-            {
-                "id": "preview",
-                "type": "mockup",
-                "title": "Mockup",
                 "additional_price": null
             }
         ],
@@ -15026,6 +15037,45 @@
         "title": "Unisex Fleece Sweatpants | Cotton Heritage M7580",
         "image": "https://files.cdn.printful.com/o/products/412/product_1605091772.jpg",
         "category": "PANTS",
+        "colors": [
+            {
+                "colorCode": "#ffffff",
+                "color": "White"
+            },
+            {
+                "colorCode": "#f59382",
+                "color": "Dusty Rose"
+            },
+            {
+                "colorCode": "#691723",
+                "color": "Maroon"
+            },
+            {
+                "colorCode": "#5c4f32",
+                "color": "Military Green"
+            },
+            {
+                "colorCode": "#171f2c",
+                "color": "Navy Blazer"
+            },
+            {
+                "colorCode": "#2d407d",
+                "color": "Team Royal"
+            },
+            {
+                "colorCode": "#141414",
+                "color": "Black"
+            },
+            {
+                "colorCode": "#d2cec6",
+                "color": "Carbon Grey"
+            },
+            {
+                "colorCode": "#3a3a38",
+                "color": "Charcoal Heather"
+            }
+        ],
+        "sizes": ["XS", "S", "M", "L", "XL", "2XL"],
         "file_placement_options": [
             {
                 "id": "front_left_leg",
@@ -15056,12 +15106,6 @@
                 "type": "pocket",
                 "title": "Pocket",
                 "additional_price": "2.49"
-            },
-            {
-                "id": "default",
-                "type": "embroidery_apparel_front",
-                "title": "Front",
-                "additional_price": "6.95"
             }
         ],
         "options": [
@@ -16248,6 +16292,17 @@
         "title": "All-Over Print Unisex Track Pants",
         "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/a6/a6cfa0a9f233e47a01a13f77c40b5de9_l",
         "category": "PANTS",
+        "colors": [
+            {
+                "colorCode": "#ffffff",
+                "color": "White"
+            },
+            {
+                "colorCode": "#000000",
+                "color": "Black"
+            }
+        ],
+        "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
         "file_placement_options": [
             {
                 "id": "default",
@@ -16260,12 +16315,6 @@
                 "type": "back",
                 "title": "Back print",
                 "additional_price": null
-            },
-            {
-                "id": "label_inside",
-                "type": "label_inside",
-                "title": "Inside label",
-                "additional_price": "2.95"
             }
         ],
         "options": [
@@ -16580,6 +16629,13 @@
         "title": "Men's Fleece Shorts | Independent Trading Co. IND20SRT",
         "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/7e/7e5b05c1d1d9758b5637cd79305c2eff_l",
         "category": "SHORTS",
+        "colors": [
+            {
+                "colorCode": "#ffffff",
+                "color": "White"
+            }
+        ],
+        "sizes": ["S", "M", "L", "XL", "2XL"],
         "file_placement_options": [
             {
                 "id": "front_left_leg",
@@ -16785,6 +16841,13 @@
         "title": "All-Over Print Men's Recycled Athletic Shorts",
         "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/f4/f4dd59035fafe9682f6167d3bb2711a2_l",
         "category": "SHORTS",
+        "colors": [
+            {
+                "colorCode": "#ffffff",
+                "color": "White"
+            }
+        ],
+        "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
         "file_placement_options": [
             {
                 "id": "default",
@@ -17045,6 +17108,17 @@
         "title": "Eco Tote Bag | Econscious EC8000",
         "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/4e/4e50eb97793fafaafff72066a4f3d53e_l",
         "category": "BAGS",
+        "colors": [
+            {
+                "colorCode": "#101010",
+                "color": "Black"
+            },
+            {
+                "colorCode": "#edcea5",
+                "color": "Oyster"
+            }
+        ],
+        "sizes": ["One Size"],
         "file_placement_options": [
             {
                 "id": "default",
@@ -17201,6 +17275,21 @@
         "title": "All-Over Print Tote",
         "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/fd/fd16387330f1fa9d3a30620db7af1541_l",
         "category": "BAGS",
+        "colors": [
+            {
+                "colorCode": "#000000",
+                "color": "Black"
+            },
+            {
+                "colorCode": "#c5262a",
+                "color": "Red"
+            },
+            {
+                "colorCode": "#de9219",
+                "color": "Yellow"
+            }
+        ],
+        "sizes": ["15″×15"],
         "file_placement_options": [
             {
                 "id": "default",
@@ -17331,6 +17420,13 @@
         "title": "All-Over Print Gym Bag",
         "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/ed/ed1e2bcfb0b0e2e680f14f2b50e0ea25_l",
         "category": "BAGS",
+        "colors": [
+            {
+                "colorCode": "#ffffff",
+                "color": "White"
+            }
+        ],
+        "sizes": ["One size"],
         "file_placement_options": [
             {
                 "id": "default",
@@ -17366,18 +17462,6 @@
                 "id": "pocket",
                 "type": "pocket",
                 "title": "Pocket",
-                "additional_price": null
-            },
-            {
-                "id": "label_inside",
-                "type": "label_inside",
-                "title": "Inside label",
-                "additional_price": null
-            },
-            {
-                "id": "preview",
-                "type": "mockup",
-                "title": "Mockup",
                 "additional_price": null
             }
         ],
@@ -17441,6 +17525,13 @@
         "title": "All-Over Print Duffle Bag",
         "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/0c/0c1a5f944c18301aa3b8db21bc5a8bf7_l",
         "category": "BAGS",
+        "colors": [
+            {
+                "colorCode": "#ffffff",
+                "color": "White"
+            }
+        ],
+        "sizes": ["One size"],
         "file_placement_options": [
             {
                 "id": "default",
@@ -17476,12 +17567,6 @@
                 "id": "pocket",
                 "type": "pocket",
                 "title": "Pocket",
-                "additional_price": null
-            },
-            {
-                "id": "label_inside",
-                "type": "label_inside",
-                "title": "Inside label",
                 "additional_price": null
             }
         ],
@@ -17545,6 +17630,13 @@
         "title": "All-Over Print Fanny Pack",
         "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/a5/a5b065fbef259cc4554b04bcad64f006_l",
         "category": "BAGS",
+        "colors": [
+            {
+                "colorCode": "#ffffff",
+                "color": "White"
+            }
+        ],
+        "sizes": ["M/L", "S/M"],
         "file_placement_options": [
             {
                 "id": "default",
@@ -17568,12 +17660,6 @@
                 "id": "pocket",
                 "type": "pocket",
                 "title": "Pocket",
-                "additional_price": null
-            },
-            {
-                "id": "label_inside",
-                "type": "label_inside",
-                "title": "Inside label",
                 "additional_price": null
             }
         ],
@@ -17668,6 +17754,13 @@
         "title": "All-Over Print Backpack",
         "image": "https://files.cdn.printful.com/o/products/279/product_1548770055.jpg",
         "category": "BAGS",
+        "colors": [
+            {
+                "colorCode": "#ffffff",
+                "color": "White"
+            }
+        ],
+        "sizes": ["One Size"],
         "file_placement_options": [
             {
                 "id": "default",
@@ -17754,6 +17847,13 @@
         "title": "All-Over Print Premium Pillow",
         "image": "https://files.cdn.printful.com/o/products/214/product_1573737284.jpg",
         "category": "PILLOWS",
+        "colors": [
+            {
+                "colorCode": "#ffffff",
+                "color": "White"
+            }
+        ],
+        "sizes": ["18″×18″", "20″×12″", "22″×22″"],
         "file_placement_options": [
             {
                 "id": "default",
@@ -17890,6 +17990,13 @@
         "title": "All-Over Print Basic Pillow",
         "image": "https://files.cdn.printful.com/o/products/83/product_1573737219.jpg",
         "category": "PILLOWS",
+        "colors": [
+            {
+                "colorCode": "#ffffff",
+                "color": "White"
+            }
+        ],
+        "sizes": ["18″×18″", "20″×12″", "22″×22″"],
         "file_placement_options": [
             {
                 "id": "default",
@@ -18026,6 +18133,35 @@
         "title": "iPhone Case",
         "image": "https://files.cdn.printful.com/o/products/181/product_1570615955.jpg",
         "category": "CASES",
+        "colors": [
+            {
+                "colorCode": "#ffffff",
+                "color": "White"
+            }
+        ],
+        "sizes": [
+            "iPhone 14", 
+            "iPhone 14 Plus",  
+            "iPhone 14 Pro", 
+            "iPhone 14 Pro Max", 
+            "iPhone 13", 
+            "iPhone 13 Pro", 
+            "iPhone 13 Pro Max", 
+            "iPhone 13 mini", 
+            "iPhone 12", 
+            "iPhone 12 Pro", 
+            "iPhone 12 Pro Max", 
+            "iPhone 12 mini", 
+            "iPhone 11", 
+            "iPhone 11 Pro", 
+            "iPhone 11 Pro Max", 
+            "iPhone 7/8", 
+            "iPhone 7 Plus/8 Plus", 
+            "iPhone SE", 
+            "iPhone X/XS", 
+            "iPhone XR",  
+            "iPhone XS Max" 
+        ],
         "file_placement_options": [
             {
                 "id": "default",
@@ -18874,6 +19010,33 @@
         "title": "Tough iPhone Case",
         "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/e8/e8137cb9510f23d9b446cfce126c2f58_l",
         "category": "CASES",
+        "colors": [
+            {
+                "colorCode": "#ffffff",
+                "color": "Glossy"
+            },
+            {
+                "colorCode": "#ffffff",
+                "color": "Matte"
+            }
+        ],
+        "sizes": [
+            "iPhone 14", 
+            "iPhone 14 Plus", 
+            "iPhone 14 Pro", 
+            "iPhone 14 Pro Max", 
+            "iPhone 13", 
+            "iPhone 13 Pro", 
+            "iPhone 13 Pro Max",  
+            "iPhone 13 mini", 
+            "iPhone 12", 
+            "iPhone 12 Pro", 
+            "iPhone 12 Pro Max",  
+            "iPhone 12 mini", 
+            "iPhone 11", 
+            "iPhone 11 Pro", 
+            "iPhone 11 Pro Max"
+        ],
         "file_placement_options": [
             {
                 "id": "default",
@@ -19971,6 +20134,26 @@
         "title": "Samsung Case",
         "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/7c/7c7a0c9bba1ab7ead3c03753adc262b6_l",
         "category": "CASES",
+        "colors": [
+            {
+                "colorCode": "#ffffff",
+                "color": "White"
+            }
+        ],
+        "sizes": [
+            "Samsung Galaxy S10",
+            "Samsung Galaxy S10+",
+            "Samsung Galaxy S10e",
+            "Samsung Galaxy S20",
+            "Samsung Galaxy S20 FE",
+            "Samsung Galaxy S20 Plus",
+            "Samsung Galaxy S20 Ultra",
+            "Samsung Galaxy S21",
+            "Samsung Galaxy S21 Plus",
+            "Samsung Galaxy S21 Ultra",
+            "Samsung Galaxy S22",
+            "Samsung Galaxy S22"
+        ],
         "file_placement_options": [
             {
                 "id": "default",
@@ -20417,7 +20600,7 @@
                 "id": 14635,
                 "product_id": 267,
                 "name": "Samsung Galaxy S22 Ultra Case",
-                "size": "Samsung Galaxy S22 Ultra",
+                "size": "c",
                 "color": null,
                 "color_code": null,
                 "color_code2": null,
@@ -20456,6 +20639,28 @@
         "title": "Speckled iPhone Case",
         "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/07/07eabbd80051c972d900332d5523dc5a_l",
         "category": "CASES",
+        "colors": [
+            {
+                "colorCode": "#ffffff",
+                "color": "White"
+            }
+        ],
+        "sizes": [
+            "iPhone 13",  
+            "iPhone 13 mini", 
+            "iPhone 12", 
+            "iPhone 12 Pro", 
+            "iPhone 12 Pro Max",   
+            "iPhone 12 mini",  
+            "iPhone 11", 
+            "iPhone 11 Pro", 
+            "iPhone 11 Pro Max", 
+            "iPhone 7/8/SE",  
+            "iPhone 7 Plus/8 Plus", 
+            "iPhone X/XS", 
+            "iPhone XR",  
+            "iPhone XS Max" 
+        ],
         "file_placement_options": [
             {
                 "id": "default",
@@ -20837,6 +21042,13 @@
         "title": "Laptop Sleeve",
         "image": "https://files.cdn.printful.com/o/products/394/product_1568290995.jpg",
         "category": "CASES",
+        "colors": [
+            {
+                "colorCode": "#ffffff",
+                "color": "White"
+            }
+        ],
+        "sizes": ["Laptop Sleeve 13″", "Laptop Sleeve 15″"],
         "file_placement_options": [
             {
                 "id": "default",
@@ -20925,6 +21137,21 @@
         "title": "Framed Canvas (in)",
         "image": "https://files.cdn.printful.com/o/upload/product-catalog-img/f2/f2edcfc1a6c8e355e2946172ca9ee54b_l",
         "category": "PRINTS",
+        "colors": [
+            {
+                "colorCode": "#000000",
+                "color": "Black"
+            },
+            {
+                "colorCode": "#3b2d22",
+                "color": "Brown"
+            },
+            {
+                "colorCode": "#ffffff",
+                "color": "White"
+            }
+        ],
+        "sizes": ["12″×12″", "16″×16″" ],
         "file_placement_options": [
             {
                 "id": "default",
