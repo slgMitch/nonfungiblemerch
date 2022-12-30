@@ -41,6 +41,7 @@ export default function Products(props) {
     const [isLoading, setIsLoading] = useState(false)
     const [showCreateProductModal, setShowCreateProductModal] = useState(false)
     const [activeStep, setActiveStep] = useState(0)
+    const [canGoToNextStep, setCanGoToNextStep] = useState(false)
     
 
     useEffect(() => {
@@ -97,7 +98,20 @@ export default function Products(props) {
     }
 
     const createProduct = async () => {
+        setIsLoading(true)
+        const craeteProductRequest = {
+            selectedBaseProduct,
+            selectedUserImage,
+            selectedImagePlacement
+        }
 
+        const { data } = await axios.post(`${process.env.CREATE_PRODUCT_EVENT_URL}`, {
+            headers: {
+                'content-type': 'application/json',
+            },
+        })
+        console.log('craete product response data', data)
+        setIsLoading(false)
     }
 
     const renderStep = (activeStep) => {
@@ -108,18 +122,32 @@ export default function Products(props) {
                             setSelectedBaseProduct={setSelectedBaseProduct}
                             setImagePlacements={setImagePlacements} 
                             selectedBaseProduct={selectedBaseProduct}
+                            setCanGoToNextStep={setCanGoToNextStep}
                         />
             case 1:
                 return <Images 
                             userImages={userImages}
-                            setSelectedUserImage={setSelectedUserImage} 
+                            setSelectedUserImage={setSelectedUserImage}
+                            selectedUserImage={selectedUserImage}
+                            setCanGoToNextStep={setCanGoToNextStep} 
                         />
             case 2:
                 return <ImagePlacement 
                             imagePlacements={imagePlacements}
                             setSelectedImagePlacement={setSelectedImagePlacement} 
+                            selectedImagePlacement={selectedImagePlacement}
+                            setCanGoToNextStep={setCanGoToNextStep}
                         />
         }
+    }
+
+    const cancelProductCreation = () => {
+        setSelectedBaseProduct()
+        setSelectedUserImage()
+        setSelectedImagePlacement()
+        setActiveStep(0)
+        setShowCreateProductModal(false)
+        setCanGoToNextStep(false)
     }
 
 
@@ -212,7 +240,7 @@ export default function Products(props) {
                         </Grid>
                     )
                 }
-                <Modal open={showCreateProductModal}>
+                <Modal open={showCreateProductModal} sx={{ overflow: 'scroll'}}>
                     <Box sx={{ width: '100%', backgroundColor: 'white' }}>
                             <Stepper sx={{ paddingTop: '20px', paddingBottom: '50px' }} activeStep={activeStep}>
                                 {
@@ -230,7 +258,11 @@ export default function Products(props) {
                             {
                                 activeStep === createProductSteps.length ? (
                                     <Fragment>
-                                        <Review />
+                                        <Review 
+                                            selectedBaseProduct={selectedBaseProduct}
+                                            selectedUserImage={selectedUserImage}
+                                            selectedImagePlacement={selectedImagePlacement}
+                                        />
                                         <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
                                             <Button
                                                 color="inherit"
@@ -240,13 +272,13 @@ export default function Products(props) {
                                             >
                                                 Back
                                             </Button>
-                                            <Button onClick={() => setShowCreateProductModal(false)}>Cancel</Button>
+                                            <Button onClick={() => cancelProductCreation()}>Cancel</Button>
                                             <Box sx={{ flex: '1 1 auto' }} />
-                                            <Button onClick={createProduct}>Create</Button>
+                                            <Button onClick={() => createProduct()}>Create</Button>
                                         </Box>
                                   </Fragment>
                                 ) : (
-                                    <Grid container>
+                                    <Grid container direction='row'>
                                         {renderStep(activeStep)}
                                         <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
                                             <Button
@@ -257,9 +289,9 @@ export default function Products(props) {
                                             >
                                                 Back
                                             </Button>
-                                            <Button onClick={() => setShowCreateProductModal(false)}>Cancel</Button>
+                                            <Button onClick={() => cancelProductCreation()}>Cancel</Button>
                                             <Box sx={{ flex: '1 1 auto' }} />
-                                            <Button onClick={handleNext}>Next</Button>
+                                            <Button onClick={handleNext} disabled={!canGoToNextStep}>Next</Button>
                                         </Box>
                                     </Grid>
                                 )

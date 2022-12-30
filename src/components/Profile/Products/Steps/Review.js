@@ -4,6 +4,15 @@ import {
   } from '@mui/material'
 
 export default function Review(props) {
+    const {
+        selectedBaseProduct,
+        selectedUserImage,
+        selectedImagePlacement
+    } = props
+
+    console.log('selectedBaseProduct', selectedBaseProduct)
+    console.log('selectedUserImage', selectedUserImage)
+    console.log('selectedImagePlacement', selectedImagePlacement)
 
     return (
         <Grid container direction="row">
