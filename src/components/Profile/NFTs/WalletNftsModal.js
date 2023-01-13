@@ -13,7 +13,6 @@ import {
     Checkbox,
     FormControlLabel
   } from '@mui/material'
-import axios from 'axios'
 
 export default function WalletNftsModal(props) {
     const {
@@ -40,7 +39,6 @@ export default function WalletNftsModal(props) {
     }
 
     const handleRemoveImageBackgroundsChange = (event) => {
-        console.log('event', event.target.checked)
         setRemoveImageBackgrounds(event.target.checked)
     }
 

@@ -23,12 +23,14 @@ import BaseProducts from './Steps/BaseProducts'
 import Images from './Steps/Images'
 import ImagePlacement from './Steps/ImagePlacement'
 import Review from './Steps/Review'
+import { useRouter } from 'next/router';
 
 
 const createProductSteps = ['Select a Product', 'Select an image', 'Select image placement']
 
 export default function Products(props) {
     const { user } = props
+    const { push } = useRouter();
     const fetcher = (url) => fetch(url).then((res) => res.json())
     const url = `/api/profile/products/${user}`
     const { data, error } = useSWR(url, fetcher)
@@ -43,7 +45,9 @@ export default function Products(props) {
     const [showCreateProductModal, setShowCreateProductModal] = useState(false)
     const [activeStep, setActiveStep] = useState(0)
     const [canGoToNextStep, setCanGoToNextStep] = useState(false)
-    
+    const [ showProductCreationResultModal, setShowProductCreationResultModal] = useState(false)
+    const [ productCreationResult, setProductCreationResult] = useState()
+    const [merchName, setMerchName] = useState()
 
     useEffect(() => {
         setIsLoading(true)
@@ -51,15 +55,9 @@ export default function Products(props) {
         setIsLoading(false)
     }, [data])
 
-    if(!data || !products || isLoading) {
-        return (
-            <Backdrop
-                open={!products || isLoading}
-                sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
-            >
-                <CircularProgress color="inherit" />
-            </Backdrop>
-        )
+    const closeProductCreationResultModal = () => {
+        setShowProductCreationResultModal(false)
+        push('/')
     }
 
     const openCreateProductModal = async () => {
@@ -101,18 +99,34 @@ export default function Products(props) {
     const createProduct = async () => {
         setIsLoading(true)
         const createProductRequest = {
-            selectedBaseProduct,
-            selectedUserImage,
-            selectedImagePlacement
+            type: "create-products",
+            data: {
+                merchName,
+                selectedBaseProduct,
+                selectedUserImages,
+                selectedImagePlacement
+            }
         }
 
-        const { data } = await axios.post(`${process.env.CREATE_PRODUCT_EVENT_URL}`, createProductRequest, {
+        const { data } = await axios.post('/api/products/create-product-event', createProductRequest, {
             headers: {
                 'content-type': 'application/json',
             },
         })
         console.log('craete product response data', data)
+        setProductCreationResult(data)
         setIsLoading(false)
+        setShowProductCreationResultModal(true)
+
+    }
+
+    const cancelProductCreation = () => {
+        setSelectedBaseProduct()
+        setSelectedUserImages()
+        setSelectedImagePlacement()
+        setActiveStep(0)
+        setShowCreateProductModal(false)
+        setCanGoToNextStep(false)
     }
 
     const renderStep = (activeStep) => {
@@ -124,6 +138,7 @@ export default function Products(props) {
                             setImagePlacements={setImagePlacements} 
                             selectedBaseProduct={selectedBaseProduct}
                             setCanGoToNextStep={setCanGoToNextStep}
+                            setMerchName={setMerchName}
                         />
             case 1:
                 return <Images
@@ -143,16 +158,44 @@ export default function Products(props) {
         }
     }
 
-    const cancelProductCreation = () => {
-        setSelectedBaseProduct()
-        setSelectedUserImages()
-        setSelectedImagePlacement()
-        setActiveStep(0)
-        setShowCreateProductModal(false)
-        setCanGoToNextStep(false)
+    if(!data || !products || isLoading) {
+        return (
+            <Backdrop
+                open={!products || isLoading}
+                sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+            >
+                <CircularProgress color="inherit" />
+            </Backdrop>
+        )
     }
 
-
+    if(productCreationResult) {
+        return (
+            <Modal
+                open={showProductCreationResultModal}
+            >
+                <Grid
+                    container 
+                    direction="row" 
+                    justifyContent="center" 
+                    alignContent="center"
+                    style={{ minHeight: "100vh" }}
+                >
+                    <Grid item xs={8}>
+                        <Card sx={{ borderRadius: '16px', top: '50%' }}>
+                            <CardContent>
+                                <Typography>Product result:{JSON.stringify(productCreationResult)}</Typography>
+                                <Typography>NonFungible Merchh is making your shit... youll see it in your profile whhenever...</Typography>
+                            </CardContent>
+                            <CardActions>
+                                <Button onClick={() => closeProductCreationResultModal()}>Go somewhere else</Button>
+                            </CardActions>
+                        </Card>
+                    </Grid>
+                </Grid>
+            </Modal>
+        )   
+    }
 
     return (
         <Grid container direction="row" >
@@ -264,6 +307,8 @@ export default function Products(props) {
                                             selectedBaseProduct={selectedBaseProduct}
                                             selectedUserImages={selectedUserImages}
                                             selectedImagePlacement={selectedImagePlacement}
+                                            merchName={merchName}
+                                            setMerchName={setMerchName}
                                         />
                                         <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
                                             <Button
@@ -299,9 +344,7 @@ export default function Products(props) {
                                 )
                             }
                     </Box>
-
                 </Modal>
-
             </Grid>
         </Grid>
     )

@@ -29,7 +29,6 @@ export default function Images(props) {
     const [isLoading, setIsLoading] = useState(false)
 
     if(!selectedUserImages.length) {
-        console.log('selectedUserImages', selectedUserImages)
         setCanGoToNextStep(false)
     }
 
@@ -46,7 +45,6 @@ export default function Images(props) {
                 'content-type': 'application/json',
             },
         })
-        console.log('data', data)
         setWalletNfts(data)
         setIsLoading(false)
         setShowNftModal(true)

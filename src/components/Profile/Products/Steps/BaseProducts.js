@@ -12,11 +12,13 @@ export default function BaseProducts(props) {
         setSelectedBaseProduct, 
         setImagePlacements, 
         selectedBaseProduct,
-        setCanGoToNextStep
+        setCanGoToNextStep,
+        setMerchName
     } = props
 
     const selectProduct = (product) => {
         setSelectedBaseProduct(product)
+        setMerchName(product.title)
         const { file_placement_options } = product
         setImagePlacements(file_placement_options)
         setCanGoToNextStep(true)

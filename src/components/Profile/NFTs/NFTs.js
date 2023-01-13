@@ -42,7 +42,6 @@ export default function NFTs(props) {
                 'content-type': 'application/json',
             },
         })
-        console.log('data', data)
         setWalletNfts(data)
         setIsLoading(false)
         setShowNftModal(true)
@@ -51,18 +50,21 @@ export default function NFTs(props) {
     const saveWalletNfts = async () => {
         setShowNftModal(false)
         setIsLoading(true)
-        let nftsToSave
-        if(nfts && nfts.length) {
-            for(const nft of nfts) {
-                nftsToSave = selectedWalletNfts.filter(selectedWalletNft => selectedWalletNft.token_id !== nft.token_id)
-            }
-        } else {
-            nftsToSave = selectedWalletNfts
-        }
+        // let nftsToSave
+        // if(nfts && nfts.length) {
+        //     for(const nft of nfts) {
+        //         console.log('nft', nft)
+        //         const filteredNfts = selectedWalletNfts.filter(selectedWalletNft => selectedWalletNft.token_hash != nft.token_hash)
+        //         console.log('filteredNfts', filteredNfts)
+        //     }
+        // } else {
+        //     nftsToSave = selectedWalletNfts
+        // }
 
         const requestData = {
             user,
-            nfts: nftsToSave,
+            savedNfts: nfts,
+            newNfts: selectedWalletNfts,
             removeImageBackgrounds
         }
         const { data } = await axios.post('/api/profile/nfts/save', requestData, {
