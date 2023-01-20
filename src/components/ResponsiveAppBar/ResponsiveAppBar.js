@@ -26,9 +26,9 @@ export default function ResponsiveAppBar() {
   const { push } = useRouter();
 
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+  // const handleCloseNavMenu = () => {
+  //   setAnchorElNav(null);
+  // };
 
 
   const openShoppingCart = () => {
@@ -73,7 +73,7 @@ export default function ResponsiveAppBar() {
               >
                 <Button
                   key={page.name}
-                  onClick={handleCloseNavMenu}
+                  // onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
                   {page.name}
