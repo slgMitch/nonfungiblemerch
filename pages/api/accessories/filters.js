@@ -24,7 +24,10 @@ export default async function handler(req, res) {
         for (let accessory of accessories) {
             tokenNames.push(accessory.tokenData.tokenName)
             tokenCollections.push(accessory.tokenData.tokenCollection)
-            colors.push(accessory.colors)
+            colors = [
+                ...colors,
+                ...accessory.colors
+            ]
             prices.push({ maxPrice: accessory.maxPrice, minPrice: accessory.minPrice })
             categories.push(accessory.productCategory)
         }
@@ -36,7 +39,8 @@ export default async function handler(req, res) {
             prices: { maxPrice: Math.max(...prices.map(price => price.maxPrice)), minPrice: Math.min(...prices.map(price => price.minPrice)) },
             categories: Array.from(new Set(categories))
         }
-        console.log('filters', filters)
+        // console.log('filters', filters)
+        // console.log('accessories', accessories)
         res.status(200).json({ accessories, filters })
 
 
