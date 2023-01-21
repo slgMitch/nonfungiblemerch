@@ -1,0 +1,34 @@
+import { 
+    connectDatabase, 
+    findDocumentsByQueryObject
+} from '../../../utils/mongo-utils'
+
+export default async function handler(req, res) {
+    try {
+        const client = await connectDatabase()
+        const query = { 
+            $or: [ 
+                { productCategory: 'PRINTS' }, 
+            ] 
+        }
+
+        const apparel = await findDocumentsByQueryObject(client, 'products', query)
+        let tokenCollections = []
+        let categories = []
+        for(let app of apparel) {
+            tokenCollections.push(app.tokenData.tokenCollection)
+            categories.push(app.productCategory)
+        }
+
+        const filters = {
+            tokenCollections: Array.from(new Set(tokenCollections)),
+            categories: Array.from(new Set(categories))
+        }
+
+        res.status(200).json({ apparel, filters })
+
+    } catch(error) {
+        console.log('there was an error', error)
+        res.status(400).json(error)
+    }
+}

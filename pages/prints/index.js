@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { 
     Card,
     CardContent,
@@ -11,14 +11,11 @@ import {
     FormGroup,
     FormControlLabel,
     Checkbox,
-    Slider,
     Tooltip,
     ToggleButton
   } from '@mui/material'
-import useSWR from 'swr';
-import { useRouter } from 'next/router';
 
-export default function Apparel(props) {
+  export default function Prints(props) {
     const { filters, products } = props
     console.log('filters', filters)
     const [filteredProducts, setFilteredProducts] = useState(products)
@@ -36,18 +33,8 @@ export default function Apparel(props) {
                         ...filteredProducts.filter(product => product.tokenData.tokenCollection === filter)
                     ])
                     break;
-                case 'category':
-                    setSelectedFilters([
-                        ...selectedFilters,
-                        { filterName, filter }
-                    ])
-                    setFilteredProducts([
-                        ...filteredProducts.filter(product => product.productCategory === filter)
-                    ])
-                    break;
             }
         } else if(!event.target.checked) {
-            console.log('need to add shit back')
             switch (filterName) {
                 case 'collection':
                     setSelectedFilters([
@@ -58,30 +45,10 @@ export default function Apparel(props) {
                     ])
                     
                     break;
-                case 'category':
-                    setSelectedFilters([
-                        ...selectedFilters.filter(filter => filter.filterName === filterName && filter.filter === filter)
-                    ])
-                    setFilteredProducts([
-                        ...filteredProducts,
-                        ...products.filter(product => product.productCategory !== filter)
-                    ])
-                    
-                    break;
             
             }
         }
     }
-
-
-
-    // const viewApparel = (product) => {
-    //     console.log('product', product)
-    //     const colorHex = product.colors[product.colors.length - 1].colorCode.replace( /#/g, "" )
-    //     push(`/products/${product.syncProductId}/color/${colorHex}/size/${product.sizes[product.sizes.length - 1]}`)
-    // }
-    
-
 
     return (
         <Grid container direction='row'>
@@ -115,36 +82,12 @@ export default function Apparel(props) {
                         </FormGroup>
                     </ListItem>
                     <Divider />
-                    <Typography variant='h6'>
-                        Category
-                    </Typography>
-                    <ListItem>
-                        <FormGroup>
-                            {
-                                filters.categories.map((category) => (
-                                    <FormControlLabel
-                                        key={category}  
-                                        control={
-                                            <Checkbox 
-                                                key={category}  
-                                                disabled={selectedFilters.some(filter => filter.filter !== category && filter.filterName === 'category')}
-                                                onChange={(event) => filterAccessories(event, 'category', category)}
-                                            />
-                                        }
-                                        label={category}
-                                    />
-
-                                ))
-                            }
-                        </FormGroup>
-                    </ListItem>
-                    <Divider />
                 </List>
             </Grid>
             <Grid item xs={10}>
                 <Grid container direction='row'>
                     <Grid item xs={12}>
-                        <Typography textAlign='center' variant='h3'>Apparel</Typography>
+                        <Typography textAlign='center' variant='h3'>Prints</Typography>
                         <Grid
                             container
                             spacing={3}
@@ -217,11 +160,11 @@ export default function Apparel(props) {
         </Grid>
     )
 
-}
+  }
 
-export async function getServerSideProps(context) {
+  export async function getServerSideProps(context) {
     try {
-        const res = await fetch('http://localhost:3000/api/apparel/filters')
+        const res = await fetch('http://localhost:3000/api/prints/filters')
         const data = await res.json()
         const { apparel, filters } = data
         return {
@@ -234,4 +177,3 @@ export async function getServerSideProps(context) {
         console.log('getServerSideProps error', error)
     }
 }
-
