@@ -20,23 +20,15 @@ export default function Accessories(props) {
     const { filters, products } = props
     const [filteredProducts, setFilteredProducts] = useState(products)
     const [selectedFilters, setSelectedFilters] = useState([])
+    const [priceRangeValue, setPriceRangeValue] = useState([filters.prices.minPrice, filters.prices.maxPrice])
 
     const filterAccessories = (event, filterName, filter) => {
         if(event.target.checked) {
             // console.log('filterAccessories event', event)
             // console.log('filterAccessories filterName', filterName)
             // console.log('filterAccessories filter', filter)
-            console.log('products', products)
+            // console.log('products', products)
             switch (filterName) {
-                case 'name':
-                    setSelectedFilters([
-                        ...selectedFilters,
-                        { filterName, filter }
-                    ])
-                    setFilteredProducts([
-                        ...filteredProducts.filter(product => product.tokenData.tokenName === filter)
-                    ])
-                    break;
                 case 'collection':
                     setSelectedFilters([
                         ...selectedFilters,
@@ -46,31 +38,28 @@ export default function Accessories(props) {
                         ...filteredProducts.filter(product => product.tokenData.tokenCollection === filter)
                     ])
                     break;
-                case 'color':
-                    setSelectedFilters([
-                        ...selectedFilters,
-                        { filterName, filter }
-                    ])
-                    setFilteredProducts([
-                        ...filteredProducts.filter(product => product.colors.some(color => color.color === filter.color))
-                    ])
-                    break;
+                // case 'color':
+                //     setSelectedFilters([
+                //         ...selectedFilters,
+                //         { filterName, filter }
+                //     ])
+                //     setFilteredProducts([
+                //         ...filteredProducts.filter(product => product.colors.some(color => color.color === filter))
+                //     ])
+                //     break;
                 case 'category':
                     setSelectedFilters([
                         ...selectedFilters,
                         { filterName, filter }
                     ])
                     setFilteredProducts([
-                        ...filteredProducts.filter(product => product.category === filter)
+                        ...filteredProducts.filter(product => product.productCategory === filter)
                     ])
                     break;
             }
         } else if(!event.target.checked) {
             console.log('need to add shit back')
             switch (filterName) {
-                case 'name':
-                    
-                    break;
                 case 'collection':
                     setSelectedFilters([
                         ...selectedFilters.filter(filter => filter.filterName === filterName && filter.filter === filter)
@@ -80,21 +69,22 @@ export default function Accessories(props) {
                     ])
                     
                     break;
-                case 'color':
-                    setSelectedFilters([
-                        ...selectedFilters.filter(filter => filter.filterName === filterName && filter.filter.color === filter.color)
-                    ])
-                    setFilteredProducts([
-                        ...products.filter(product => product.colors.some(color => color.color === filter.color))
-                    ])
+                // case 'color':
+                //     setSelectedFilters([
+                //         ...selectedFilters.filter(filter => filter.filterName === filterName && filter.filter === filter)
+                //     ])
+                //     setFilteredProducts([
+                //         ...products.filter(product => product.colors.some(color => color.color !== filter))
+                //     ])
                         
-                    break;
+                //     break;
                 case 'category':
                     setSelectedFilters([
                         ...selectedFilters.filter(filter => filter.filterName === filterName && filter.filter === filter)
                     ])
                     setFilteredProducts([
-                        ...products.filter(product => product.category !== filter)
+                        ...filteredProducts,
+                        ...products.filter(product => product.productCategory !== filter)
                     ])
                     
                     break;
@@ -103,13 +93,12 @@ export default function Accessories(props) {
         }
     }
 
-    const filterPrice = (event) => {
-        console.log('filterAccessories event', event.target.value)
-        // setFilteredProducts([
-        //     ...filteredProducts.filter(product => product.prices.maxPrice === filter)
-        // ])
-
-    }
+    // const filterPrice = (event, newValue) => {
+    //     setPriceRangeValue(newValue)
+    //     setFilteredProducts([
+    //         ...filteredProducts.filter(product => product.prices.maxPrice === filter)
+    //     ])
+    // }
     
 
     return (
@@ -120,29 +109,6 @@ export default function Accessories(props) {
                 </Typography>
                 <Divider />
                 <List>
-                    <Typography variant='h6'>
-                        Token Name
-                    </Typography>
-                    <ListItem>
-                        <FormGroup>
-                            {
-                                filters.tokenNames.map((tokenName) => (
-                                    <FormControlLabel
-                                        key={tokenName} 
-                                        control={
-                                            <Checkbox 
-                                                key={tokenName}
-                                                onChange={(event) => filterAccessories(event, 'name', tokenName)}
-                                            />
-                                        }
-                                        label={tokenName}
-                                    />
-
-                                ))
-                            }
-                        </FormGroup>
-                    </ListItem>
-                    <Divider />
                     <Typography variant='h6'>
                         Token Collection
                     </Typography>
@@ -167,7 +133,7 @@ export default function Accessories(props) {
                         </FormGroup>
                     </ListItem>
                     <Divider />
-                    <Typography variant='h6'>
+                    {/* <Typography variant='h6'>
                         Colors
                     </Typography>
                     <ListItem>
@@ -179,8 +145,8 @@ export default function Accessories(props) {
                                         control={
                                             <Checkbox 
                                                 key={color.color} 
-                                                disabled={selectedFilters.some(filter => filter.filter !== color && filter.filterName === 'color')}
-                                                onChange={(event) => filterAccessories(event, 'color', color)}
+                                                disabled={selectedFilters.some(filter => filter.filter !== color.color && filter.filterName === 'color')}
+                                                onChange={(event) => filterAccessories(event, 'color', color.color)}
                                             />
                                         }
                                         label={color.color}
@@ -190,7 +156,7 @@ export default function Accessories(props) {
                             }
                         </FormGroup>
                     </ListItem>
-                    <Divider />
+                    <Divider /> */}
                     <Typography variant='h6'>
                         Category
                     </Typography>
@@ -203,6 +169,7 @@ export default function Accessories(props) {
                                         control={
                                             <Checkbox 
                                                 key={category}  
+                                                disabled={selectedFilters.some(filter => filter.filter !== category && filter.filterName === 'category')}
                                                 onChange={(event) => filterAccessories(event, 'category', category)}
                                             />
                                         }
@@ -214,7 +181,7 @@ export default function Accessories(props) {
                         </FormGroup>
                     </ListItem>
                     <Divider />
-                    <Typography variant='h6'>
+                    {/* <Typography variant='h6'>
                         Price
                     </Typography>
                     <ListItem>
@@ -234,11 +201,12 @@ export default function Accessories(props) {
                             min={filters.prices.minPrice}
                             max={filters.prices.maxPrice}
                             step={1}
-                            onChange={(event) => filterPrice(event)}
+                            value={priceRangeValue}
+                            onChange={filterPrice}
                         />
 
                     </ListItem>
-                    <Divider />
+                    <Divider /> */}
 
                 </List>
 
@@ -264,7 +232,6 @@ export default function Accessories(props) {
                                                     boxShadow: '-1px 10px 29px 0px rgba(0,0,0,0.8);', 
                                                     cursor: 'pointer' 
                                                 },
-                                                // cursor: 'pointer' 
                                             }}
                                         >
                                             <CardMedia 
@@ -294,9 +261,17 @@ export default function Accessories(props) {
                                                     ))}
                                                 </Grid>
                                                 <br />
-                                                <Typography gutterBottom variant="h6" component="div">
-                                                    Price: ${ product.maxPrice } - ${ product.minPrice }
-                                                </Typography>
+                                                {
+                                                    product.minPrice === product.maxPrice ? (
+                                                        <Typography gutterBottom variant="h6" component="div">
+                                                            Price: ${ product.maxPrice }
+                                                        </Typography>
+                                                    ) : (
+                                                        <Typography gutterBottom variant="h6" component="div">
+                                                            Price: ${ product.minPrice } - ${ product.maxPrice }
+                                                        </Typography>
+                                                    )
+                                                }
                                             </CardContent>
 
                                         </Card>
