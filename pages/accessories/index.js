@@ -15,12 +15,13 @@ import {
     Tooltip,
     ToggleButton
   } from '@mui/material'
+  import { useRouter } from 'next/router'
 
 export default function Accessories(props) {
     const { filters, products } = props
     const [filteredProducts, setFilteredProducts] = useState(products)
     const [selectedFilters, setSelectedFilters] = useState([])
-    // const [priceRangeValue, setPriceRangeValue] = useState([filters.prices.minPrice, filters.prices.maxPrice])
+    const { push } = useRouter()
 
     const filterAccessories = (event, filterName, filter) => {
         if(event.target.checked) {
@@ -99,6 +100,13 @@ export default function Accessories(props) {
     //         ...filteredProducts.filter(product => product.prices.maxPrice === filter)
     //     ])
     // }
+
+
+    const viewProduct = (product) => {
+        console.log('product', product)
+        const colorHex = product.colors[product.colors.length - 1].colorCode.replace( /#/g, "" )
+        push(`/products/${product.syncProductId}/color/${colorHex}/size/${product.sizes[product.sizes.length - 1]}`)
+    }
     
 
     return (
@@ -227,6 +235,7 @@ export default function Accessories(props) {
                                     <Grid item xs={3} key={product._id}>
                                         <Card
                                             key={product._id}
+                                            onClick={() => viewProduct(product)}
                                             sx={{ 
                                                 ":hover": { 
                                                     boxShadow: '-1px 10px 29px 0px rgba(0,0,0,0.8);', 

@@ -29,9 +29,6 @@ export default async function handler(req, res) {
             categories: Array.from(new Set(categories))
         }
 
-        console.log('filters', filters)
-        console.log('apparel', apparel)
-
         res.status(200).json({ apparel, filters })
 
     } catch(error) {
