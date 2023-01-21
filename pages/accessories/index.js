@@ -20,7 +20,7 @@ export default function Accessories(props) {
     const { filters, products } = props
     const [filteredProducts, setFilteredProducts] = useState(products)
     const [selectedFilters, setSelectedFilters] = useState([])
-    const [priceRangeValue, setPriceRangeValue] = useState([filters.prices.minPrice, filters.prices.maxPrice])
+    // const [priceRangeValue, setPriceRangeValue] = useState([filters.prices.minPrice, filters.prices.maxPrice])
 
     const filterAccessories = (event, filterName, filter) => {
         if(event.target.checked) {
