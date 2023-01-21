@@ -19,6 +19,7 @@ import {
 export default function Accessories(props) {
     const { filters, products } = props
     const [filteredProducts, setFilteredProducts] = useState(products)
+    const [selectedFilters, setSelectedFilters] = useState([])
 
     const filterAccessories = (event, filterName, filter) => {
         if(event.target.checked) {
@@ -28,41 +29,85 @@ export default function Accessories(props) {
             console.log('products', products)
             switch (filterName) {
                 case 'name':
-                    console.log('filterAccessories filter name', filter)
+                    setSelectedFilters([
+                        ...selectedFilters,
+                        { filterName, filter }
+                    ])
                     setFilteredProducts([
                         ...filteredProducts.filter(product => product.tokenData.tokenName === filter)
                     ])
+                    break;
+                case 'collection':
+                    setSelectedFilters([
+                        ...selectedFilters,
+                        { filterName, filter }
+                    ])
+                    setFilteredProducts([
+                        ...filteredProducts.filter(product => product.tokenData.tokenCollection === filter)
+                    ])
+                    break;
+                case 'color':
+                    setSelectedFilters([
+                        ...selectedFilters,
+                        { filterName, filter }
+                    ])
+                    setFilteredProducts([
+                        ...filteredProducts.filter(product => product.colors.some(color => color.color === filter.color))
+                    ])
+                    break;
+                case 'category':
+                    setSelectedFilters([
+                        ...selectedFilters,
+                        { filterName, filter }
+                    ])
+                    setFilteredProducts([
+                        ...filteredProducts.filter(product => product.category === filter)
+                    ])
+                    break;
+            }
+        } else if(!event.target.checked) {
+            console.log('need to add shit back')
+            switch (filterName) {
+                case 'name':
                     
                     break;
                 case 'collection':
-                    console.log('filterAccessories filter collections', filter)
+                    setSelectedFilters([
+                        ...selectedFilters.filter(filter => filter.filterName === filterName && filter.filter === filter)
+                    ])
                     setFilteredProducts([
-                        ...filteredProducts.filter(product => product.tokenData.tokenCollection === filter)
+                        ...products.filter(product => product.collection !== filter)
                     ])
                     
                     break;
                 case 'color':
-                    console.log('filterAccessories filter color', filter)
-                    setFilteredProducts([
-                        ...filteredProducts.filter(product => product.colors.some(color => color.color === filter.color))
+                    setSelectedFilters([
+                        ...selectedFilters.filter(filter => filter.filterName === filterName && filter.filter.color === filter.color)
                     ])
-                    
+                    setFilteredProducts([
+                        ...products.filter(product => product.colors.some(color => color.color === filter.color))
+                    ])
+                        
                     break;
                 case 'category':
-                    console.log('filterAccessories filter category', filter)
+                    setSelectedFilters([
+                        ...selectedFilters.filter(filter => filter.filterName === filterName && filter.filter === filter)
+                    ])
                     setFilteredProducts([
-                        ...filteredProducts.filter(product => product.category === filter)
+                        ...products.filter(product => product.category !== filter)
                     ])
                     
                     break;
+            
             }
-        } else if(event.target.checked) {
-            console.log('need to add shit back')
         }
     }
 
     const filterPrice = (event) => {
         console.log('filterAccessories event', event.target.value)
+        // setFilteredProducts([
+        //     ...filteredProducts.filter(product => product.prices.maxPrice === filter)
+        // ])
 
     }
     
@@ -110,6 +155,7 @@ export default function Accessories(props) {
                                         control={
                                             <Checkbox
                                                 key={tokenCollection} 
+                                                disabled={selectedFilters.some(filter => filter.filter !== tokenCollection && filter.filterName === 'collection')}
                                                 onChange={(event) => filterAccessories(event, 'collection', tokenCollection)}
                                             />
                                         }
@@ -133,6 +179,7 @@ export default function Accessories(props) {
                                         control={
                                             <Checkbox 
                                                 key={color.color} 
+                                                disabled={selectedFilters.some(filter => filter.filter !== color && filter.filterName === 'color')}
                                                 onChange={(event) => filterAccessories(event, 'color', color)}
                                             />
                                         }
