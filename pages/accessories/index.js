@@ -105,7 +105,9 @@ export default function Accessories(props) {
     const viewProduct = (product) => {
         console.log('product', product)
         const colorHex = product.colors[product.colors.length - 1].colorCode.replace( /#/g, "" )
-        push(`/products/${product.syncProductId}/color/${colorHex}/size/${product.sizes[product.sizes.length - 1]}`)
+        const productSize = product.sizes[product.sizes.length - 1]
+        console.log('productSize', productSize.replace(/"|'|″/g, ''))
+        push(`/products/${product.syncProductId}/color/${colorHex}/size/${productSize.replace(/"|'|″/g, '')}`)
     }
     
 

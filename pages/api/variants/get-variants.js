@@ -6,12 +6,21 @@ import {
 export default async function handler(req, res) {
     try {
         const client = await connectDatabase()
-        const { syncProductId, color, size } = req.query
+        let { syncProductId, color, size } = req.query
+        if (/\d/.test(size)) {
+            console.log('has a number', size)
+            const subA = size.substr(0,2)
+            const subB = size.substr(3,4)
+            console.log('has a subA', subA)
+            console.log('has a subB', subB)
+            size = `${subA}″x${subB}″`
+        }
         const variantQuery = {
             syncProductId: +syncProductId,
             'color.color_code': `#${color}`,
             size
         }
+        console.log('variantQuery', variantQuery)
         const productQuery = {
             syncProductId: +syncProductId
         }
@@ -24,6 +33,7 @@ export default async function handler(req, res) {
             productColors,
             productSizes
         }
+        console.log('response', response)
 
         res.status(200).json(response)
 
