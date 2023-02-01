@@ -14,7 +14,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 
 export default function CustomVariant(props) {
-    const { products, variant } = props
+    const { products, variant, productColors, productSizes } = props
     console.log('{ products, variant }', { products, variant });
     return (
         <Grid
@@ -47,9 +47,9 @@ export default function CustomVariant(props) {
                     // onChange={changeSelectedColor}
                   >
                     {
-                        products &&
-                        products.map((product) => (
-                            <MenuItem key={product.color.color} value={product.color.color}>{product.color.color}</MenuItem>
+                        productColors &&
+                        productColors.map((color) => (
+                            <MenuItem key={color.color} value={color.color}>{color.color}</MenuItem>
                         ))
                     }
                   </Select>
@@ -66,9 +66,9 @@ export default function CustomVariant(props) {
                       // onChange={changeSelectedSize}
                   >
                       {
-                          products &&
-                          products.map((product) => (
-                              <MenuItem key={product.size} value={product.size}>{product.size}</MenuItem>
+                          productSizes &&
+                          productSizes.map((size) => (
+                              <MenuItem key={size} value={size}>{size}</MenuItem>
                           ))
                       }
                   </Select>
@@ -113,12 +113,14 @@ export async function getServerSideProps(context) {
   const { syncProductId, syncVariantId } = context.params;
   // console.log("{ syncProductId, syncVariantId }", { syncProductId, syncVariantId });
   const response = await fetch(`http://localhost:3000/api/product/${syncProductId}/variant/${syncVariantId}`);
-  const { products, variant } = await response.json()
+  const { products, variant, productColors, productSizes } = await response.json()
   // console.log('getServerSideProps data', { products, variant });
   return {
     props: {
         products,
-        variant: variant[0]
+        variant: variant[0],
+        productColors, 
+        productSizes
     }
   }
 }
