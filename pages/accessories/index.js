@@ -13,14 +13,18 @@ import {
     Checkbox,
     Slider,
     Tooltip,
-    ToggleButton
+    ToggleButton,
+    CircularProgress,
+    Backdrop
   } from '@mui/material'
   import { useRouter } from 'next/router'
+  import axios from 'axios';
 
 export default function Accessories(props) {
     const { filters, products } = props
     const [filteredProducts, setFilteredProducts] = useState(products)
     const [selectedFilters, setSelectedFilters] = useState([])
+    const [isLoading, setIsLoading] = useState(false);
     const { push } = useRouter()
 
     const filterAccessories = (event, filterName, filter) => {
@@ -101,13 +105,28 @@ export default function Accessories(props) {
     //     ])
     // }
 
-
-    const viewProduct = (product) => {
+    const viewProduct = async (product) => {
         console.log('product', product)
-        const colorHex = product.colors[product.colors.length - 1].colorCode.replace( /#/g, "" )
-        const productSize = product.sizes[product.sizes.length - 1]
-        console.log('productSize', productSize.replace(/"|'|″/g, ''))
-        push(`/products/${product.syncProductId}/color/${colorHex}/size/${productSize.replace(/"|'|″/g, '')}`)
+        setIsLoading(true);
+        const { data } = await axios.get(`http://localhost:3000/api/product/${product.syncProductId}/getProductVariant`, {
+            headers: {
+                'content-type': 'application/json',
+            },
+        })
+        console.log('data', data)
+        push(`/product/${product.syncProductId}/variant/${data.syncVariantId}`)
+    }
+
+
+    if(isLoading) {
+        return (
+            <Backdrop
+                open={isLoading}
+                sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+            >
+                <CircularProgress color="inherit" />
+            </Backdrop>
+        )
     }
     
 
