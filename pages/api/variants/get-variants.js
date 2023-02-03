@@ -20,7 +20,6 @@ export default async function handler(req, res) {
             'color.color_code': `#${color}`,
             size
         }
-        console.log('variantQuery', variantQuery)
         const productQuery = {
             syncProductId: +syncProductId
         }
@@ -33,7 +32,6 @@ export default async function handler(req, res) {
             productColors,
             productSizes
         }
-        console.log('response', response)
 
         res.status(200).json(response)
 

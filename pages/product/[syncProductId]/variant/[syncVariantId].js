@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   Typography,
   Button,
@@ -15,7 +15,23 @@ import Image from "next/image";
 
 export default function CustomVariant(props) {
     const { products, variant, productColors, productSizes } = props
-    console.log('{ products, variant }', { products, variant });
+    const [selectedSize, setSelectedSize] = useState(variant.size)
+    const [selectedColor, setSelectedColor] = useState(variant.color.color)
+    const { push } = useRouter()
+
+    const changeProductColor = (color) => {
+      setSelectedColor(color)
+      const selectedProduct = products.find(product => product.color.color === color && product.size === selectedSize)
+      push(`/product/${selectedProduct.syncProductId}/variant/${selectedProduct.syncVariantId}`)
+
+    }
+
+    const changeProductSize = (size) => {
+      setSelectedSize(size)
+      const selectedProduct = products.find(product => product.color.color === selectedColor && product.size === size)
+      push(`/product/${selectedProduct.syncProductId}/variant/${selectedProduct.syncVariantId}`)
+    }
+
     return (
         <Grid
         container
@@ -42,9 +58,9 @@ export default function CustomVariant(props) {
                   <Select
                     labelId="product-color-select-label"
                     id="product-color-select"
-                    value={variant.color.color}
+                    value={selectedColor}
                     label="Color"
-                    // onChange={changeSelectedColor}
+                    onChange={(event) => changeProductColor(event.target.value)} 
                   >
                     {
                         productColors &&
@@ -61,9 +77,9 @@ export default function CustomVariant(props) {
                   <Select
                       labelId="product-size-select-label"
                       id="product-size-select"
-                      value={variant.size}
+                      value={selectedSize}
                       label="Size"
-                      // onChange={changeSelectedSize}
+                      onChange={(event) => changeProductSize(event.target.value)}
                   >
                       {
                           productSizes &&
