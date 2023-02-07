@@ -11,7 +11,6 @@ import {
     FormGroup,
     FormControlLabel,
     Checkbox,
-    Slider,
     Tooltip,
     ToggleButton,
     CircularProgress,
@@ -29,10 +28,6 @@ export default function Accessories(props) {
 
     const filterAccessories = (event, filterName, filter) => {
         if(event.target.checked) {
-            // console.log('filterAccessories event', event)
-            // console.log('filterAccessories filterName', filterName)
-            // console.log('filterAccessories filter', filter)
-            // console.log('products', products)
             switch (filterName) {
                 case 'collection':
                     setSelectedFilters([
@@ -43,15 +38,6 @@ export default function Accessories(props) {
                         ...filteredProducts.filter(product => product.tokenData.tokenCollection === filter)
                     ])
                     break;
-                // case 'color':
-                //     setSelectedFilters([
-                //         ...selectedFilters,
-                //         { filterName, filter }
-                //     ])
-                //     setFilteredProducts([
-                //         ...filteredProducts.filter(product => product.colors.some(color => color.color === filter))
-                //     ])
-                //     break;
                 case 'category':
                     setSelectedFilters([
                         ...selectedFilters,
@@ -74,15 +60,6 @@ export default function Accessories(props) {
                     ])
                     
                     break;
-                // case 'color':
-                //     setSelectedFilters([
-                //         ...selectedFilters.filter(filter => filter.filterName === filterName && filter.filter === filter)
-                //     ])
-                //     setFilteredProducts([
-                //         ...products.filter(product => product.colors.some(color => color.color !== filter))
-                //     ])
-                        
-                //     break;
                 case 'category':
                     setSelectedFilters([
                         ...selectedFilters.filter(filter => filter.filterName === filterName && filter.filter === filter)
@@ -97,13 +74,6 @@ export default function Accessories(props) {
             }
         }
     }
-
-    // const filterPrice = (event, newValue) => {
-    //     setPriceRangeValue(newValue)
-    //     setFilteredProducts([
-    //         ...filteredProducts.filter(product => product.prices.maxPrice === filter)
-    //     ])
-    // }
 
     const viewProduct = async (product) => {
         console.log('product', product)
@@ -156,36 +126,11 @@ export default function Accessories(props) {
                                         }
                                         label={tokenCollection}
                                     />
-
                                 ))
                             }
                         </FormGroup>
                     </ListItem>
                     <Divider />
-                    {/* <Typography variant='h6'>
-                        Colors
-                    </Typography>
-                    <ListItem>
-                        <FormGroup>
-                            {
-                                filters.colors.map((color) => (
-                                    <FormControlLabel
-                                        key={color.color} 
-                                        control={
-                                            <Checkbox 
-                                                key={color.color} 
-                                                disabled={selectedFilters.some(filter => filter.filter !== color.color && filter.filterName === 'color')}
-                                                onChange={(event) => filterAccessories(event, 'color', color.color)}
-                                            />
-                                        }
-                                        label={color.color}
-                                    />
-
-                                ))
-                            }
-                        </FormGroup>
-                    </ListItem>
-                    <Divider /> */}
                     <Typography variant='h6'>
                         Category
                     </Typography>
@@ -204,41 +149,12 @@ export default function Accessories(props) {
                                         }
                                         label={category}
                                     />
-
                                 ))
                             }
                         </FormGroup>
                     </ListItem>
                     <Divider />
-                    {/* <Typography variant='h6'>
-                        Price
-                    </Typography>
-                    <ListItem>
-                        <Slider 
-                            marks={
-                                [
-                                    { 
-                                        value: filters.prices.minPrice, 
-                                        label: filters.prices.minPrice 
-                                    }, 
-                                    { 
-                                        value: filters.prices.maxPrice, 
-                                        label: filters.prices.maxPrice 
-                                    }
-                                ]
-                            }
-                            min={filters.prices.minPrice}
-                            max={filters.prices.maxPrice}
-                            step={1}
-                            value={priceRangeValue}
-                            onChange={filterPrice}
-                        />
-
-                    </ListItem>
-                    <Divider /> */}
-
                 </List>
-
             </Grid>
             <Grid item xs={10}>
                 <Grid container direction='row'>
@@ -303,18 +219,14 @@ export default function Accessories(props) {
                                                     )
                                                 }
                                             </CardContent>
-
                                         </Card>
                                     </Grid>
                                 ))
                             }
-
                         </Grid>
                     </Grid>
                 </Grid>
-
             </Grid>
-
         </Grid>
     )
 }
