@@ -138,7 +138,7 @@ export default function Images(props) {
                                     <Card sx={{ borderRadius: '16px', top: '50%' }}>
                                         <CardContent>
                                             <Typography variant="h5" gutterBottom textAlign="center">
-                                                You haven't added any NFTs yet... Click below to add!
+                                                You havent added any NFTs yet... Click below to add!
                                             </Typography>
                                         </CardContent>
                                         <CardActions>

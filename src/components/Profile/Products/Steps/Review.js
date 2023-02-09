@@ -120,7 +120,7 @@ export default function Review(props) {
                                         {
                                             selectedBaseProduct &&
                                             selectedBaseProduct.colors.map((color) => (
-                                                <Tooltip title={color.color}>
+                                                <Tooltip key={color.color} title={color.color}>
                                                     <ToggleButton key={color.colorCode} value={color.colorCode} style={{ backgroundColor: `${color.colorCode}`, margin: '2px', padding: '15px'}}></ToggleButton>
                                                 </Tooltip>
                                             ))

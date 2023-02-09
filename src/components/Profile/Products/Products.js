@@ -273,7 +273,7 @@ export default function Products(props) {
                                 <Card sx={{ borderRadius: '16px', top: '50%' }}>
                                     <CardContent>
                                         <Typography variant="h5" gutterBottom textAlign="center">
-                                            You don't have any Products... Start the process by clicking below!
+                                            You dont have any Products... Start the process by clicking below!
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
