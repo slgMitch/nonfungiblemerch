@@ -19,8 +19,8 @@ export default async function handler(req, res) {
         })
         
         const s3 = new S3({
-            accessKeyId: process.env.AWS_S3_ACCESS_KEY_ID,
-            secretAccessKey: process.env.AWS_S3_SECRET_ACCESS_KEY
+            accessKeyId: process.env.S3_ACCESS_KEY_ID,
+            secretAccessKey: process.env.S3_SECRET_ACCESS_KEY
         });
 
         const fileContent = await fs.readFile(outputFile)
@@ -43,7 +43,7 @@ export default async function handler(req, res) {
             const stringRequest = JSON.stringify(bucketOptions)
             const encRequest = btoa(stringRequest)
             
-            const cdnUrl = `${process.env.AWS_CDN_API_BASE}/${encRequest}`
+            const cdnUrl = `${process.env.CDN_API_BASE}/${encRequest}`
             console.log('cdnUrl', cdnUrl)
             res.status(200).json(cdnUrl)
         })
