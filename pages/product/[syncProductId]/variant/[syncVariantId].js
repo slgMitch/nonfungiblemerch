@@ -128,7 +128,7 @@ export default function CustomVariant(props) {
 export async function getServerSideProps(context) {
   const { syncProductId, syncVariantId } = context.params;
   // console.log("{ syncProductId, syncVariantId }", { syncProductId, syncVariantId });
-  const response = await fetch(`http://localhost:3000/api/product/${syncProductId}/variant/${syncVariantId}`);
+  const response = await fetch(`${API_BASE_DOMAIN}/api/product/${syncProductId}/variant/${syncVariantId}`);
   const { products, variant, productColors, productSizes } = await response.json()
   // console.log('getServerSideProps data', { products, variant });
   return {

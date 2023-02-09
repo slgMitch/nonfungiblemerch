@@ -30,7 +30,7 @@ import {
 
   export async function getServerSideProps(context) {
     try {
-        const res = await fetch('http://localhost:3000/api/projects/filters')
+        const res = await fetch(`${API_BASE_DOMAIN}/api/projects/filters`)
         const data = await res.json()
         const { projects, filters } = data
         return {

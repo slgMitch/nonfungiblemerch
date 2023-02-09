@@ -78,7 +78,7 @@ export default function Accessories(props) {
     const viewProduct = async (product) => {
         console.log('product', product)
         setIsLoading(true);
-        const { data } = await axios.get(`http://localhost:3000/api/product/${product.syncProductId}/getProductVariant`, {
+        const { data } = await axios.get(`${API_BASE_DOMAIN}/api/product/${product.syncProductId}/getProductVariant`, {
             headers: {
                 'content-type': 'application/json',
             },
@@ -233,7 +233,7 @@ export default function Accessories(props) {
 
 export async function getServerSideProps(context) {
     try {
-        const res = await fetch('http://localhost:3000/api/accessories/filters')
+        const res = await fetch(`${API_BASE_DOMAIN}/api/accessories/filters`)
         const data = await res.json()
         const { accessories, filters } = data
         return {

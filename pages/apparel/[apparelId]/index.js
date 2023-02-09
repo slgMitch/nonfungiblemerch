@@ -155,7 +155,7 @@ export default function ApparelId(props) {
 
 export async function getServerSideProps(context) {
     const {apparelId} = context.params
-    const res = await fetch(`http://localhost:3000/api/products/${apparelId}`)
+    const res = await fetch(`${API_BASE_DOMAIN}/api/products/${apparelId}`)
     const data = await res.json()
     // console.log('getServerSideProps', data)
     return {
