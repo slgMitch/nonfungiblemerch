@@ -241,10 +241,11 @@ export async function getServerSideProps(context) {
         const res = await fetch(
             `${process.env.API_BASE_DOMAIN}/api/apparel/filters`, 
             { 
-                credentials: "same-origin",
                 headers: {
+                    'Accept': 'application/json',
                     'Content-Type': 'application/json',
-                    'Access-Control-Allow-Origin':'*'
+                    'Access-Control-Allow-Origin':'*',
+                    'User-Agent': '*'
                 }
             }
             )
