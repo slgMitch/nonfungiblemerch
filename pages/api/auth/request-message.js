@@ -1,6 +1,5 @@
 import Moralis from 'moralis';
 import { connectDatabase, getOneDocument, insertDocument } from '../../../utils/mongo-utils'
-import { MongoClient } from 'mongodb'
 
 export default async function handler(req, res) {
     const { address, chain, network } = JSON.parse(req.body);

@@ -56,15 +56,18 @@ function Profile() {
           const { account, chain } = await setWalletAccountAndChain(wallet)
     
           const userData = { address: account, chain: chain.id, network: 'evm' };
+          console.log('userData', userData);
       
           setIsLoading(true)
-          const { data, error } = await axios.post('/api/auth/request-message', userData, {
+          const { data } = await axios.post(`${API_BASE_DOMAIN}/api/auth/request-message`, userData, {
               headers: {
-                  'content-type': 'application/json',
+                'Access-Control-Allow-Methods': 'PUT,GET,POST,DELETE,OPTIONS',
+                'Access-Control-Allow-Origin': '*',
+                'Accept': 'application/json',   
+                'Content-Type': 'application/json',
               },
           });
           console.log('profile data', data);
-          console.log('profile data error', error);
       
           const message = data.message;
       
@@ -82,6 +85,7 @@ function Profile() {
         } catch (error) {
           console.log('there was an error authenticating', error)
           setIsError(error)
+          setIsLoading(false)
         }
     }
 
