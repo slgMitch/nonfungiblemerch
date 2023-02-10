@@ -58,12 +58,13 @@ function Profile() {
           const userData = { address: account, chain: chain.id, network: 'evm' };
       
           setIsLoading(true)
-          const { data } = await axios.post('/api/auth/request-message', userData, {
+          const { data, error } = await axios.post('/api/auth/request-message', userData, {
               headers: {
                   'content-type': 'application/json',
               },
           });
           console.log('profile data', data);
+          console.log('profile data error', error);
       
           const message = data.message;
       

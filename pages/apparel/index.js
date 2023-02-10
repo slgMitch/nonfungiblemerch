@@ -240,21 +240,9 @@ export async function getServerSideProps(context) {
     try {
         
         console.log('apparel context', context)
-        const res = await fetch(
-            `${process.env.API_BASE_DOMAIN}/api/apparel/filters`, 
-            // { 
-            //     headers: {
-            //         'Accept': 'application/json',
-            //         'Content-Type': 'application/json',
-            //         'Access-Control-Allow-Origin':'*',
-            //         'User-Agent': '*'
-            //     }
-            // }
-            )
-        console.log('apparel data res', res)
+        const res = await fetch(`${process.env.API_BASE_DOMAIN}/api/apparel/filters`)
         const data = await res.json()
         const { apparel, filters } = data
-        console.log('apparel data', data)
         return {
             props: {
                 filters,
