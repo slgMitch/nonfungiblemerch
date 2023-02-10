@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import { 
+    Backdrop,
     Button,
     Card,
     CardContent,
     CardActions,
+    CircularProgress,
     Grid,
     Typography,
     Divider,
@@ -41,6 +43,7 @@ function Profile() {
     const [showWalletOptions, setShowWalletOptions] = useState(false)
     const profileActionOptions = [{text: 'Products', component: 'products'}, {text: 'NFTs', component: 'nfts'}]
     const profileManagementOptions = [{text: 'Settings', component: 'settings'}, {text: 'Sign Out', component: 'signOut'}]
+    const [isLoading, setIsLoading] = useState()
     // console.log('session', session)
     // need to set is loading 
 
@@ -54,6 +57,7 @@ function Profile() {
     
           const userData = { address: account, chain: chain.id, network: 'evm' };
       
+          setIsLoading(true)
           const { data } = await axios.post('/api/auth/request-message', userData, {
               headers: {
                   'content-type': 'application/json',
@@ -72,6 +76,7 @@ function Profile() {
            */
           userCtx.setActiveUser({ address: account })
           push(url);
+          setIsLoading(false)
         } catch (e) {
           console.log('there was an error', e)
         }
@@ -280,6 +285,18 @@ function Profile() {
                     {renderSwitch(activeProfileComponent)}
                 </Grid>
             </Grid>
+        )
+    }
+
+
+    if(isLoading) {
+        return (
+            <Backdrop
+                open={isLoading}
+                sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+            >
+                <CircularProgress color="inherit" />
+            </Backdrop>
         )
     }
 

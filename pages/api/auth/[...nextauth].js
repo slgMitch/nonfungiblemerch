@@ -34,7 +34,7 @@ export default NextAuth({
                   // returning the user object and creating  a session
                   return user;
                 } catch (e) {
-                  console.error(e);
+                  console.log('there was an error in next auth',e);
                   return null;
                 }
               },
