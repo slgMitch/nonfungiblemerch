@@ -238,7 +238,7 @@ export default function Apparel(props) {
 
 export async function getServerSideProps(context) {
     try {
-        const res = await fetch(`${process.env.API_BASE_DOMAIN}/api/apparel/filters`)
+        const res = await fetch(`${process.env.API_BASE_DOMAIN}/api/apparel/filters`, { credentials: "same-origin" })
         console.log('apparel data res', res)
         const data = await res.json()
         const { apparel, filters } = data

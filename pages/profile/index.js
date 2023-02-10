@@ -57,7 +57,6 @@ function Profile() {
           const { data } = await axios.post('/api/auth/request-message', userData, {
               headers: {
                   'content-type': 'application/json',
-                  'User-Agent': '*'
               },
           });
       
