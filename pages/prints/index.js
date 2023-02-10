@@ -58,7 +58,7 @@ import {
     const viewProduct = async (product) => {
         console.log('product', product)
         setIsLoading(true);
-        const { data } = await axios.get(`${API_BASE_DOMAIN}/api/product/${product.syncProductId}/getProductVariant`, {
+        const { data } = await axios.get(`${process.env.API_BASE_DOMAIN}/api/product/${product.syncProductId}/getProductVariant`, {
             headers: {
                 'content-type': 'application/json',
             },
@@ -194,7 +194,7 @@ import {
 
   export async function getServerSideProps(context) {
     try {
-        const res = await fetch(`${API_BASE_DOMAIN}/api/prints/filters`)
+        const res = await fetch(`${process.env.API_BASE_DOMAIN}/api/prints/filters`)
         const data = await res.json()
         const { apparel, filters } = data
         return {

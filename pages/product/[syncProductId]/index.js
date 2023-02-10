@@ -29,7 +29,7 @@ export default function CustomProducts(props) {
 
 export async function getServerSideProps(context) {
     const { syncProductId } = context.params
-    const response = await fetch(`${API_BASE_DOMAIN}/api/product/${syncProductId}`)
+    const response = await fetch(`${process.env.API_BASE_DOMAIN}/api/product/${syncProductId}`)
     const data = await response.json()
     console.log('getServerSideProps data', data);
     return {
