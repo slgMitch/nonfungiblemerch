@@ -75,7 +75,7 @@ function Profile() {
            * instead of using signIn(..., redirect: "/user")
            * we get the url from callback and push it to the router to avoid page refreshing
            */
-          userCtx.setActiveUser({ address: account })
+        //   userCtx.setActiveUser({ address: account })
           push(url);
           setIsLoading(false)
         } catch (error) {
@@ -304,6 +304,8 @@ function Profile() {
 
     if(isError) {
         console.log('show isError', isError)
+        setIsError(false)
+        alert(isError)
     }
 
     return (
