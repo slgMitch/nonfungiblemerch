@@ -80,7 +80,7 @@ export default function Apparel(props) {
         setIsLoading(true);
         const { data } = await axios.get(`${process.env.API_BASE_DOMAIN}/api/product/${product.syncProductId}/getProductVariant`, {
             headers: {
-                'content-type': 'application/json',
+                'Content-Type': 'application/json',
             },
         })
         console.log('data', data)
@@ -238,7 +238,16 @@ export default function Apparel(props) {
 
 export async function getServerSideProps(context) {
     try {
-        const res = await fetch(`${process.env.API_BASE_DOMAIN}/api/apparel/filters`, { credentials: "same-origin" })
+        const res = await fetch(
+            `${process.env.API_BASE_DOMAIN}/api/apparel/filters`, 
+            { 
+                credentials: "same-origin",
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin':'*'
+                }
+            }
+            )
         console.log('apparel data res', res)
         const data = await res.json()
         const { apparel, filters } = data
