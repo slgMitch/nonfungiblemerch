@@ -44,8 +44,8 @@ function Profile() {
     const profileActionOptions = [{text: 'Products', component: 'products'}, {text: 'NFTs', component: 'nfts'}]
     const profileManagementOptions = [{text: 'Settings', component: 'settings'}, {text: 'Sign Out', component: 'signOut'}]
     const [isLoading, setIsLoading] = useState()
-    // console.log('session', session)
-    // need to set is loading 
+    const [isError, setIsError] = useState()
+
 
     const handleAuth = async (wallet) => {
         if (isConnected) {
@@ -63,6 +63,7 @@ function Profile() {
                   'content-type': 'application/json',
               },
           });
+          console.log('profile data', data);
       
           const message = data.message;
       
@@ -77,8 +78,9 @@ function Profile() {
           userCtx.setActiveUser({ address: account })
           push(url);
           setIsLoading(false)
-        } catch (e) {
-          console.log('there was an error', e)
+        } catch (error) {
+          console.log('there was an error authenticating', error)
+          setIsError(error)
         }
     }
 
@@ -298,6 +300,10 @@ function Profile() {
                 <CircularProgress color="inherit" />
             </Backdrop>
         )
+    }
+
+    if(isError) {
+        console.log('show isError', isError)
     }
 
     return (
