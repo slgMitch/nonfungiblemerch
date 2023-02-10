@@ -42,6 +42,7 @@ function Profile() {
     const profileActionOptions = [{text: 'Products', component: 'products'}, {text: 'NFTs', component: 'nfts'}]
     const profileManagementOptions = [{text: 'Settings', component: 'settings'}, {text: 'Sign Out', component: 'signOut'}]
     // console.log('session', session)
+    // need to set is loading 
 
     const handleAuth = async (wallet) => {
         if (isConnected) {
@@ -56,6 +57,7 @@ function Profile() {
           const { data } = await axios.post('/api/auth/request-message', userData, {
               headers: {
                   'content-type': 'application/json',
+                  'User-Agent': '*'
               },
           });
       

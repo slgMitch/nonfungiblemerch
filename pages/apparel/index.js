@@ -241,6 +241,7 @@ export async function getServerSideProps(context) {
         const res = await fetch(`${process.env.API_BASE_DOMAIN}/api/apparel/filters`)
         const data = await res.json()
         const { apparel, filters } = data
+        console.log('apparel data', data)
         return {
             props: {
                 filters,
