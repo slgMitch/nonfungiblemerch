@@ -238,6 +238,8 @@ export default function Apparel(props) {
 
 export async function getServerSideProps(context) {
     try {
+        
+        console.log('apparel context', context)
         const res = await fetch(
             `${process.env.API_BASE_DOMAIN}/api/apparel/filters`, 
             { 
