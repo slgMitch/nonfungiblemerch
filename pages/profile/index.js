@@ -59,7 +59,7 @@ function Profile() {
           console.log('userData', userData);
       
           setIsLoading(true)
-          const { data } = await axios.post(`${API_BASE_DOMAIN}/api/auth/request-message`, userData, {
+          const { data } = await axios.post(`${process.env.API_BASE_DOMAIN}/api/auth/request-message`, userData, {
               headers: {
                 'Access-Control-Allow-Methods': 'PUT,GET,POST,DELETE,OPTIONS',
                 'Access-Control-Allow-Origin': '*',
