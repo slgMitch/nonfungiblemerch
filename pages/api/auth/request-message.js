@@ -10,7 +10,6 @@ export default async function handler(req, res) {
             statement: 'Please sign this message to confirm your identity.',
             uri: process.env.NEXTAUTH_URL,
             timeout: 60,
-            key: process.env.MORALIS_API_KEY
         };
         
         await Moralis.start({ apiKey: process.env.MORALIS_API_KEY });
