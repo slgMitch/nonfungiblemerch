@@ -3,7 +3,7 @@ import { connectDatabase, getOneDocument, insertDocument } from '../../../utils/
 
 export default async function handler(req, res) {
     try {
-        const { address, chain, network } = JSON.parse(req.body);
+        // const { address, chain, network } = JSON.parse(req.body);
     
         // const config = {
         //     domain: process.env.APP_DOMAIN,
