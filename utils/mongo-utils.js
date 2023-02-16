@@ -1,17 +1,25 @@
 import { MongoClient } from 'mongodb';
 
 export async function connectDatabase() {
-  const client = await MongoClient.connect(process.env.MONGO_URL);
-
-  return client;
+  try {
+    const client = await MongoClient.connect(process.env.MONGO_URL);
+  
+    return client;
+  } catch(error) {
+    return error 
+  }
 } 
 
 export async function insertDocument(client, collection, document) {
-  const db = client.db();
-
-  const result = await db.collection(collection).insertOne(document);
-
-  return result;
+  try {
+    const db = client.db();
+  
+    const result = await db.collection(collection).insertOne(document);
+  
+    return result;
+  } catch(error) {
+    return error
+  }
 }
 
 export async function insertDocuments(client, collection, documents) {
@@ -45,11 +53,15 @@ return documents;
 }
 
 export async function getOneDocument(client, collection, documentObject) {
-  const db = client.db();
-
-  const document = await db.collection(collection).findOne(documentObject);
-
-  return document;
+  try {
+    const db = client.db();
+  
+    const document = await db.collection(collection).findOne(documentObject);
+  
+    return document;
+  } catch(error) {
+    return error
+  }
 }
 
 export async function deleteCollection(client, collection) {
