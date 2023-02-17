@@ -29,7 +29,7 @@ export default async function handler(req, res) {
         //     await insertDocument(client, 'users', { user: address })
         // }
 
-        res.status(200).json({ address, chain, network });
+        // res.status(200).json({ address, chain, network });
     } catch (error) {
         console.log('there was an error in request message', error)
         res.status(400).json(error);

@@ -60,32 +60,16 @@ function Profile() {
           console.log('userData', userData);
       
           setIsLoading(true)
-        //   const { data } = await axios.post(`/api/auth/request-message`, userData, {
-        //       headers: {
-        //         'Accept': 'application/json',  
-        //         'Access-Control-Allow-Origin': '*',                                                                                                             
-        //         'Content-Type': 'application/json',
-        //       },
-        //   });
-        const config = {
-            domain: process.env.APP_DOMAIN,
-            statement: 'Please sign this message to confirm your identity.',
-            uri: process.env.NEXTAUTH_URL,
-            timeout: 60,
-        };
+          const { data } = await axios.post(`https://u8nrhw46z0.execute-api.us-east-1.amazonaws.com/Prod/auth`, userData, {
+              headers: {
+                'Accept': 'application/json',                                                                                                              
+                'Content-Type': 'application/json',
+              },
+          });
+          console.log('auth data', data);
         
-        await Moralis.start({ apiKey: process.env.MORALIS_API_KEY });
-        
-        const message = await Moralis.Auth.requestMessage({
-            address: userData.address,
-            chain: userData.chain,
-            network: userData.network,
-            ...config
-        });
-
-        console.log('profile message', message);
-      
-        //   const message = data.message;
+          const message = data.message;
+          console.log('profile message', message);
       
           const signature = await signMessageAsync({ message });
       
