@@ -62,6 +62,7 @@ function Profile() {
           setIsLoading(true)
           const { data } = await axios.post(`https://u8nrhw46z0.execute-api.us-east-1.amazonaws.com/Prod/auth`, userData, {
               headers: {
+                'Access-Control-Allow-Origin': '*',
                 'Accept': 'application/json',                                                                                                              
                 'Content-Type': 'application/json',
               },
